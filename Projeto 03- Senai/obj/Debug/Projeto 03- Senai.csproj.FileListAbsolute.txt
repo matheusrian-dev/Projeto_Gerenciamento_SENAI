@@ -1,0 +1,10 @@
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto 03- Senai\Projeto 03- Senai\bin\Debug\Projeto 03- Senai.exe.config
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto 03- Senai\Projeto 03- Senai\bin\Debug\Projeto 03- Senai.exe
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto 03- Senai\Projeto 03- Senai\bin\Debug\Projeto 03- Senai.pdb
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto 03- Senai\Projeto 03- Senai\obj\Debug\Projeto 03- Senai.csprojResolveAssemblyReference.cache
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto 03- Senai\Projeto 03- Senai\obj\Debug\Projeto_03__Senai.frmLogin.resources
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto 03- Senai\Projeto 03- Senai\obj\Debug\Projeto_03__Senai.Properties.Resources.resources
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto 03- Senai\Projeto 03- Senai\obj\Debug\Projeto 03- Senai.csproj.GenerateResource.Cache
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto 03- Senai\Projeto 03- Senai\obj\Debug\Projeto 03- Senai.exe
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto 03- Senai\Projeto 03- Senai\obj\Debug\Projeto 03- Senai.pdb
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto 03- Senai\Projeto 03- Senai\obj\Debug\Projeto_03__Senai.FrmMenuPrincipal.resources

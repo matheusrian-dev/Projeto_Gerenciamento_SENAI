@@ -31,15 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblGerenciarEmpresa = new System.Windows.Forms.Label();
+            this.lblGerarRelatórioAlunos = new System.Windows.Forms.Label();
+            this.lblGerarRelatorioEmpresa = new System.Windows.Forms.Label();
+            this.lblVisualizarDadosAlunos = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.userControlVisualizarDadosAlunos1 = new Projeto_03__Senai.UserControlVisualizarDadosAlunos();
+            this.userControlGerarRelatorioAluno1 = new Projeto_03__Senai.UserControlGerarRelatorioAluno();
             this.panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +59,19 @@
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenu.BackgroundImage")));
+            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Location = new System.Drawing.Point(12, 7);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(24, 25);
+            this.btnMenu.TabIndex = 3;
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnMinimizar
             // 
@@ -84,79 +99,88 @@
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // btnMenu
-            // 
-            this.btnMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenu.BackgroundImage")));
-            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Location = new System.Drawing.Point(12, 7);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(24, 25);
-            this.btnMenu.TabIndex = 3;
-            this.btnMenu.UseVisualStyleBackColor = true;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.panelMenu.Controls.Add(this.label4);
-            this.panelMenu.Controls.Add(this.label3);
-            this.panelMenu.Controls.Add(this.label2);
-            this.panelMenu.Controls.Add(this.label1);
+            this.panelMenu.Controls.Add(this.lblGerenciarEmpresa);
+            this.panelMenu.Controls.Add(this.lblGerarRelatórioAlunos);
+            this.panelMenu.Controls.Add(this.lblGerarRelatorioEmpresa);
+            this.panelMenu.Controls.Add(this.lblVisualizarDadosAlunos);
             this.panelMenu.Location = new System.Drawing.Point(0, 38);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(0, 306);
             this.panelMenu.TabIndex = 2;
             // 
-            // label1
+            // lblGerenciarEmpresa
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(52, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "COISA 01";
+            this.lblGerenciarEmpresa.AutoSize = true;
+            this.lblGerenciarEmpresa.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGerenciarEmpresa.ForeColor = System.Drawing.Color.Snow;
+            this.lblGerenciarEmpresa.Location = new System.Drawing.Point(27, 223);
+            this.lblGerenciarEmpresa.Name = "lblGerenciarEmpresa";
+            this.lblGerenciarEmpresa.Size = new System.Drawing.Size(147, 54);
+            this.lblGerenciarEmpresa.TabIndex = 4;
+            this.lblGerenciarEmpresa.Text = "Gerenciar Cadastro\r\nde \r\nEmpresas";
+            this.lblGerenciarEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lblGerarRelatórioAlunos
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Snow;
-            this.label2.Location = new System.Drawing.Point(52, 177);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "COISA 01";
+            this.lblGerarRelatórioAlunos.AutoSize = true;
+            this.lblGerarRelatórioAlunos.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGerarRelatórioAlunos.ForeColor = System.Drawing.Color.Snow;
+            this.lblGerarRelatórioAlunos.Location = new System.Drawing.Point(30, 71);
+            this.lblGerarRelatórioAlunos.Name = "lblGerarRelatórioAlunos";
+            this.lblGerarRelatórioAlunos.Size = new System.Drawing.Size(134, 54);
+            this.lblGerarRelatórioAlunos.TabIndex = 3;
+            this.lblGerarRelatórioAlunos.Text = "Gerar Relatório \r\ndos\r\nDados dos Alunos";
+            this.lblGerarRelatórioAlunos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblGerarRelatórioAlunos.Click += new System.EventHandler(this.lblGerarRelatórioAlunos_Click);
             // 
-            // label3
+            // lblGerarRelatorioEmpresa
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Snow;
-            this.label3.Location = new System.Drawing.Point(52, 245);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "COISA 01";
+            this.lblGerarRelatorioEmpresa.AutoSize = true;
+            this.lblGerarRelatorioEmpresa.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGerarRelatorioEmpresa.ForeColor = System.Drawing.Color.Snow;
+            this.lblGerarRelatorioEmpresa.Location = new System.Drawing.Point(27, 147);
+            this.lblGerarRelatorioEmpresa.Name = "lblGerarRelatorioEmpresa";
+            this.lblGerarRelatorioEmpresa.Size = new System.Drawing.Size(140, 54);
+            this.lblGerarRelatorioEmpresa.TabIndex = 1;
+            this.lblGerarRelatorioEmpresa.Text = "Gerar Relatório \r\ndos\r\nDados da Empresa";
+            this.lblGerarRelatorioEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // lblVisualizarDadosAlunos
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(52, 109);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 18);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "COISA 01";
+            this.lblVisualizarDadosAlunos.AutoSize = true;
+            this.lblVisualizarDadosAlunos.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVisualizarDadosAlunos.ForeColor = System.Drawing.Color.Snow;
+            this.lblVisualizarDadosAlunos.Location = new System.Drawing.Point(33, 13);
+            this.lblVisualizarDadosAlunos.Name = "lblVisualizarDadosAlunos";
+            this.lblVisualizarDadosAlunos.Size = new System.Drawing.Size(129, 36);
+            this.lblVisualizarDadosAlunos.TabIndex = 0;
+            this.lblVisualizarDadosAlunos.Text = "Visualizar Dados \r\ndos Alunos";
+            this.lblVisualizarDadosAlunos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblVisualizarDadosAlunos.Click += new System.EventHandler(this.lblVisualizarDadosAlunos_Click);
             // 
             // timer1
             // 
             this.timer1.Interval = 38;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // userControlVisualizarDadosAlunos1
+            // 
+            this.userControlVisualizarDadosAlunos1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userControlVisualizarDadosAlunos1.Location = new System.Drawing.Point(0, 38);
+            this.userControlVisualizarDadosAlunos1.Name = "userControlVisualizarDadosAlunos1";
+            this.userControlVisualizarDadosAlunos1.Size = new System.Drawing.Size(640, 304);
+            this.userControlVisualizarDadosAlunos1.TabIndex = 3;
+            // 
+            // userControlGerarRelatorioAluno1
+            // 
+            this.userControlGerarRelatorioAluno1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userControlGerarRelatorioAluno1.Location = new System.Drawing.Point(0, 38);
+            this.userControlGerarRelatorioAluno1.Name = "userControlGerarRelatorioAluno1";
+            this.userControlGerarRelatorioAluno1.Size = new System.Drawing.Size(640, 304);
+            this.userControlGerarRelatorioAluno1.TabIndex = 4;
             // 
             // FrmMenuPrincipal
             // 
@@ -166,6 +190,8 @@
             this.ClientSize = new System.Drawing.Size(640, 340);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.userControlVisualizarDadosAlunos1);
+            this.Controls.Add(this.userControlGerarRelatorioAluno1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMenuPrincipal";
@@ -185,10 +211,12 @@
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblGerarRelatórioAlunos;
+        private System.Windows.Forms.Label lblGerarRelatorioEmpresa;
+        private System.Windows.Forms.Label lblVisualizarDadosAlunos;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblGerenciarEmpresa;
+        private UserControlVisualizarDadosAlunos userControlVisualizarDadosAlunos1;
+        private UserControlGerarRelatorioAluno userControlGerarRelatorioAluno1;
     }
 }

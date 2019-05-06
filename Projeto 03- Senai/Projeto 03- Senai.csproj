@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +63,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlGerarRelatorioAluno.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerarRelatorioAluno.Designer.cs">
+      <DependentUpon>UserControlGerarRelatorioAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlGerarRelatorioEmpresa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerarRelatorioEmpresa.Designer.cs">
+      <DependentUpon>UserControlGerarRelatorioEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlGerenciarEmpresa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerenciarEmpresa.Designer.cs">
+      <DependentUpon>UserControlGerenciarEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlVisualizarDadosAlunos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlVisualizarDadosAlunos.Designer.cs">
+      <DependentUpon>UserControlVisualizarDadosAlunos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +102,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControlGerarRelatorioAluno.resx">
+      <DependentUpon>UserControlGerarRelatorioAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlGerarRelatorioEmpresa.resx">
+      <DependentUpon>UserControlGerarRelatorioEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlGerenciarEmpresa.resx">
+      <DependentUpon>UserControlGerenciarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlVisualizarDadosAlunos.resx">
+      <DependentUpon>UserControlVisualizarDadosAlunos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

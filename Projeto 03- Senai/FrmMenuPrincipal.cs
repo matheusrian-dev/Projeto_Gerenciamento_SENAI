@@ -19,6 +19,7 @@ namespace Projeto_03__Senai
         public FrmMenuPrincipal()
         {
             InitializeComponent();
+            userControlGerarRelatorioAluno1.Visible = false;
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -54,6 +55,18 @@ namespace Projeto_03__Senai
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void lblVisualizarDadosAlunos_Click(object sender, EventArgs e)
+        {
+            userControlVisualizarDadosAlunos1.Visible = true;
+            userControlGerarRelatorioAluno1.Visible = false;
+        }
+
+        private void lblGerarRelatórioAlunos_Click(object sender, EventArgs e)
+        {
+            userControlGerarRelatorioAluno1.Visible = true;
+            userControlVisualizarDadosAlunos1.Visible = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)

@@ -37,17 +37,19 @@
             this.mskTelefoneEmpresa = new System.Windows.Forms.MaskedTextBox();
             this.mskCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtEnderecoEmpresa = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtCidadeEmpresa = new System.Windows.Forms.TextBox();
-            this.txtEstadoEmpresa = new System.Windows.Forms.TextBox();
+            this.txtRazaoSocial = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtResponsavelEmpresa = new System.Windows.Forms.TextBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 73);
+            this.label1.Location = new System.Drawing.Point(116, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 16);
             this.label1.TabIndex = 0;
@@ -57,7 +59,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 44);
+            this.label2.Location = new System.Drawing.Point(116, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 16);
             this.label2.TabIndex = 2;
@@ -66,16 +68,18 @@
             // txtNomeEmpresa
             // 
             this.txtNomeEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeEmpresa.Location = new System.Drawing.Point(99, 41);
+            this.txtNomeEmpresa.Location = new System.Drawing.Point(181, 41);
             this.txtNomeEmpresa.Name = "txtNomeEmpresa";
             this.txtNomeEmpresa.Size = new System.Drawing.Size(375, 22);
             this.txtNomeEmpresa.TabIndex = 3;
+            this.txtNomeEmpresa.Enter += new System.EventHandler(this.txtNomeEmpresa_Enter);
+            this.txtNomeEmpresa.Leave += new System.EventHandler(this.txtNomeEmpresa_Leave);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(283, 70);
+            this.label3.Location = new System.Drawing.Point(365, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 16);
             this.label3.TabIndex = 4;
@@ -85,7 +89,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(35, 102);
+            this.label4.Location = new System.Drawing.Point(117, 102);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 16);
             this.label4.TabIndex = 5;
@@ -94,14 +98,16 @@
             // txtEmailEmpresa
             // 
             this.txtEmailEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailEmpresa.Location = new System.Drawing.Point(99, 98);
+            this.txtEmailEmpresa.Location = new System.Drawing.Point(181, 98);
             this.txtEmailEmpresa.Name = "txtEmailEmpresa";
             this.txtEmailEmpresa.Size = new System.Drawing.Size(375, 22);
             this.txtEmailEmpresa.TabIndex = 6;
+            this.txtEmailEmpresa.Enter += new System.EventHandler(this.txtEmailEmpresa_Enter);
+            this.txtEmailEmpresa.Leave += new System.EventHandler(this.txtEmailEmpresa_Leave);
             // 
             // mskTelefoneEmpresa
             // 
-            this.mskTelefoneEmpresa.Location = new System.Drawing.Point(352, 69);
+            this.mskTelefoneEmpresa.Location = new System.Drawing.Point(434, 69);
             this.mskTelefoneEmpresa.Mask = "(99) 00000-0000";
             this.mskTelefoneEmpresa.Name = "mskTelefoneEmpresa";
             this.mskTelefoneEmpresa.Size = new System.Drawing.Size(122, 20);
@@ -109,67 +115,97 @@
             // 
             // mskCNPJ
             // 
-            this.mskCNPJ.Location = new System.Drawing.Point(99, 69);
+            this.mskCNPJ.Location = new System.Drawing.Point(181, 69);
             this.mskCNPJ.Name = "mskCNPJ";
             this.mskCNPJ.Size = new System.Drawing.Size(157, 20);
             this.mskCNPJ.TabIndex = 8;
+            this.mskCNPJ.Enter += new System.EventHandler(this.mskCNPJ_Enter);
+            this.mskCNPJ.Leave += new System.EventHandler(this.mskCNPJ_Leave);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(35, 131);
+            this.label5.Location = new System.Drawing.Point(109, 131);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 16);
+            this.label5.Size = new System.Drawing.Size(68, 16);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Cidade";
+            this.label5.Text = "Endereço";
+            // 
+            // txtEnderecoEmpresa
+            // 
+            this.txtEnderecoEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnderecoEmpresa.Location = new System.Drawing.Point(181, 128);
+            this.txtEnderecoEmpresa.Name = "txtEnderecoEmpresa";
+            this.txtEnderecoEmpresa.Size = new System.Drawing.Size(375, 22);
+            this.txtEnderecoEmpresa.TabIndex = 12;
+            this.txtEnderecoEmpresa.Enter += new System.EventHandler(this.txtEnderecoEmpresa_Enter);
+            this.txtEnderecoEmpresa.Leave += new System.EventHandler(this.txtEnderecoEmpresa_Leave);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(283, 131);
+            this.label6.Location = new System.Drawing.Point(85, 163);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 16);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Estado";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.Size = new System.Drawing.Size(92, 16);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Razão Social";
             // 
-            // txtCidadeEmpresa
+            // txtRazaoSocial
             // 
-            this.txtCidadeEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCidadeEmpresa.Location = new System.Drawing.Point(99, 128);
-            this.txtCidadeEmpresa.Name = "txtCidadeEmpresa";
-            this.txtCidadeEmpresa.Size = new System.Drawing.Size(157, 22);
-            this.txtCidadeEmpresa.TabIndex = 12;
-            // 
-            // txtEstadoEmpresa
-            // 
-            this.txtEstadoEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstadoEmpresa.Location = new System.Drawing.Point(352, 128);
-            this.txtEstadoEmpresa.Name = "txtEstadoEmpresa";
-            this.txtEstadoEmpresa.Size = new System.Drawing.Size(122, 22);
-            this.txtEstadoEmpresa.TabIndex = 13;
+            this.txtRazaoSocial.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRazaoSocial.Location = new System.Drawing.Point(181, 160);
+            this.txtRazaoSocial.Name = "txtRazaoSocial";
+            this.txtRazaoSocial.Size = new System.Drawing.Size(375, 22);
+            this.txtRazaoSocial.TabIndex = 14;
+            this.txtRazaoSocial.Enter += new System.EventHandler(this.txtRazaoSocial_Enter);
+            this.txtRazaoSocial.Leave += new System.EventHandler(this.txtRazaoSocial_Leave);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(35, 160);
+            this.label7.Location = new System.Drawing.Point(89, 197);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 16);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Cidade";
+            this.label7.Size = new System.Drawing.Size(88, 16);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Responsável";
+            // 
+            // txtResponsavelEmpresa
+            // 
+            this.txtResponsavelEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResponsavelEmpresa.Location = new System.Drawing.Point(181, 191);
+            this.txtResponsavelEmpresa.Name = "txtResponsavelEmpresa";
+            this.txtResponsavelEmpresa.Size = new System.Drawing.Size(375, 22);
+            this.txtResponsavelEmpresa.TabIndex = 16;
+            this.txtResponsavelEmpresa.Enter += new System.EventHandler(this.txtResponsavelEmpresa_Enter);
+            this.txtResponsavelEmpresa.Leave += new System.EventHandler(this.txtResponsavelEmpresa_Leave);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCancelar.Location = new System.Drawing.Point(500, 241);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(123, 46);
+            this.btnCancelar.TabIndex = 17;
+            this.btnCancelar.Text = "Cadastrar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // UserControlGerenciarEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.txtResponsavelEmpresa);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtEstadoEmpresa);
-            this.Controls.Add(this.txtCidadeEmpresa);
+            this.Controls.Add(this.txtRazaoSocial);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtEnderecoEmpresa);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.mskCNPJ);
             this.Controls.Add(this.mskTelefoneEmpresa);
@@ -181,6 +217,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UserControlGerenciarEmpresa";
             this.Size = new System.Drawing.Size(640, 304);
+            this.Load += new System.EventHandler(this.UserControlGerenciarEmpresa_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,9 +234,11 @@
         private System.Windows.Forms.MaskedTextBox mskTelefoneEmpresa;
         private System.Windows.Forms.MaskedTextBox mskCNPJ;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtEnderecoEmpresa;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtCidadeEmpresa;
-        private System.Windows.Forms.TextBox txtEstadoEmpresa;
+        private System.Windows.Forms.TextBox txtRazaoSocial;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtResponsavelEmpresa;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

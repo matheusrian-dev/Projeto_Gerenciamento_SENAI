@@ -42,6 +42,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.userControlVisualizarDadosAlunos1 = new Projeto_03__Senai.UserControlVisualizarDadosAlunos();
             this.userControlGerarRelatorioAluno1 = new Projeto_03__Senai.UserControlGerarRelatorioAluno();
+            this.userControlGerenciarEmpresa1 = new Projeto_03__Senai.UserControlGerenciarEmpresa();
+            this.userControlGerarRelatorioEmpresa1 = new Projeto_03__Senai.UserControlGerarRelatorioEmpresa();
             this.panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
@@ -102,10 +104,10 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panelMenu.Controls.Add(this.lblVisualizarDadosAlunos);
             this.panelMenu.Controls.Add(this.lblGerenciarEmpresa);
             this.panelMenu.Controls.Add(this.lblGerarRelatórioAlunos);
             this.panelMenu.Controls.Add(this.lblGerarRelatorioEmpresa);
-            this.panelMenu.Controls.Add(this.lblVisualizarDadosAlunos);
             this.panelMenu.Location = new System.Drawing.Point(0, 38);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(0, 306);
@@ -122,6 +124,7 @@
             this.lblGerenciarEmpresa.TabIndex = 4;
             this.lblGerenciarEmpresa.Text = "Gerenciar Cadastro\r\nde \r\nEmpresas";
             this.lblGerenciarEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblGerenciarEmpresa.Click += new System.EventHandler(this.lblGerenciarEmpresa_Click);
             // 
             // lblGerarRelatórioAlunos
             // 
@@ -147,6 +150,7 @@
             this.lblGerarRelatorioEmpresa.TabIndex = 1;
             this.lblGerarRelatorioEmpresa.Text = "Gerar Relatório \r\ndos\r\nDados da Empresa";
             this.lblGerarRelatorioEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblGerarRelatorioEmpresa.Click += new System.EventHandler(this.lblGerarRelatorioEmpresa_Click);
             // 
             // lblVisualizarDadosAlunos
             // 
@@ -169,7 +173,7 @@
             // userControlVisualizarDadosAlunos1
             // 
             this.userControlVisualizarDadosAlunos1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userControlVisualizarDadosAlunos1.Location = new System.Drawing.Point(0, 38);
+            this.userControlVisualizarDadosAlunos1.Location = new System.Drawing.Point(0, 36);
             this.userControlVisualizarDadosAlunos1.Name = "userControlVisualizarDadosAlunos1";
             this.userControlVisualizarDadosAlunos1.Size = new System.Drawing.Size(640, 304);
             this.userControlVisualizarDadosAlunos1.TabIndex = 3;
@@ -177,10 +181,26 @@
             // userControlGerarRelatorioAluno1
             // 
             this.userControlGerarRelatorioAluno1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userControlGerarRelatorioAluno1.Location = new System.Drawing.Point(0, 38);
+            this.userControlGerarRelatorioAluno1.Location = new System.Drawing.Point(-3, 24);
             this.userControlGerarRelatorioAluno1.Name = "userControlGerarRelatorioAluno1";
             this.userControlGerarRelatorioAluno1.Size = new System.Drawing.Size(640, 304);
             this.userControlGerarRelatorioAluno1.TabIndex = 4;
+            // 
+            // userControlGerenciarEmpresa1
+            // 
+            this.userControlGerenciarEmpresa1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userControlGerenciarEmpresa1.Location = new System.Drawing.Point(0, 38);
+            this.userControlGerenciarEmpresa1.Name = "userControlGerenciarEmpresa1";
+            this.userControlGerenciarEmpresa1.Size = new System.Drawing.Size(640, 304);
+            this.userControlGerenciarEmpresa1.TabIndex = 5;
+            // 
+            // userControlGerarRelatorioEmpresa1
+            // 
+            this.userControlGerarRelatorioEmpresa1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userControlGerarRelatorioEmpresa1.Location = new System.Drawing.Point(0, 37);
+            this.userControlGerarRelatorioEmpresa1.Name = "userControlGerarRelatorioEmpresa1";
+            this.userControlGerarRelatorioEmpresa1.Size = new System.Drawing.Size(640, 303);
+            this.userControlGerarRelatorioEmpresa1.TabIndex = 6;
             // 
             // FrmMenuPrincipal
             // 
@@ -192,6 +212,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.userControlVisualizarDadosAlunos1);
             this.Controls.Add(this.userControlGerarRelatorioAluno1);
+            this.Controls.Add(this.userControlGerenciarEmpresa1);
+            this.Controls.Add(this.userControlGerarRelatorioEmpresa1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMenuPrincipal";
@@ -218,5 +240,7 @@
         private System.Windows.Forms.Label lblGerenciarEmpresa;
         private UserControlVisualizarDadosAlunos userControlVisualizarDadosAlunos1;
         private UserControlGerarRelatorioAluno userControlGerarRelatorioAluno1;
+        private UserControlGerenciarEmpresa userControlGerenciarEmpresa1;
+        private UserControlGerarRelatorioEmpresa userControlGerarRelatorioEmpresa1;
     }
 }

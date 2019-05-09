@@ -20,6 +20,8 @@ namespace Projeto_03__Senai
         {
             InitializeComponent();
             userControlGerarRelatorioAluno1.Visible = false;
+            userControlGerarRelatorioEmpresa1.Visible = false;
+            userControlGerenciarEmpresa1.Visible = false;
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -61,24 +63,32 @@ namespace Projeto_03__Senai
         {
             userControlVisualizarDadosAlunos1.Visible = true;
             userControlGerarRelatorioAluno1.Visible = false;
+            userControlGerarRelatorioAluno1.Visible = false;
+            userControlGerenciarEmpresa1.Visible = false;
         }
 
         private void lblGerarRelatórioAlunos_Click(object sender, EventArgs e)
         {
             userControlGerarRelatorioAluno1.Visible = true;
             userControlVisualizarDadosAlunos1.Visible = false;
+            userControlGerarRelatorioEmpresa1.Visible = false;
+            userControlGerenciarEmpresa1.Visible = false;
         }
 
         private void lblGerenciarEmpresa_Click(object sender, EventArgs e)
         {
             userControlGerenciarEmpresa1.Visible = true;
             userControlVisualizarDadosAlunos1.Visible = false;
+            userControlGerarRelatorioAluno1.Visible = false;
+            userControlGerarRelatorioEmpresa1.Visible = false;
         }
 
         private void lblGerarRelatorioEmpresa_Click(object sender, EventArgs e)
         {
             userControlGerarRelatorioEmpresa1.Visible = true;
             userControlVisualizarDadosAlunos1.Visible = false;
+            userControlGerenciarEmpresa1.Visible = false;
+            userControlGerarRelatorioAluno1.Visible = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)

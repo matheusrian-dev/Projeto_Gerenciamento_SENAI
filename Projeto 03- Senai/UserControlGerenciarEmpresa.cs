@@ -150,5 +150,12 @@ namespace Projeto_03__Senai
                 txtResponsavelEmpresa.ForeColor = Color.Gray;
             }
         }
+
+        private void btnShowEditar_Click(object sender, EventArgs e)
+        {
+            FormEditarEmpresa editar = new FormEditarEmpresa();
+            this.Hide();
+            editar.Show();
+        }
     }
 }

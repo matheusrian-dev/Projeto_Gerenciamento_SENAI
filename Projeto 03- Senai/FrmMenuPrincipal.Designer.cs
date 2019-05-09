@@ -35,15 +35,16 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.lblVisualizarDadosAlunos = new System.Windows.Forms.Label();
             this.lblGerenciarEmpresa = new System.Windows.Forms.Label();
             this.lblGerarRelatórioAlunos = new System.Windows.Forms.Label();
             this.lblGerarRelatorioEmpresa = new System.Windows.Forms.Label();
-            this.lblVisualizarDadosAlunos = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.userControlVisualizarDadosAlunos1 = new Projeto_03__Senai.UserControlVisualizarDadosAlunos();
             this.userControlGerarRelatorioAluno1 = new Projeto_03__Senai.UserControlGerarRelatorioAluno();
             this.userControlGerenciarEmpresa1 = new Projeto_03__Senai.UserControlGerenciarEmpresa();
             this.userControlGerarRelatorioEmpresa1 = new Projeto_03__Senai.UserControlGerarRelatorioEmpresa();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +52,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnMenu);
             this.panel1.Controls.Add(this.btnMinimizar);
             this.panel1.Controls.Add(this.btnFechar);
@@ -113,6 +115,19 @@
             this.panelMenu.Size = new System.Drawing.Size(0, 306);
             this.panelMenu.TabIndex = 2;
             // 
+            // lblVisualizarDadosAlunos
+            // 
+            this.lblVisualizarDadosAlunos.AutoSize = true;
+            this.lblVisualizarDadosAlunos.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVisualizarDadosAlunos.ForeColor = System.Drawing.Color.Snow;
+            this.lblVisualizarDadosAlunos.Location = new System.Drawing.Point(33, 13);
+            this.lblVisualizarDadosAlunos.Name = "lblVisualizarDadosAlunos";
+            this.lblVisualizarDadosAlunos.Size = new System.Drawing.Size(129, 36);
+            this.lblVisualizarDadosAlunos.TabIndex = 0;
+            this.lblVisualizarDadosAlunos.Text = "Visualizar Dados \r\ndos Alunos";
+            this.lblVisualizarDadosAlunos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblVisualizarDadosAlunos.Click += new System.EventHandler(this.lblVisualizarDadosAlunos_Click);
+            // 
             // lblGerenciarEmpresa
             // 
             this.lblGerenciarEmpresa.AutoSize = true;
@@ -152,19 +167,6 @@
             this.lblGerarRelatorioEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblGerarRelatorioEmpresa.Click += new System.EventHandler(this.lblGerarRelatorioEmpresa_Click);
             // 
-            // lblVisualizarDadosAlunos
-            // 
-            this.lblVisualizarDadosAlunos.AutoSize = true;
-            this.lblVisualizarDadosAlunos.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVisualizarDadosAlunos.ForeColor = System.Drawing.Color.Snow;
-            this.lblVisualizarDadosAlunos.Location = new System.Drawing.Point(33, 13);
-            this.lblVisualizarDadosAlunos.Name = "lblVisualizarDadosAlunos";
-            this.lblVisualizarDadosAlunos.Size = new System.Drawing.Size(129, 36);
-            this.lblVisualizarDadosAlunos.TabIndex = 0;
-            this.lblVisualizarDadosAlunos.Text = "Visualizar Dados \r\ndos Alunos";
-            this.lblVisualizarDadosAlunos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblVisualizarDadosAlunos.Click += new System.EventHandler(this.lblVisualizarDadosAlunos_Click);
-            // 
             // timer1
             // 
             this.timer1.Interval = 38;
@@ -202,6 +204,17 @@
             this.userControlGerarRelatorioEmpresa1.Size = new System.Drawing.Size(640, 303);
             this.userControlGerarRelatorioEmpresa1.TabIndex = 6;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(234, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(172, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "SENAI - Sistema FIEMG";
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,6 +233,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMenuPrincipal";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -242,5 +256,6 @@
         private UserControlGerarRelatorioAluno userControlGerarRelatorioAluno1;
         private UserControlGerenciarEmpresa userControlGerenciarEmpresa1;
         private UserControlGerarRelatorioEmpresa userControlGerarRelatorioEmpresa1;
+        private System.Windows.Forms.Label label1;
     }
 }

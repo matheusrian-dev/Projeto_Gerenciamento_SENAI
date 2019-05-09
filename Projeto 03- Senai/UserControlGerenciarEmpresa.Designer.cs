@@ -43,6 +43,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtResponsavelEmpresa = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnShowEditar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -116,6 +118,7 @@
             // mskCNPJ
             // 
             this.mskCNPJ.Location = new System.Drawing.Point(181, 69);
+            this.mskCNPJ.Mask = "999.999.999/99999-99";
             this.mskCNPJ.Name = "mskCNPJ";
             this.mskCNPJ.Size = new System.Drawing.Size(157, 20);
             this.mskCNPJ.TabIndex = 8;
@@ -188,18 +191,43 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancelar.Location = new System.Drawing.Point(500, 241);
+            this.btnCancelar.Location = new System.Drawing.Point(372, 241);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(123, 46);
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.Text = "Cadastrar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(69, 15);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(503, 220);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Cadastro de Empresa";
+            // 
+            // btnShowEditar
+            // 
+            this.btnShowEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnShowEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowEditar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowEditar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnShowEditar.Location = new System.Drawing.Point(501, 241);
+            this.btnShowEditar.Name = "btnShowEditar";
+            this.btnShowEditar.Size = new System.Drawing.Size(123, 46);
+            this.btnShowEditar.TabIndex = 19;
+            this.btnShowEditar.Text = "Editar Cadastro";
+            this.btnShowEditar.UseVisualStyleBackColor = false;
+            this.btnShowEditar.Click += new System.EventHandler(this.btnShowEditar_Click);
+            // 
             // UserControlGerenciarEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.btnShowEditar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtResponsavelEmpresa);
             this.Controls.Add(this.label7);
@@ -215,6 +243,7 @@
             this.Controls.Add(this.txtNomeEmpresa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
             this.Name = "UserControlGerenciarEmpresa";
             this.Size = new System.Drawing.Size(640, 304);
             this.Load += new System.EventHandler(this.UserControlGerenciarEmpresa_Load);
@@ -240,5 +269,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtResponsavelEmpresa;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnShowEditar;
     }
 }

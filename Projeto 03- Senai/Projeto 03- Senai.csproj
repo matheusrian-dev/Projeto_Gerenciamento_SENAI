@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormEditarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarEmpresa.Designer.cs">
+      <DependentUpon>FormEditarEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="UserControlVisualizarDadosAlunos.Designer.cs">
       <DependentUpon>UserControlVisualizarDadosAlunos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormEditarEmpresa.resx">
+      <DependentUpon>FormEditarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>

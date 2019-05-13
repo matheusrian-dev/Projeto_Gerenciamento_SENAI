@@ -20,26 +20,26 @@ namespace Projeto_03__Senai
         private void txtGerarPorCNPJ_Enter(object sender, EventArgs e)
         {
 
-            if (txtGerarPorCNPJ.Text == "Insira o CNPJ da Empresa")
+            if (mskGerarPorCNPJ.Text == "Insira o CNPJ da Empresa")
             {
-                txtGerarPorCNPJ.Text = "";
-                txtGerarPorCNPJ.ForeColor = Color.Black;
+                mskGerarPorCNPJ.Text = "";
+                mskGerarPorCNPJ.ForeColor = Color.Black;
             }
         }
 
         private void txtGerarPorCNPJ_Leave(object sender, EventArgs e)
         {
-            if (txtGerarPorCNPJ.Text == "")
+            if (mskGerarPorCNPJ.Text == "")
             {
-                txtGerarPorCNPJ.Text = "Insira o CNPJ da Empresa";
-                txtGerarPorCNPJ.ForeColor = Color.Gray;
+                mskGerarPorCNPJ.Text = "Insira o CNPJ da Empresa";
+                mskGerarPorCNPJ.ForeColor = Color.Gray;
             }
         }
 
         private void UserControlGerarRelatorioEmpresa_Load(object sender, EventArgs e)
         {
-            txtGerarPorCNPJ.Text = "Insira o CNPJ da Empresa";
-            txtGerarPorCNPJ.ForeColor = Color.Gray;
+            mskGerarPorCNPJ.Text = "Insira o CNPJ da Empresa";
+            mskGerarPorCNPJ.ForeColor = Color.Gray;
         }
     }
 }

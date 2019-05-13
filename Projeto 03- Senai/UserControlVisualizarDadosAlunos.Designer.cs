@@ -29,94 +29,99 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtBuscaRA = new System.Windows.Forms.TextBox();
-            this.btnBuscarRA = new System.Windows.Forms.Button();
-            this.btnBuscarDataMatricula = new System.Windows.Forms.Button();
-            this.btnBuscarTurma = new System.Windows.Forms.Button();
-            this.txtBuscarTurma = new System.Windows.Forms.TextBox();
-            this.dtpBuscarDataMatricula = new System.Windows.Forms.DateTimePicker();
+            this.txtFiltrarRA = new System.Windows.Forms.TextBox();
+            this.btnFiltrarRA = new System.Windows.Forms.Button();
+            this.btnFiltrarDataMatricula = new System.Windows.Forms.Button();
+            this.btnFiltrarTurma = new System.Windows.Forms.Button();
+            this.txtFiltrarTurma = new System.Windows.Forms.TextBox();
+            this.dtpFiltrarDataMatricula = new System.Windows.Forms.DateTimePicker();
             this.btnTodosAlunos = new System.Windows.Forms.Button();
-            this.btnBuscarAlunosEmpresa = new System.Windows.Forms.Button();
-            this.txtBuscarAlunosNaEmpresa = new System.Windows.Forms.TextBox();
+            this.btnFiltrarAlunosEmpresa = new System.Windows.Forms.Button();
+            this.txtFiltrarAlunosNaEmpresa = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnIrParaBuscaAvancada = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 57);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(348, 289);
+            this.dataGridView1.Size = new System.Drawing.Size(348, 237);
             this.dataGridView1.TabIndex = 0;
             // 
-            // txtBuscaRA
+            // txtFiltrarRA
             // 
-            this.txtBuscaRA.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscaRA.Location = new System.Drawing.Point(382, 20);
-            this.txtBuscaRA.Name = "txtBuscaRA";
-            this.txtBuscaRA.Size = new System.Drawing.Size(165, 22);
-            this.txtBuscaRA.TabIndex = 1;
-            this.txtBuscaRA.Enter += new System.EventHandler(this.txtBuscaRA_Enter);
-            this.txtBuscaRA.Leave += new System.EventHandler(this.txtBuscaRA_Leave);
+            this.txtFiltrarRA.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFiltrarRA.Location = new System.Drawing.Point(372, 23);
+            this.txtFiltrarRA.Name = "txtFiltrarRA";
+            this.txtFiltrarRA.Size = new System.Drawing.Size(165, 22);
+            this.txtFiltrarRA.TabIndex = 1;
+            this.txtFiltrarRA.Enter += new System.EventHandler(this.txtBuscaRA_Enter);
+            this.txtFiltrarRA.Leave += new System.EventHandler(this.txtBuscaRA_Leave);
             // 
-            // btnBuscarRA
+            // btnFiltrarRA
             // 
-            this.btnBuscarRA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBuscarRA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarRA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarRA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBuscarRA.Location = new System.Drawing.Point(553, 5);
-            this.btnBuscarRA.Name = "btnBuscarRA";
-            this.btnBuscarRA.Size = new System.Drawing.Size(84, 53);
-            this.btnBuscarRA.TabIndex = 2;
-            this.btnBuscarRA.Text = "Buscar por RA";
-            this.btnBuscarRA.UseVisualStyleBackColor = false;
-            this.btnBuscarRA.Click += new System.EventHandler(this.btnBuscarRA_Click);
+            this.btnFiltrarRA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnFiltrarRA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltrarRA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrarRA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFiltrarRA.Location = new System.Drawing.Point(543, 8);
+            this.btnFiltrarRA.Name = "btnFiltrarRA";
+            this.btnFiltrarRA.Size = new System.Drawing.Size(84, 53);
+            this.btnFiltrarRA.TabIndex = 2;
+            this.btnFiltrarRA.Text = "Filtrar por RA";
+            this.btnFiltrarRA.UseVisualStyleBackColor = false;
+            this.btnFiltrarRA.Click += new System.EventHandler(this.btnBuscarRA_Click);
             // 
-            // btnBuscarDataMatricula
+            // btnFiltrarDataMatricula
             // 
-            this.btnBuscarDataMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBuscarDataMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarDataMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarDataMatricula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBuscarDataMatricula.Location = new System.Drawing.Point(553, 64);
-            this.btnBuscarDataMatricula.Name = "btnBuscarDataMatricula";
-            this.btnBuscarDataMatricula.Size = new System.Drawing.Size(84, 53);
-            this.btnBuscarDataMatricula.TabIndex = 4;
-            this.btnBuscarDataMatricula.Text = "Buscar por Data de Matrícula";
-            this.btnBuscarDataMatricula.UseVisualStyleBackColor = false;
+            this.btnFiltrarDataMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnFiltrarDataMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltrarDataMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrarDataMatricula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFiltrarDataMatricula.Location = new System.Drawing.Point(543, 67);
+            this.btnFiltrarDataMatricula.Name = "btnFiltrarDataMatricula";
+            this.btnFiltrarDataMatricula.Size = new System.Drawing.Size(84, 53);
+            this.btnFiltrarDataMatricula.TabIndex = 4;
+            this.btnFiltrarDataMatricula.Text = "Filtrar por Data de Matrícula";
+            this.btnFiltrarDataMatricula.UseVisualStyleBackColor = false;
+            this.btnFiltrarDataMatricula.Click += new System.EventHandler(this.btnFiltrarDataMatricula_Click);
             // 
-            // btnBuscarTurma
+            // btnFiltrarTurma
             // 
-            this.btnBuscarTurma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBuscarTurma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarTurma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBuscarTurma.Location = new System.Drawing.Point(553, 123);
-            this.btnBuscarTurma.Name = "btnBuscarTurma";
-            this.btnBuscarTurma.Size = new System.Drawing.Size(84, 53);
-            this.btnBuscarTurma.TabIndex = 6;
-            this.btnBuscarTurma.Text = "Buscar por Turma";
-            this.btnBuscarTurma.UseVisualStyleBackColor = false;
+            this.btnFiltrarTurma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnFiltrarTurma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltrarTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrarTurma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFiltrarTurma.Location = new System.Drawing.Point(543, 126);
+            this.btnFiltrarTurma.Name = "btnFiltrarTurma";
+            this.btnFiltrarTurma.Size = new System.Drawing.Size(84, 53);
+            this.btnFiltrarTurma.TabIndex = 6;
+            this.btnFiltrarTurma.Text = "Filtrar por Turma";
+            this.btnFiltrarTurma.UseVisualStyleBackColor = false;
+            this.btnFiltrarTurma.Click += new System.EventHandler(this.btnFiltrarTurma_Click);
             // 
-            // txtBuscarTurma
+            // txtFiltrarTurma
             // 
-            this.txtBuscarTurma.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarTurma.Location = new System.Drawing.Point(382, 138);
-            this.txtBuscarTurma.Name = "txtBuscarTurma";
-            this.txtBuscarTurma.Size = new System.Drawing.Size(165, 22);
-            this.txtBuscarTurma.TabIndex = 5;
-            this.txtBuscarTurma.Enter += new System.EventHandler(this.txtBuscarTurma_Enter);
-            this.txtBuscarTurma.Leave += new System.EventHandler(this.txtBuscarTurma_Leave);
+            this.txtFiltrarTurma.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFiltrarTurma.Location = new System.Drawing.Point(372, 141);
+            this.txtFiltrarTurma.Name = "txtFiltrarTurma";
+            this.txtFiltrarTurma.Size = new System.Drawing.Size(165, 22);
+            this.txtFiltrarTurma.TabIndex = 5;
+            this.txtFiltrarTurma.Enter += new System.EventHandler(this.txtBuscarTurma_Enter);
+            this.txtFiltrarTurma.Leave += new System.EventHandler(this.txtBuscarTurma_Leave);
             // 
-            // dtpBuscarDataMatricula
+            // dtpFiltrarDataMatricula
             // 
-            this.dtpBuscarDataMatricula.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBuscarDataMatricula.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBuscarDataMatricula.Location = new System.Drawing.Point(382, 77);
-            this.dtpBuscarDataMatricula.Name = "dtpBuscarDataMatricula";
-            this.dtpBuscarDataMatricula.Size = new System.Drawing.Size(165, 22);
-            this.dtpBuscarDataMatricula.TabIndex = 7;
+            this.dtpFiltrarDataMatricula.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFiltrarDataMatricula.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFiltrarDataMatricula.Location = new System.Drawing.Point(372, 80);
+            this.dtpFiltrarDataMatricula.Name = "dtpFiltrarDataMatricula";
+            this.dtpFiltrarDataMatricula.Size = new System.Drawing.Size(165, 22);
+            this.dtpFiltrarDataMatricula.TabIndex = 7;
             // 
             // btnTodosAlunos
             // 
@@ -124,50 +129,88 @@
             this.btnTodosAlunos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTodosAlunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTodosAlunos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnTodosAlunos.Location = new System.Drawing.Point(553, 241);
+            this.btnTodosAlunos.Location = new System.Drawing.Point(227, 15);
             this.btnTodosAlunos.Name = "btnTodosAlunos";
-            this.btnTodosAlunos.Size = new System.Drawing.Size(84, 53);
+            this.btnTodosAlunos.Size = new System.Drawing.Size(135, 36);
             this.btnTodosAlunos.TabIndex = 8;
-            this.btnTodosAlunos.Text = "Buscar Todos os Alunos";
+            this.btnTodosAlunos.Text = "Buscar Arquivo Excel ";
             this.btnTodosAlunos.UseVisualStyleBackColor = false;
+            this.btnTodosAlunos.Click += new System.EventHandler(this.btnTodosAlunos_Click);
             // 
-            // btnBuscarAlunosEmpresa
+            // btnFiltrarAlunosEmpresa
             // 
-            this.btnBuscarAlunosEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBuscarAlunosEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarAlunosEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarAlunosEmpresa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBuscarAlunosEmpresa.Location = new System.Drawing.Point(553, 182);
-            this.btnBuscarAlunosEmpresa.Name = "btnBuscarAlunosEmpresa";
-            this.btnBuscarAlunosEmpresa.Size = new System.Drawing.Size(84, 53);
-            this.btnBuscarAlunosEmpresa.TabIndex = 9;
-            this.btnBuscarAlunosEmpresa.Text = "Buscar Alunos na Empresa";
-            this.btnBuscarAlunosEmpresa.UseVisualStyleBackColor = false;
+            this.btnFiltrarAlunosEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnFiltrarAlunosEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltrarAlunosEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrarAlunosEmpresa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFiltrarAlunosEmpresa.Location = new System.Drawing.Point(543, 185);
+            this.btnFiltrarAlunosEmpresa.Name = "btnFiltrarAlunosEmpresa";
+            this.btnFiltrarAlunosEmpresa.Size = new System.Drawing.Size(84, 53);
+            this.btnFiltrarAlunosEmpresa.TabIndex = 9;
+            this.btnFiltrarAlunosEmpresa.Text = "Filtrar Alunos na Empresa";
+            this.btnFiltrarAlunosEmpresa.UseVisualStyleBackColor = false;
+            this.btnFiltrarAlunosEmpresa.Click += new System.EventHandler(this.btnFiltrarAlunosEmpresa_Click);
             // 
-            // txtBuscarAlunosNaEmpresa
+            // txtFiltrarAlunosNaEmpresa
             // 
-            this.txtBuscarAlunosNaEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarAlunosNaEmpresa.Location = new System.Drawing.Point(382, 197);
-            this.txtBuscarAlunosNaEmpresa.Name = "txtBuscarAlunosNaEmpresa";
-            this.txtBuscarAlunosNaEmpresa.Size = new System.Drawing.Size(165, 22);
-            this.txtBuscarAlunosNaEmpresa.TabIndex = 10;
-            this.txtBuscarAlunosNaEmpresa.Enter += new System.EventHandler(this.txtBuscarAlunosNaEmpresa_Enter);
-            this.txtBuscarAlunosNaEmpresa.Leave += new System.EventHandler(this.txtBuscarAlunosNaEmpresa_Leave);
+            this.txtFiltrarAlunosNaEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFiltrarAlunosNaEmpresa.Location = new System.Drawing.Point(372, 200);
+            this.txtFiltrarAlunosNaEmpresa.Name = "txtFiltrarAlunosNaEmpresa";
+            this.txtFiltrarAlunosNaEmpresa.Size = new System.Drawing.Size(165, 22);
+            this.txtFiltrarAlunosNaEmpresa.TabIndex = 10;
+            this.txtFiltrarAlunosNaEmpresa.Enter += new System.EventHandler(this.txtBuscarAlunosNaEmpresa_Enter);
+            this.txtFiltrarAlunosNaEmpresa.Leave += new System.EventHandler(this.txtBuscarAlunosNaEmpresa_Leave);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(14, 30);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(193, 21);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // btnIrParaBuscaAvancada
+            // 
+            this.btnIrParaBuscaAvancada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnIrParaBuscaAvancada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIrParaBuscaAvancada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIrParaBuscaAvancada.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnIrParaBuscaAvancada.Location = new System.Drawing.Point(372, 241);
+            this.btnIrParaBuscaAvancada.Name = "btnIrParaBuscaAvancada";
+            this.btnIrParaBuscaAvancada.Size = new System.Drawing.Size(255, 53);
+            this.btnIrParaBuscaAvancada.TabIndex = 12;
+            this.btnIrParaBuscaAvancada.Text = "Ir para a Tela de Busca Avançada e Criação de Relatórios";
+            this.btnIrParaBuscaAvancada.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(14, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 18);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Tabelas do Arquivo:";
             // 
             // UserControlVisualizarDadosAlunos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Controls.Add(this.txtBuscarAlunosNaEmpresa);
-            this.Controls.Add(this.btnBuscarAlunosEmpresa);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnIrParaBuscaAvancada);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtFiltrarAlunosNaEmpresa);
+            this.Controls.Add(this.btnFiltrarAlunosEmpresa);
             this.Controls.Add(this.btnTodosAlunos);
-            this.Controls.Add(this.dtpBuscarDataMatricula);
-            this.Controls.Add(this.btnBuscarTurma);
-            this.Controls.Add(this.txtBuscarTurma);
-            this.Controls.Add(this.btnBuscarDataMatricula);
-            this.Controls.Add(this.btnBuscarRA);
-            this.Controls.Add(this.txtBuscaRA);
+            this.Controls.Add(this.dtpFiltrarDataMatricula);
+            this.Controls.Add(this.btnFiltrarTurma);
+            this.Controls.Add(this.txtFiltrarTurma);
+            this.Controls.Add(this.btnFiltrarDataMatricula);
+            this.Controls.Add(this.btnFiltrarRA);
+            this.Controls.Add(this.txtFiltrarRA);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserControlVisualizarDadosAlunos";
             this.Size = new System.Drawing.Size(640, 304);
@@ -181,14 +224,17 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox txtBuscaRA;
-        private System.Windows.Forms.Button btnBuscarRA;
-        private System.Windows.Forms.Button btnBuscarDataMatricula;
-        private System.Windows.Forms.Button btnBuscarTurma;
-        private System.Windows.Forms.TextBox txtBuscarTurma;
-        private System.Windows.Forms.DateTimePicker dtpBuscarDataMatricula;
+        private System.Windows.Forms.TextBox txtFiltrarRA;
+        private System.Windows.Forms.Button btnFiltrarRA;
+        private System.Windows.Forms.Button btnFiltrarDataMatricula;
+        private System.Windows.Forms.Button btnFiltrarTurma;
+        private System.Windows.Forms.TextBox txtFiltrarTurma;
+        private System.Windows.Forms.DateTimePicker dtpFiltrarDataMatricula;
         private System.Windows.Forms.Button btnTodosAlunos;
-        private System.Windows.Forms.Button btnBuscarAlunosEmpresa;
-        private System.Windows.Forms.TextBox txtBuscarAlunosNaEmpresa;
+        private System.Windows.Forms.Button btnFiltrarAlunosEmpresa;
+        private System.Windows.Forms.TextBox txtFiltrarAlunosNaEmpresa;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnIrParaBuscaAvancada;
+        private System.Windows.Forms.Label label1;
     }
 }

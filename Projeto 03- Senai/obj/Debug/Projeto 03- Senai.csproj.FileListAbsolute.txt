@@ -48,3 +48,9 @@ C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto-0
 C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto 03- Senai.exe
 C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto 03- Senai.pdb
 C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto_03__Senai.FormEditarEmpresa.resources
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto-03\Projeto 03- Senai\bin\Debug\ExcelDataReader.dll
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto-03\Projeto 03- Senai\bin\Debug\ExcelDataReader.pdb
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto-03\Projeto 03- Senai\bin\Debug\ExcelDataReader.xml
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto-03\Projeto 03- Senai\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto-03\Projeto 03- Senai\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\ti20\Downloads\Projeto-03 (Beatriz,Gabriel Alexandre,Matheus)\Projeto-03\Projeto 03- Senai\bin\Debug\ExcelDataReader.DataSet.xml

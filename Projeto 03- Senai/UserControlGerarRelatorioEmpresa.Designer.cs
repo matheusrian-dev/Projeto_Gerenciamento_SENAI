@@ -31,7 +31,7 @@
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btnGerarPorCNPJ = new System.Windows.Forms.Button();
             this.btnGerarTodasEmpresas = new System.Windows.Forms.Button();
-            this.txtGerarPorCNPJ = new System.Windows.Forms.TextBox();
+            this.mskGerarPorCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // reportViewer1
@@ -47,7 +47,7 @@
             this.btnGerarPorCNPJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerarPorCNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGerarPorCNPJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGerarPorCNPJ.Location = new System.Drawing.Point(192, 248);
+            this.btnGerarPorCNPJ.Location = new System.Drawing.Point(185, 247);
             this.btnGerarPorCNPJ.Name = "btnGerarPorCNPJ";
             this.btnGerarPorCNPJ.Size = new System.Drawing.Size(84, 52);
             this.btnGerarPorCNPJ.TabIndex = 14;
@@ -60,27 +60,27 @@
             this.btnGerarTodasEmpresas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerarTodasEmpresas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGerarTodasEmpresas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGerarTodasEmpresas.Location = new System.Drawing.Point(537, 247);
+            this.btnGerarTodasEmpresas.Location = new System.Drawing.Point(508, 247);
             this.btnGerarTodasEmpresas.Name = "btnGerarTodasEmpresas";
-            this.btnGerarTodasEmpresas.Size = new System.Drawing.Size(84, 53);
+            this.btnGerarTodasEmpresas.Size = new System.Drawing.Size(113, 53);
             this.btnGerarTodasEmpresas.TabIndex = 15;
-            this.btnGerarTodasEmpresas.Text = "Gerar por Turma";
+            this.btnGerarTodasEmpresas.Text = "Gerar Relatório de Todas as Empresas";
             this.btnGerarTodasEmpresas.UseVisualStyleBackColor = false;
             // 
-            // txtGerarPorCNPJ
+            // mskGerarPorCNPJ
             // 
-            this.txtGerarPorCNPJ.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGerarPorCNPJ.Location = new System.Drawing.Point(22, 262);
-            this.txtGerarPorCNPJ.Name = "txtGerarPorCNPJ";
-            this.txtGerarPorCNPJ.Size = new System.Drawing.Size(164, 22);
-            this.txtGerarPorCNPJ.TabIndex = 17;
+            this.mskGerarPorCNPJ.Location = new System.Drawing.Point(22, 264);
+            this.mskGerarPorCNPJ.Mask = "999.999.999/99999-99";
+            this.mskGerarPorCNPJ.Name = "mskGerarPorCNPJ";
+            this.mskGerarPorCNPJ.Size = new System.Drawing.Size(157, 20);
+            this.mskGerarPorCNPJ.TabIndex = 16;
             // 
             // UserControlGerarRelatorioEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Controls.Add(this.txtGerarPorCNPJ);
+            this.Controls.Add(this.mskGerarPorCNPJ);
             this.Controls.Add(this.btnGerarTodasEmpresas);
             this.Controls.Add(this.btnGerarPorCNPJ);
             this.Controls.Add(this.reportViewer1);
@@ -97,6 +97,6 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.Button btnGerarPorCNPJ;
         private System.Windows.Forms.Button btnGerarTodasEmpresas;
-        private System.Windows.Forms.TextBox txtGerarPorCNPJ;
+        private System.Windows.Forms.MaskedTextBox mskGerarPorCNPJ;
     }
 }

@@ -118,7 +118,7 @@
             // mskCNPJ
             // 
             this.mskCNPJ.Location = new System.Drawing.Point(181, 69);
-            this.mskCNPJ.Mask = "999.999.999/99999-99";
+            this.mskCNPJ.Mask = "999,999,999/99999-99";
             this.mskCNPJ.Name = "mskCNPJ";
             this.mskCNPJ.Size = new System.Drawing.Size(157, 20);
             this.mskCNPJ.TabIndex = 8;

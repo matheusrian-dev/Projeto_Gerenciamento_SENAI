@@ -35,12 +35,12 @@
             this.btnFiltrarTurma = new System.Windows.Forms.Button();
             this.txtFiltrarTurma = new System.Windows.Forms.TextBox();
             this.dtpFiltrarDataMatricula = new System.Windows.Forms.DateTimePicker();
-            this.btnTodosAlunos = new System.Windows.Forms.Button();
+            this.btnBuscarArquivo = new System.Windows.Forms.Button();
             this.btnFiltrarAlunosEmpresa = new System.Windows.Forms.Button();
-            this.txtFiltrarAlunosNaEmpresa = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnIrParaBuscaAvancada = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.mskFiltrarAlunosNaEmpresa = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,19 +123,19 @@
             this.dtpFiltrarDataMatricula.Size = new System.Drawing.Size(165, 22);
             this.dtpFiltrarDataMatricula.TabIndex = 7;
             // 
-            // btnTodosAlunos
+            // btnBuscarArquivo
             // 
-            this.btnTodosAlunos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnTodosAlunos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTodosAlunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTodosAlunos.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnTodosAlunos.Location = new System.Drawing.Point(227, 15);
-            this.btnTodosAlunos.Name = "btnTodosAlunos";
-            this.btnTodosAlunos.Size = new System.Drawing.Size(135, 36);
-            this.btnTodosAlunos.TabIndex = 8;
-            this.btnTodosAlunos.Text = "Buscar Arquivo Excel ";
-            this.btnTodosAlunos.UseVisualStyleBackColor = false;
-            this.btnTodosAlunos.Click += new System.EventHandler(this.btnTodosAlunos_Click);
+            this.btnBuscarArquivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBuscarArquivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarArquivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarArquivo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnBuscarArquivo.Location = new System.Drawing.Point(227, 15);
+            this.btnBuscarArquivo.Name = "btnBuscarArquivo";
+            this.btnBuscarArquivo.Size = new System.Drawing.Size(135, 36);
+            this.btnBuscarArquivo.TabIndex = 8;
+            this.btnBuscarArquivo.Text = "Buscar Arquivo Excel ";
+            this.btnBuscarArquivo.UseVisualStyleBackColor = false;
+            this.btnBuscarArquivo.Click += new System.EventHandler(this.btnBuscarArquivo_Click);
             // 
             // btnFiltrarAlunosEmpresa
             // 
@@ -150,16 +150,6 @@
             this.btnFiltrarAlunosEmpresa.Text = "Filtrar Alunos na Empresa";
             this.btnFiltrarAlunosEmpresa.UseVisualStyleBackColor = false;
             this.btnFiltrarAlunosEmpresa.Click += new System.EventHandler(this.btnFiltrarAlunosEmpresa_Click);
-            // 
-            // txtFiltrarAlunosNaEmpresa
-            // 
-            this.txtFiltrarAlunosNaEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltrarAlunosNaEmpresa.Location = new System.Drawing.Point(372, 200);
-            this.txtFiltrarAlunosNaEmpresa.Name = "txtFiltrarAlunosNaEmpresa";
-            this.txtFiltrarAlunosNaEmpresa.Size = new System.Drawing.Size(165, 22);
-            this.txtFiltrarAlunosNaEmpresa.TabIndex = 10;
-            this.txtFiltrarAlunosNaEmpresa.Enter += new System.EventHandler(this.txtBuscarAlunosNaEmpresa_Enter);
-            this.txtFiltrarAlunosNaEmpresa.Leave += new System.EventHandler(this.txtBuscarAlunosNaEmpresa_Leave);
             // 
             // comboBox1
             // 
@@ -183,6 +173,7 @@
             this.btnIrParaBuscaAvancada.TabIndex = 12;
             this.btnIrParaBuscaAvancada.Text = "Ir para a Tela de Busca Avançada e Criação de Relatórios";
             this.btnIrParaBuscaAvancada.UseVisualStyleBackColor = false;
+            this.btnIrParaBuscaAvancada.Click += new System.EventHandler(this.btnIrParaBuscaAvancada_Click);
             // 
             // label1
             // 
@@ -194,17 +185,25 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Tabelas do Arquivo:";
             // 
+            // mskFiltrarAlunosNaEmpresa
+            // 
+            this.mskFiltrarAlunosNaEmpresa.Location = new System.Drawing.Point(372, 202);
+            this.mskFiltrarAlunosNaEmpresa.Mask = "999,999,999/99999-99";
+            this.mskFiltrarAlunosNaEmpresa.Name = "mskFiltrarAlunosNaEmpresa";
+            this.mskFiltrarAlunosNaEmpresa.Size = new System.Drawing.Size(165, 20);
+            this.mskFiltrarAlunosNaEmpresa.TabIndex = 14;
+            // 
             // UserControlVisualizarDadosAlunos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.mskFiltrarAlunosNaEmpresa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnIrParaBuscaAvancada);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.txtFiltrarAlunosNaEmpresa);
             this.Controls.Add(this.btnFiltrarAlunosEmpresa);
-            this.Controls.Add(this.btnTodosAlunos);
+            this.Controls.Add(this.btnBuscarArquivo);
             this.Controls.Add(this.dtpFiltrarDataMatricula);
             this.Controls.Add(this.btnFiltrarTurma);
             this.Controls.Add(this.txtFiltrarTurma);
@@ -230,11 +229,11 @@
         private System.Windows.Forms.Button btnFiltrarTurma;
         private System.Windows.Forms.TextBox txtFiltrarTurma;
         private System.Windows.Forms.DateTimePicker dtpFiltrarDataMatricula;
-        private System.Windows.Forms.Button btnTodosAlunos;
+        private System.Windows.Forms.Button btnBuscarArquivo;
         private System.Windows.Forms.Button btnFiltrarAlunosEmpresa;
-        private System.Windows.Forms.TextBox txtFiltrarAlunosNaEmpresa;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnIrParaBuscaAvancada;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox mskFiltrarAlunosNaEmpresa;
     }
 }

@@ -68,6 +68,7 @@
             this.btnEditar.TabIndex = 36;
             this.btnEditar.Text = "Editar Cadastro";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnVoltar
             // 

@@ -4,18 +4,23 @@ GO
 USE Senai
 GO
 
+CREATE TABLE Funcionario(
+ cpf			      INT PRIMARY KEY NOT NULL,
+ nomeFunc             VARCHAR(90)  NULL,
+ cargo				  VARCHAR(100) NULL,
+ senha				  VARCHAR(100) NULL,
+ telefoneFunc		  VARCHAR(20)  NULL,
+ emailFunc	          VARCHAR(70)  NULL,
+ );
+
 CREATE TABLE Empresa(
  cnpj			      INT PRIMARY KEY NOT NULL,
  nomeEmpresa          VARCHAR(90) NULL,
+ razaoSocial          VARCHAR(100) NULL,
+ endereco             VARCHAR(100) NULL,
  telefoneEmpresa      VARCHAR(20) NULL,
  emailEmpresa	      VARCHAR(70) NULL,
- cidadeEmpresa        VARCHAR(50) NULL,
- estadoEmpresa        VARCHAR(50) NULL,
- bairroEmpresa        VARCHAR(50) NULL,
- ruaEmpresa           VARCHAR(50) NULL,
- complementoEmpresa   VARCHAR(50) NULL,
- numeroEmpresa        VARCHAR(6)  NULL,
- cepEmpresa           VARCHAR(30) NULL,
+ responsavel          VARCHAR(100) NULL,
  );
 
 CREATE TABLE Aluno(
@@ -48,8 +53,11 @@ CREATE TABLE Aluno(
  dataMatricula		  DATE		  NULL,	
  Empresa_cnpj		  INT 		  NULL,
  FOREIGN KEY (Empresa_cnpj)
-	REFERENCES EMPRESA(cnpj)
+	REFERENCES Empresa(cnpj)
 );
 
 SELECT * FROM Aluno;
 SELECT * FROM Empresa;
+
+--DROP DATABASE Senai;
+

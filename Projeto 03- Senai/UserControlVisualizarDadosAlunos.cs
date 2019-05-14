@@ -71,9 +71,6 @@ namespace Projeto_03__Senai
 
             txtFiltrarTurma.Text = "Insira o código da Turma";
             txtFiltrarTurma.ForeColor = Color.Gray;
-
-            txtFiltrarAlunosNaEmpresa.Text = "Insira o CNPJ da Empresa";
-            txtFiltrarAlunosNaEmpresa.ForeColor = Color.Gray;
         }
 
         private void txtBuscarTurma_Enter(object sender, EventArgs e)
@@ -94,26 +91,9 @@ namespace Projeto_03__Senai
             }
         }
 
-        private void txtBuscarAlunosNaEmpresa_Enter(object sender, EventArgs e)
-        {
-            if (txtFiltrarAlunosNaEmpresa.Text == "Insira o CNPJ da Empresa")
-            {
-                txtFiltrarAlunosNaEmpresa.Text = "";
-                txtFiltrarAlunosNaEmpresa.ForeColor = Color.Black;
-            }
-        }
+        
 
-        private void txtBuscarAlunosNaEmpresa_Leave(object sender, EventArgs e)
-        {
-
-            if (txtFiltrarAlunosNaEmpresa.Text == "")
-            {
-                txtFiltrarAlunosNaEmpresa.Text = "Insira o CNPJ da Empresa";
-                txtFiltrarAlunosNaEmpresa.ForeColor = Color.Gray;
-            }
-        }
-
-        private void btnTodosAlunos_Click(object sender, EventArgs e)
+        private void btnBuscarArquivo_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog of = new OpenFileDialog() { Filter = "Excel Work Book 97-2003|*.xls|Excel Workbook|* .xlsx", ValidateNames = true })
             {
@@ -211,7 +191,7 @@ namespace Projeto_03__Senai
         private void btnFiltrarAlunosEmpresa_Click(object sender, EventArgs e)
         {
             //Validação para o caso do textbox estar em branco ou com um placeholder
-            if (txtFiltrarAlunosNaEmpresa.Text.Length < 1 || txtFiltrarAlunosNaEmpresa.Text == "Insira o CNPJ da Empresa")
+            if (mskFiltrarAlunosNaEmpresa.MaskFull == false)
             {
                 MessageBox.Show("Insira um valor no campo de filtro de Alunos da Empresa ao lado da opção 'Filtrar Alunos na Empresa'");
             }
@@ -227,9 +207,15 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("sexo LIKE '{0}%' OR sexo LIKE '% {0}%'", txtFiltrarAlunosNaEmpresa.Text);
+                    string.Format("sexo LIKE '{0}%' OR sexo LIKE '% {0}%'", mskFiltrarAlunosNaEmpresa.Text);
                 }
             }
+        }
+
+        private void btnIrParaBuscaAvancada_Click(object sender, EventArgs e)
+        {
+            FormBuscaAvancada buscaA = new FormBuscaAvancada();
+            buscaA.Show();
         }
     }
 }

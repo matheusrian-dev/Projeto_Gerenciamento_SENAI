@@ -70,7 +70,7 @@
             // mskGerarPorCNPJ
             // 
             this.mskGerarPorCNPJ.Location = new System.Drawing.Point(22, 264);
-            this.mskGerarPorCNPJ.Mask = "999.999.999/99999-99";
+            this.mskGerarPorCNPJ.Mask = "999,999,999/99999-99";
             this.mskGerarPorCNPJ.Name = "mskGerarPorCNPJ";
             this.mskGerarPorCNPJ.Size = new System.Drawing.Size(157, 20);
             this.mskGerarPorCNPJ.TabIndex = 16;

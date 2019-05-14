@@ -140,21 +140,21 @@ namespace Projeto_03__Senai
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             //validação de dados obrigatórios
-            if(txtNomeEmpresa.Text.Length < 1 || txtNomeEmpresa.Text == "Insira o nome da Empresa" || mskCNPJ.Text.Length < 1 || (mskTelefoneEmpresa.Text.Length < 1 && (txtEmailEmpresa.Text.Length < 5 || txtEmailEmpresa.Text == "Insira o email da Empresa")))
+            if(txtNomeEmpresa.Text.Length < 1 || txtNomeEmpresa.Text == "Insira o nome da Empresa" || mskCNPJ.MaskFull == false || (mskTelefoneEmpresa.MaskFull == false && (txtEmailEmpresa.Text.Length < 5 || txtEmailEmpresa.Text == "Insira o email da Empresa")))
             {
                 MessageBox.Show("Não é possível cadastrar a empresa por falta de informações importantes (Nome, CNPJ e uma das opções de contato).");
             }
             else
             {
                 //validação de dados que podem ser inseridos em uma futura edição de dados
-                if (txtEnderecoEmpresa.Text.Length < 1 || txtRazaoSocial.Text.Length < 1 || txtResponsavelEmpresa.Text.Length < 1 || mskTelefoneEmpresa.Text.Length < 1 || txtEmailEmpresa.Text.Length < 1 ||
+                if (txtEnderecoEmpresa.Text.Length < 1 || txtRazaoSocial.Text.Length < 1 || txtResponsavelEmpresa.Text.Length < 1 || mskTelefoneEmpresa.MaskFull == false || txtEmailEmpresa.Text.Length < 1 ||
                     txtEnderecoEmpresa.Text == "Insira o endereço da Empresa" || txtRazaoSocial.Text == "Insira a razão social da Empresa" || txtResponsavelEmpresa.Text == "Insira o responsável pela Empresa" || txtEmailEmpresa.Text == "Insira o email da Empresa")
                 {
-                    DialogResult confirmation1 = MessageBox.Show("Há informações não obrigatórias que não foram preenchidas, deseja continuar?", "Sim", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                    DialogResult confirmation1 = MessageBox.Show("Há informações não obrigatórias que não foram preenchidas, deseja continuar?", "Mensagem de Confirmação", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                     if (confirmation1.Equals(DialogResult.OK))
                     {
                         //confirmação pré-cadastro
-                        DialogResult result = MessageBox.Show("Deseja realmente cadastrar a empresa: " + txtNomeEmpresa.Text + "?", "Sim", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                        DialogResult result = MessageBox.Show("Deseja realmente cadastrar a empresa: " + txtNomeEmpresa.Text + "?", "Mensagem de Confirmação", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                         if (result.Equals(DialogResult.OK))
                         {
                             //Do something
@@ -170,7 +170,7 @@ namespace Projeto_03__Senai
                 else
                 {
                     //confirmação pré-cadastro
-                    DialogResult result = MessageBox.Show("Deseja realmente cadastrar a empresa: " + txtNomeEmpresa.Text + "?", "Sim", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                    DialogResult result = MessageBox.Show("Deseja realmente cadastrar a empresa: " + txtNomeEmpresa.Text + "?", "Mensagem de Confirmação", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                     if (result.Equals(DialogResult.OK))
                     {
                         //Do something

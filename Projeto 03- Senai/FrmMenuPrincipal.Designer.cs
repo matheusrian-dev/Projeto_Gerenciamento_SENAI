@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnIrAddFuncionario = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.lblGerenciarEmpresa = new System.Windows.Forms.Label();
             this.lblGerarRelatorioEmpresa = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnIrAddFuncionario = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.userControlVisualizarDadosAlunos1 = new Projeto_03__Senai.UserControlVisualizarDadosAlunos();
             this.userControlGerenciarEmpresa1 = new Projeto_03__Senai.UserControlGerenciarEmpresa();
@@ -64,6 +64,19 @@
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            // 
+            // btnIrAddFuncionario
+            // 
+            this.btnIrAddFuncionario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIrAddFuncionario.BackgroundImage")));
+            this.btnIrAddFuncionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnIrAddFuncionario.FlatAppearance.BorderSize = 0;
+            this.btnIrAddFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIrAddFuncionario.Location = new System.Drawing.Point(52, 7);
+            this.btnIrAddFuncionario.Name = "btnIrAddFuncionario";
+            this.btnIrAddFuncionario.Size = new System.Drawing.Size(24, 25);
+            this.btnIrAddFuncionario.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.btnIrAddFuncionario, "Adicionar um Novo Funcionário");
+            this.btnIrAddFuncionario.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -171,19 +184,6 @@
             // 
             this.timer1.Interval = 38;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnIrAddFuncionario
-            // 
-            this.btnIrAddFuncionario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIrAddFuncionario.BackgroundImage")));
-            this.btnIrAddFuncionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnIrAddFuncionario.FlatAppearance.BorderSize = 0;
-            this.btnIrAddFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrAddFuncionario.Location = new System.Drawing.Point(52, 7);
-            this.btnIrAddFuncionario.Name = "btnIrAddFuncionario";
-            this.btnIrAddFuncionario.Size = new System.Drawing.Size(24, 25);
-            this.btnIrAddFuncionario.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.btnIrAddFuncionario, "Adicionar um Novo Funcionário");
-            this.btnIrAddFuncionario.UseVisualStyleBackColor = true;
             // 
             // userControlVisualizarDadosAlunos1
             // 

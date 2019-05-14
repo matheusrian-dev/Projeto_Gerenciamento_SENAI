@@ -58,7 +58,7 @@
             this.btnGerarTurma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnGerarTurma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerarTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerarTurma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGerarTurma.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnGerarTurma.Location = new System.Drawing.Point(544, 185);
             this.btnGerarTurma.Name = "btnGerarTurma";
             this.btnGerarTurma.Size = new System.Drawing.Size(84, 53);
@@ -82,7 +82,7 @@
             this.btnGerarDataMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnGerarDataMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerarDataMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerarDataMatricula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGerarDataMatricula.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnGerarDataMatricula.Location = new System.Drawing.Point(544, 126);
             this.btnGerarDataMatricula.Name = "btnGerarDataMatricula";
             this.btnGerarDataMatricula.Size = new System.Drawing.Size(84, 53);
@@ -95,7 +95,7 @@
             this.btnGerarRA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnGerarRA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerarRA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerarRA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGerarRA.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnGerarRA.Location = new System.Drawing.Point(544, 67);
             this.btnGerarRA.Name = "btnGerarRA";
             this.btnGerarRA.Size = new System.Drawing.Size(84, 53);

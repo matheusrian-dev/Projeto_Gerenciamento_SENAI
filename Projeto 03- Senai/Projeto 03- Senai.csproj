@@ -58,6 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCadastrarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrarFuncionario.Designer.cs">
+      <DependentUpon>FormCadastrarFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEditarEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     <Compile Include="UserControlVisualizarDadosAlunos.Designer.cs">
       <DependentUpon>UserControlVisualizarDadosAlunos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormCadastrarFuncionario.resx">
+      <DependentUpon>FormCadastrarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditarEmpresa.resx">
       <DependentUpon>FormEditarEmpresa.cs</DependentUpon>
     </EmbeddedResource>

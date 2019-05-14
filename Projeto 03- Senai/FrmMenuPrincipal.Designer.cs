@@ -40,6 +40,8 @@
             this.lblGerenciarEmpresa = new System.Windows.Forms.Label();
             this.lblGerarRelatorioEmpresa = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnIrAddFuncionario = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.userControlVisualizarDadosAlunos1 = new Projeto_03__Senai.UserControlVisualizarDadosAlunos();
             this.userControlGerenciarEmpresa1 = new Projeto_03__Senai.UserControlGerenciarEmpresa();
             this.userControlGerarRelatorioEmpresa1 = new Projeto_03__Senai.UserControlGerarRelatorioEmpresa();
@@ -50,6 +52,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel1.Controls.Add(this.btnIrAddFuncionario);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnMenu);
             this.panel1.Controls.Add(this.btnMinimizar);
@@ -66,7 +69,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(234, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 20);
@@ -96,6 +99,7 @@
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(24, 25);
             this.btnMinimizar.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.btnMinimizar, "Minimizar");
             this.btnMinimizar.UseVisualStyleBackColor = true;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
@@ -109,6 +113,7 @@
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 25);
             this.btnFechar.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.btnFechar, "Fechar");
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
@@ -166,6 +171,19 @@
             // 
             this.timer1.Interval = 38;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnIrAddFuncionario
+            // 
+            this.btnIrAddFuncionario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIrAddFuncionario.BackgroundImage")));
+            this.btnIrAddFuncionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnIrAddFuncionario.FlatAppearance.BorderSize = 0;
+            this.btnIrAddFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIrAddFuncionario.Location = new System.Drawing.Point(52, 7);
+            this.btnIrAddFuncionario.Name = "btnIrAddFuncionario";
+            this.btnIrAddFuncionario.Size = new System.Drawing.Size(24, 25);
+            this.btnIrAddFuncionario.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.btnIrAddFuncionario, "Adicionar um Novo Funcionário");
+            this.btnIrAddFuncionario.UseVisualStyleBackColor = true;
             // 
             // userControlVisualizarDadosAlunos1
             // 
@@ -230,5 +248,7 @@
         private UserControlGerenciarEmpresa userControlGerenciarEmpresa1;
         private UserControlGerarRelatorioEmpresa userControlGerarRelatorioEmpresa1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnIrAddFuncionario;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

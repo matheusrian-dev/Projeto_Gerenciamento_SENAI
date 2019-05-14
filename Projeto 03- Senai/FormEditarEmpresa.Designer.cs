@@ -61,7 +61,7 @@
             this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnEditar.Location = new System.Drawing.Point(255, 345);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(123, 46);
@@ -74,6 +74,7 @@
             this.btnVoltar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVoltar.BackgroundImage")));
             this.btnVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -143,6 +144,7 @@
             this.mskCNPJ.Location = new System.Drawing.Point(177, 145);
             this.mskCNPJ.Mask = "999.999.999/99999-99";
             this.mskCNPJ.Name = "mskCNPJ";
+            this.mskCNPJ.ReadOnly = true;
             this.mskCNPJ.Size = new System.Drawing.Size(157, 20);
             this.mskCNPJ.TabIndex = 27;
             // 
@@ -218,7 +220,7 @@
             this.groupBox1.Size = new System.Drawing.Size(503, 220);
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cadastro de Empresa";
+            this.groupBox1.Text = "Atualização de Cadastro de Empresa";
             // 
             // panel1
             // 
@@ -252,7 +254,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label8.Location = new System.Drawing.Point(12, 10);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(172, 20);
@@ -294,7 +296,7 @@
             this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnBuscar.Location = new System.Drawing.Point(438, 66);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(79, 26);

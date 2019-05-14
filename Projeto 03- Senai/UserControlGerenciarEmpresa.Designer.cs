@@ -42,7 +42,7 @@
             this.txtRazaoSocial = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtResponsavelEmpresa = new System.Windows.Forms.TextBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnShowEditar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -122,8 +122,6 @@
             this.mskCNPJ.Name = "mskCNPJ";
             this.mskCNPJ.Size = new System.Drawing.Size(157, 20);
             this.mskCNPJ.TabIndex = 8;
-            this.mskCNPJ.Enter += new System.EventHandler(this.mskCNPJ_Enter);
-            this.mskCNPJ.Leave += new System.EventHandler(this.mskCNPJ_Leave);
             // 
             // label5
             // 
@@ -185,18 +183,19 @@
             this.txtResponsavelEmpresa.Enter += new System.EventHandler(this.txtResponsavelEmpresa_Enter);
             this.txtResponsavelEmpresa.Leave += new System.EventHandler(this.txtResponsavelEmpresa_Leave);
             // 
-            // btnCancelar
+            // btnCadastrar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancelar.Location = new System.Drawing.Point(372, 241);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(123, 46);
-            this.btnCancelar.TabIndex = 17;
-            this.btnCancelar.Text = "Cadastrar";
-            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCadastrar.Location = new System.Drawing.Point(372, 241);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(123, 46);
+            this.btnCadastrar.TabIndex = 17;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // groupBox1
             // 
@@ -213,7 +212,7 @@
             this.btnShowEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnShowEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowEditar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowEditar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnShowEditar.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnShowEditar.Location = new System.Drawing.Point(501, 241);
             this.btnShowEditar.Name = "btnShowEditar";
             this.btnShowEditar.Size = new System.Drawing.Size(123, 46);
@@ -228,7 +227,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.btnShowEditar);
-            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtResponsavelEmpresa);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtRazaoSocial);
@@ -268,7 +267,7 @@
         private System.Windows.Forms.TextBox txtRazaoSocial;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtResponsavelEmpresa;
-        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnShowEditar;
     }

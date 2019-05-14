@@ -67,7 +67,7 @@
             this.btnFiltrarRA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnFiltrarRA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarRA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrarRA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFiltrarRA.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnFiltrarRA.Location = new System.Drawing.Point(543, 8);
             this.btnFiltrarRA.Name = "btnFiltrarRA";
             this.btnFiltrarRA.Size = new System.Drawing.Size(84, 53);
@@ -81,7 +81,7 @@
             this.btnFiltrarDataMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnFiltrarDataMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarDataMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrarDataMatricula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFiltrarDataMatricula.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnFiltrarDataMatricula.Location = new System.Drawing.Point(543, 67);
             this.btnFiltrarDataMatricula.Name = "btnFiltrarDataMatricula";
             this.btnFiltrarDataMatricula.Size = new System.Drawing.Size(84, 53);
@@ -95,7 +95,7 @@
             this.btnFiltrarTurma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnFiltrarTurma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrarTurma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFiltrarTurma.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnFiltrarTurma.Location = new System.Drawing.Point(543, 126);
             this.btnFiltrarTurma.Name = "btnFiltrarTurma";
             this.btnFiltrarTurma.Size = new System.Drawing.Size(84, 53);
@@ -128,7 +128,7 @@
             this.btnTodosAlunos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnTodosAlunos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTodosAlunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTodosAlunos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnTodosAlunos.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnTodosAlunos.Location = new System.Drawing.Point(227, 15);
             this.btnTodosAlunos.Name = "btnTodosAlunos";
             this.btnTodosAlunos.Size = new System.Drawing.Size(135, 36);
@@ -142,7 +142,7 @@
             this.btnFiltrarAlunosEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnFiltrarAlunosEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarAlunosEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrarAlunosEmpresa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFiltrarAlunosEmpresa.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnFiltrarAlunosEmpresa.Location = new System.Drawing.Point(543, 185);
             this.btnFiltrarAlunosEmpresa.Name = "btnFiltrarAlunosEmpresa";
             this.btnFiltrarAlunosEmpresa.Size = new System.Drawing.Size(84, 53);
@@ -176,7 +176,7 @@
             this.btnIrParaBuscaAvancada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnIrParaBuscaAvancada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIrParaBuscaAvancada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIrParaBuscaAvancada.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnIrParaBuscaAvancada.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnIrParaBuscaAvancada.Location = new System.Drawing.Point(372, 241);
             this.btnIrParaBuscaAvancada.Name = "btnIrParaBuscaAvancada";
             this.btnIrParaBuscaAvancada.Size = new System.Drawing.Size(255, 53);

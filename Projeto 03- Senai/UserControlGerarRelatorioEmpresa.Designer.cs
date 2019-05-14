@@ -46,7 +46,7 @@
             this.btnGerarPorCNPJ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnGerarPorCNPJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerarPorCNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerarPorCNPJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGerarPorCNPJ.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnGerarPorCNPJ.Location = new System.Drawing.Point(185, 247);
             this.btnGerarPorCNPJ.Name = "btnGerarPorCNPJ";
             this.btnGerarPorCNPJ.Size = new System.Drawing.Size(84, 52);
@@ -59,7 +59,7 @@
             this.btnGerarTodasEmpresas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnGerarTodasEmpresas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerarTodasEmpresas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerarTodasEmpresas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGerarTodasEmpresas.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnGerarTodasEmpresas.Location = new System.Drawing.Point(508, 247);
             this.btnGerarTodasEmpresas.Name = "btnGerarTodasEmpresas";
             this.btnGerarTodasEmpresas.Size = new System.Drawing.Size(113, 53);

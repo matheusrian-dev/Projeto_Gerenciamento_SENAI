@@ -56,9 +56,9 @@ CREATE TABLE Aluno(
 	REFERENCES Empresa(cnpj)
 );
 
-SELECT * FROM Aluno;
-SELECT * FROM Empresa;
+--SELECT * FROM Aluno;
+--SELECT * FROM Empresa;
 
 INSERT INTO Funcionario VALUES('999.999.999-99', 'Admin', 'Coordenador', '123', '(31) 98988-3242', 'admin@gmail.com');
 --DROP DATABASE Senai;
-
+--SELECT * FROM Funcionario;

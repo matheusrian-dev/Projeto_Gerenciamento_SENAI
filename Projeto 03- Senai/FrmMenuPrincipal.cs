@@ -16,11 +16,17 @@ namespace Projeto_03__Senai
         int MouPosX = 0, MouPosY = 0;
         bool mouseDown = false;
 
-        public FrmMenuPrincipal()
+        public FrmMenuPrincipal(string CargoUsuario)
         {
             InitializeComponent();
             userControlGerarRelatorioEmpresa1.Visible = false;
             userControlGerenciarEmpresa1.Visible = false;
+            if (CargoUsuario != "Coordenador")
+            {
+                btnIrAddFuncionario.Visible = false;
+                lblGerarRelatorioEmpresa.Visible = false;
+                lblGerenciarEmpresa.Visible = false;
+            }
         }
 
         private void btnMenu_Click(object sender, EventArgs e)

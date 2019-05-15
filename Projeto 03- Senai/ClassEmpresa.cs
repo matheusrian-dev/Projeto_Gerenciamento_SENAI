@@ -26,14 +26,21 @@ namespace Projeto_03__Senai
             {
                 //Conectar no Banco
                 bd.Conectar();
-
-                //Executar o Insert
-                bd.ExecutarComandosSql(String.Format("INSERT INTO Empresa(cnpj, nomeEmpresa, razaoSocial, endereco, telefoneEmpresa, emailEmpresa, responsavel)" +
+                DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Empresa WHERE cnpj = '" + Cnpj + "'"));
+                if (dt.Rows.Count == 0)
+                {
+                    //Executar o Insert
+                    bd.ExecutarComandosSql(String.Format("INSERT INTO Empresa(cnpj, nomeEmpresa, razaoSocial, endereco, telefoneEmpresa, emailEmpresa, responsavel)" +
                     " VALUES ('" + Cnpj + "', '" + NomeEmpresa + "', '" + RazaoSocial + "', '" + Endereco + "', '" + TelefoneEmpresa + "', '" + EmailEmpresa + "', '" + Responsavel + "')"));
+                    MessageBox.Show("Empresa Cadastrada com Sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("O CNPJ inserido já está registrado no sistema");
+                }
 
                 //Desconectar
                 bd.Desconectar();
-                MessageBox.Show("Empresa Cadastrada com Sucesso!");
                 return true;
             }
             catch (Exception ex)
@@ -69,6 +76,21 @@ namespace Projeto_03__Senai
             }
         }
 
+        public bool RetEmpresaCNPJ(string cnpj)
+        {
+            bd.Conectar();
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Empresa WHERE cnpj = '" + cnpj + "'"));
+            if (dt.Rows.Count == 0)
+            {
+                MessageBox.Show("CNPJ não encontrado");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
         public DataTable MostrarEmpresas()
         {
             bd.Conectar();
@@ -81,6 +103,13 @@ namespace Projeto_03__Senai
         {
             bd.Conectar();
             DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Empresa WHERE cnpj = '" + cnpj + "'"));
+            NomeEmpresa = dt.Rows[0]["nomeEmpresa"].ToString();
+            RazaoSocial = dt.Rows[0]["razaoSocial"].ToString();
+            Endereco = dt.Rows[0]["endereco"].ToString();
+            TelefoneEmpresa = dt.Rows[0]["telefoneEmpresa"].ToString();
+            EmailEmpresa = dt.Rows[0]["emailEmpresa"].ToString();
+            Responsavel = dt.Rows[0]["responsavel"].ToString();
+            Cnpj = dt.Rows[0]["cnpj"].ToString();
             bd.Desconectar();
             return dt;
         }

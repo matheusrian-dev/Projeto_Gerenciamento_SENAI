@@ -76,10 +76,14 @@ namespace Projeto_03__Senai
                 MessageBox.Show("Funcionário: " + funcionario.NomeFunc + "\n"
                              + "\n" + "Bem vindo ao Sistema!");
                 
-                FrmMenuPrincipal menu = new FrmMenuPrincipal();
+                FrmMenuPrincipal menu = new FrmMenuPrincipal(funcionario.CargoUsuario);
                 this.Hide();
                 menu.Show();
                 
+            }
+            else
+            {
+                MessageBox.Show("Email ou Senha inválido.");
             }
         }
     }

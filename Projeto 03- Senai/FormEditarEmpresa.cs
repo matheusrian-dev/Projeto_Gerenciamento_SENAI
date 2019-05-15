@@ -45,7 +45,9 @@ namespace Projeto_03__Senai
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            FrmMenuPrincipal menu = new FrmMenuPrincipal();
+            ClassFuncionario funcionario = new ClassFuncionario();
+            funcionario.CargoUsuario = "Coordenador";
+            FrmMenuPrincipal menu = new FrmMenuPrincipal(funcionario.CargoUsuario);
             this.Close();
             menu.Show();
         }
@@ -117,14 +119,21 @@ namespace Projeto_03__Senai
             }
             else
             {
-                empresa.MostrarEmpresasCnpj(mskBuscarCNPJ.Text);
-                mskCNPJ.Text = empresa.Cnpj;
-                txtNome.Text = empresa.NomeEmpresa;
-                mskTelefone.Text = empresa.TelefoneEmpresa;
-                txtEmail.Text = empresa.EmailEmpresa;
-                txtEndereco.Text = empresa.Endereco;
-                txtRazaoSocial.Text = empresa.RazaoSocial;
-                txtResponsavel.Text = empresa.Responsavel;
+                empresa.RetEmpresaCNPJ(mskBuscarCNPJ.Text);
+                if(empresa.RetEmpresaCNPJ(mskBuscarCNPJ.Text) == true)
+                {
+                    empresa.MostrarEmpresasCnpj(mskBuscarCNPJ.Text);
+                    mskCNPJ.Text = empresa.Cnpj;
+                    txtNome.Text = empresa.NomeEmpresa;
+                    mskTelefone.Text = empresa.TelefoneEmpresa;
+                    txtEmail.Text = empresa.EmailEmpresa;
+                    txtEndereco.Text = empresa.Endereco;
+                    txtRazaoSocial.Text = empresa.RazaoSocial;
+                    txtResponsavel.Text = empresa.Responsavel;
+                }
+                else
+                {
+                }
             }
         }
 

@@ -36,13 +36,20 @@ namespace Projeto_03__Senai
             }
             else
             {
-                funcionario.MostrarFuncionarioCpf(mskBuscaCPF.Text);
-                txtNome.Text = funcionario.NomeFunc;
-                txtEmail.Text = funcionario.EmailFunc;
-                txtSenha.Text = funcionario.Senha;
-                mskCPF.Text = funcionario.Cpf;
-                mskTelefone.Text = funcionario.TelefoneFunc;
-                cboCargo.Text = funcionario.Cargo;
+                funcionario.RetFuncionarioCPF(mskBuscaCPF.Text);
+                if(funcionario.RetFuncionarioCPF(mskBuscaCPF.Text) == true)
+                {
+                    funcionario.MostrarFuncionarioCpf(mskBuscaCPF.Text);
+                    txtNome.Text = funcionario.NomeFunc;
+                    txtEmail.Text = funcionario.EmailFunc;
+                    txtSenha.Text = funcionario.Senha;
+                    mskCPF.Text = funcionario.Cpf;
+                    mskTelefone.Text = funcionario.TelefoneFunc;
+                    cboCargo.Text = funcionario.Cargo;
+                }
+                else
+                {
+                }
             }
         }
 

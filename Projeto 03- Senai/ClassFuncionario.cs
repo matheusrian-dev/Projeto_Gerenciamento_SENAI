@@ -16,6 +16,7 @@ namespace Projeto_03__Senai
         public string Senha { get; set; }
         public string TelefoneFunc { get; set; }
         public string EmailFunc { get; set; }
+        public string CargoUsuario { get; set; }
 
         ClassAcessoBD bd = new ClassAcessoBD();
 
@@ -25,14 +26,20 @@ namespace Projeto_03__Senai
             {
                 //Conectar no Banco
                 bd.Conectar();
-
-                //Executar o Insert
-                bd.ExecutarComandosSql(String.Format("INSERT INTO Funcionario(cpf, nomeFunc, cargo, senha, telefoneFunc, emailFunc)" +
-                    " VALUES ('" + Cpf + "', '" + NomeFunc + "', '" + Cargo + "', '" + Senha + "', '" + TelefoneFunc + "', '" + EmailFunc + "')"));
-
+                DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Funcionario WHERE cpf = '" + Cpf + "'"));
+                if (dt.Rows.Count == 0)
+                {
+                    //Executar o Insert
+                    bd.ExecutarComandosSql(String.Format("INSERT INTO Funcionario(cpf, nomeFunc, cargo, senha, telefoneFunc, emailFunc)" +
+                        " VALUES ('" + Cpf + "', '" + NomeFunc + "', '" + Cargo + "', '" + Senha + "', '" + TelefoneFunc + "', '" + EmailFunc + "')"));
+                    MessageBox.Show("Funcionário Cadastrado com Sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("CPF inserido já registrado no sistema");
+                }
                 //Desconectar
                 bd.Desconectar();
-                MessageBox.Show("Funcionário Cadastrado com Sucesso!");
                 return true;
             }
             catch (Exception ex)
@@ -81,12 +88,12 @@ namespace Projeto_03__Senai
         {
             bd.Conectar();
             DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Funcionario WHERE cpf = '" + cpf + "'"));
+            string cpfEdit = dt.Rows[0]["cpf"].ToString();
             string nome = dt.Rows[0]["nomeFunc"].ToString();
             string cargo = dt.Rows[0]["cargo"].ToString();
             string telefone = dt.Rows[0]["telefoneFunc"].ToString();
             string email = dt.Rows[0]["emailFunc"].ToString();
             string senha = dt.Rows[0]["senha"].ToString();
-            string cpfEdit = dt.Rows[0]["cpf"].ToString();
             NomeFunc = nome;
             Cargo = cargo;
             TelefoneFunc = telefone;
@@ -95,6 +102,21 @@ namespace Projeto_03__Senai
             Cpf = cpfEdit;
             bd.Desconectar();
             return dt;
+        }
+
+        public bool RetFuncionarioCPF(string cpf)
+        {
+            bd.Conectar();
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Funcionario WHERE cpf = '" + cpf + "'"));
+            if(dt.Rows.Count == 0)
+            {
+                MessageBox.Show("CPF não encontrado");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         public DataTable RetFuncionario(string email, string senha)
@@ -114,12 +136,11 @@ namespace Projeto_03__Senai
                 string nome = dt.Rows[0]["nomeFunc"].ToString();
                 string cargo = dt.Rows[0]["cargo"].ToString();
                 NomeFunc = nome;
-                Cargo = cargo;
+                CargoUsuario = cargo;
                 return true;
             }
             else
             {
-                MessageBox.Show("Email ou Senha inválido.");
                 return false;
             }
         }

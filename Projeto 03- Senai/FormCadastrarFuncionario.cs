@@ -47,7 +47,8 @@ namespace Projeto_03__Senai
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            FrmMenuPrincipal menu = new FrmMenuPrincipal();
+            funcionario.CargoUsuario = "Coordenador";
+            FrmMenuPrincipal menu = new FrmMenuPrincipal(funcionario.CargoUsuario);
             this.Close();
             menu.Show();
         }

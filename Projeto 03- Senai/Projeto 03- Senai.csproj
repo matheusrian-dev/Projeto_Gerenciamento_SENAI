@@ -148,6 +148,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="UserControlGerarRelatorioAluno.resx">
       <DependentUpon>UserControlGerarRelatorioAluno.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +162,7 @@
       <DependentUpon>UserControlVisualizarDadosAlunos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ClassAluno.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

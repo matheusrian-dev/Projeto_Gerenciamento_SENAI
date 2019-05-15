@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projeto_03__Senai
 {
-    class ClassAluno
+    public class ClassAluno
     {
         public string Nome { get; set; }
         public int Idade { get; set; }

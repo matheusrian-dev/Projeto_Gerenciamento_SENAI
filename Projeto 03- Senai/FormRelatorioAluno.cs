@@ -22,7 +22,8 @@ namespace Projeto_03__Senai
 
         private void FormRelatorioAluno_Load(object sender, EventArgs e)
         {
-            this.reportViewer1.RefreshReport();
+            this.Controls.Add(reportViewer1);
+            reportViewer1.RefreshReport();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)

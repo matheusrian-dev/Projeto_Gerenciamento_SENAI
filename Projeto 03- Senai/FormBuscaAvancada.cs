@@ -23,7 +23,6 @@ namespace Projeto_03__Senai
         }
 
         DataSet result;
-        ReportDataSource rs = new ReportDataSource();
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
@@ -325,6 +324,7 @@ namespace Projeto_03__Senai
             }
         }
 
+        ReportDataSource rs = new ReportDataSource();
         private void btnGerarRelatorio_Click(object sender, EventArgs e)
         {
             List<ClassAluno> lst = new List<ClassAluno>();
@@ -348,7 +348,8 @@ namespace Projeto_03__Senai
             FormRelatorioAluno relatorio = new FormRelatorioAluno();
             relatorio.reportViewer1.LocalReport.DataSources.Clear();
             relatorio.reportViewer1.LocalReport.DataSources.Add(rs);
-            relatorio.reportViewer1.LocalReport.ReportEmbeddedResource = "Example2.Report1.rdlc";
+            relatorio.reportViewer1.LocalReport.ReportEmbeddedResource = "Projeto 03- Senai.Report1.rdlc";
+            relatorio.ShowDialog();
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)

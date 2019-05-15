@@ -77,6 +77,7 @@
             this.btnIrAddFuncionario.TabIndex = 5;
             this.toolTip1.SetToolTip(this.btnIrAddFuncionario, "Adicionar um Novo Funcionário");
             this.btnIrAddFuncionario.UseVisualStyleBackColor = true;
+            this.btnIrAddFuncionario.Click += new System.EventHandler(this.btnIrAddFuncionario_Click);
             // 
             // label1
             // 

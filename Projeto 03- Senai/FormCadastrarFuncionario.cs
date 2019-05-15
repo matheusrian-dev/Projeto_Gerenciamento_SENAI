@@ -18,6 +18,7 @@ namespace Projeto_03__Senai
         {
             InitializeComponent();
         }
+        ClassFuncionario funcionario = new ClassFuncionario();
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
@@ -51,24 +52,29 @@ namespace Projeto_03__Senai
             menu.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnIrParaEditarFuncionario_Click(object sender, EventArgs e)
         {
-
+            FormAtualizarFuncionario atualizar = new FormAtualizarFuncionario();
+            atualizar.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnCadastrarFuncionario_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            if (txtEmail.Text.Length < 1 || txtNome.Text.Length < 1 || txtSenha.Text.Length < 1 || cboCargo.Text.Length < 1 || mskCPF.MaskFull == false || mskTelefone.MaskFull == false)
+            {
+                MessageBox.Show("Por favor, preencha todos os campos antes de iniciar o processo de cadastramento.");
+            }
+            else
+            {
+                funcionario.Cpf = mskCPF.Text;
+                funcionario.NomeFunc = txtNome.Text;
+                funcionario.TelefoneFunc = mskTelefone.Text;
+                funcionario.EmailFunc = txtEmail.Text;
+                funcionario.Senha = txtSenha.Text;
+                funcionario.Cargo = cboCargo.Text;
+                funcionario.CadastrarFuncionario();
+            }
+            
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)

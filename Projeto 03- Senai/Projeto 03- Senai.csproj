@@ -58,7 +58,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassAcessoBD.cs" />
     <Compile Include="ClassAluno.cs" />
+    <Compile Include="ClassEmpresa.cs" />
+    <Compile Include="ClassFuncionario.cs" />
+    <Compile Include="FormAtualizarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAtualizarFuncionario.Designer.cs">
+      <DependentUpon>FormAtualizarFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCadastrarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,12 +106,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControlGerarRelatorioAluno.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlGerarRelatorioAluno.Designer.cs">
-      <DependentUpon>UserControlGerarRelatorioAluno.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControlGerarRelatorioEmpresa.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -121,6 +124,9 @@
     <Compile Include="UserControlVisualizarDadosAlunos.Designer.cs">
       <DependentUpon>UserControlVisualizarDadosAlunos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormAtualizarFuncionario.resx">
+      <DependentUpon>FormAtualizarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCadastrarFuncionario.resx">
       <DependentUpon>FormCadastrarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,9 +155,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="UserControlGerarRelatorioAluno.resx">
-      <DependentUpon>UserControlGerarRelatorioAluno.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControlGerarRelatorioEmpresa.resx">
       <DependentUpon>UserControlGerarRelatorioEmpresa.cs</DependentUpon>
     </EmbeddedResource>

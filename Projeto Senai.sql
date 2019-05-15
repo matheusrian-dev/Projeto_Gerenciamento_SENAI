@@ -5,7 +5,7 @@ USE Senai
 GO
 
 CREATE TABLE Funcionario(
- cpf			      INT PRIMARY KEY NOT NULL,
+ cpf			      VARCHAR(15) PRIMARY KEY NOT NULL,
  nomeFunc             VARCHAR(90)  NULL,
  cargo				  VARCHAR(100) NULL,
  senha				  VARCHAR(100) NULL,
@@ -14,7 +14,7 @@ CREATE TABLE Funcionario(
  );
 
 CREATE TABLE Empresa(
- cnpj			      INT PRIMARY KEY NOT NULL,
+ cnpj			      VARCHAR(22) PRIMARY KEY NOT NULL,
  nomeEmpresa          VARCHAR(90) NULL,
  razaoSocial          VARCHAR(100) NULL,
  endereco             VARCHAR(100) NULL,
@@ -51,7 +51,7 @@ CREATE TABLE Aluno(
  codigoTurma          VARCHAR(30) NULL,
  statusAluno          VARCHAR(10) NULL,
  dataMatricula		  DATE		  NULL,	
- Empresa_cnpj		  INT 		  NULL,
+ Empresa_cnpj		  VARCHAR(22) NULL,
  FOREIGN KEY (Empresa_cnpj)
 	REFERENCES Empresa(cnpj)
 );
@@ -59,5 +59,6 @@ CREATE TABLE Aluno(
 SELECT * FROM Aluno;
 SELECT * FROM Empresa;
 
+INSERT INTO Funcionario VALUES('999.999.999-99', 'Admin', 'Coordenador', '123', '(31) 98988-3242', 'admin@gmail.com');
 --DROP DATABASE Senai;
 

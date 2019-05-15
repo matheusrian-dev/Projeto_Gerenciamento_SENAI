@@ -24,6 +24,8 @@ namespace Projeto_03__Senai
         {
             this.Controls.Add(reportViewer1);
             reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)

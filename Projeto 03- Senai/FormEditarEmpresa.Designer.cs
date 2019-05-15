@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditarEmpresa));
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.txtResponsavelEmpresa = new System.Windows.Forms.TextBox();
+            this.txtResponsavel = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtRazaoSocial = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtEnderecoEmpresa = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.mskCNPJ = new System.Windows.Forms.MaskedTextBox();
-            this.mskTelefoneEmpresa = new System.Windows.Forms.MaskedTextBox();
-            this.txtEmailEmpresa = new System.Windows.Forms.TextBox();
+            this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtNomeEmpresa = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -50,7 +50,7 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mskBuscarCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -86,13 +86,13 @@
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // txtResponsavelEmpresa
+            // txtResponsavel
             // 
-            this.txtResponsavelEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResponsavelEmpresa.Location = new System.Drawing.Point(177, 267);
-            this.txtResponsavelEmpresa.Name = "txtResponsavelEmpresa";
-            this.txtResponsavelEmpresa.Size = new System.Drawing.Size(375, 22);
-            this.txtResponsavelEmpresa.TabIndex = 33;
+            this.txtResponsavel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResponsavel.Location = new System.Drawing.Point(177, 267);
+            this.txtResponsavel.Name = "txtResponsavel";
+            this.txtResponsavel.Size = new System.Drawing.Size(375, 22);
+            this.txtResponsavel.TabIndex = 33;
             // 
             // label7
             // 
@@ -122,13 +122,13 @@
             this.label6.TabIndex = 30;
             this.label6.Text = "Razão Social";
             // 
-            // txtEnderecoEmpresa
+            // txtEndereco
             // 
-            this.txtEnderecoEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnderecoEmpresa.Location = new System.Drawing.Point(177, 204);
-            this.txtEnderecoEmpresa.Name = "txtEnderecoEmpresa";
-            this.txtEnderecoEmpresa.Size = new System.Drawing.Size(375, 22);
-            this.txtEnderecoEmpresa.TabIndex = 29;
+            this.txtEndereco.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEndereco.Location = new System.Drawing.Point(177, 204);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(375, 22);
+            this.txtEndereco.TabIndex = 29;
             // 
             // label5
             // 
@@ -149,21 +149,21 @@
             this.mskCNPJ.Size = new System.Drawing.Size(157, 20);
             this.mskCNPJ.TabIndex = 27;
             // 
-            // mskTelefoneEmpresa
+            // mskTelefone
             // 
-            this.mskTelefoneEmpresa.Location = new System.Drawing.Point(430, 145);
-            this.mskTelefoneEmpresa.Mask = "(99) 00000-0000";
-            this.mskTelefoneEmpresa.Name = "mskTelefoneEmpresa";
-            this.mskTelefoneEmpresa.Size = new System.Drawing.Size(122, 20);
-            this.mskTelefoneEmpresa.TabIndex = 26;
+            this.mskTelefone.Location = new System.Drawing.Point(430, 145);
+            this.mskTelefone.Mask = "(99) 00000-0000";
+            this.mskTelefone.Name = "mskTelefone";
+            this.mskTelefone.Size = new System.Drawing.Size(122, 20);
+            this.mskTelefone.TabIndex = 26;
             // 
-            // txtEmailEmpresa
+            // txtEmail
             // 
-            this.txtEmailEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailEmpresa.Location = new System.Drawing.Point(177, 174);
-            this.txtEmailEmpresa.Name = "txtEmailEmpresa";
-            this.txtEmailEmpresa.Size = new System.Drawing.Size(375, 22);
-            this.txtEmailEmpresa.TabIndex = 25;
+            this.txtEmail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(177, 174);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(375, 22);
+            this.txtEmail.TabIndex = 25;
             // 
             // label4
             // 
@@ -185,13 +185,13 @@
             this.label3.TabIndex = 23;
             this.label3.Text = "Telefone";
             // 
-            // txtNomeEmpresa
+            // txtNome
             // 
-            this.txtNomeEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeEmpresa.Location = new System.Drawing.Point(177, 117);
-            this.txtNomeEmpresa.Name = "txtNomeEmpresa";
-            this.txtNomeEmpresa.Size = new System.Drawing.Size(375, 22);
-            this.txtNomeEmpresa.TabIndex = 22;
+            this.txtNome.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(177, 117);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(375, 22);
+            this.txtNome.TabIndex = 22;
             // 
             // label2
             // 
@@ -275,12 +275,13 @@
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // maskedTextBox1
+            // mskBuscarCNPJ
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(275, 70);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(157, 20);
-            this.maskedTextBox1.TabIndex = 38;
+            this.mskBuscarCNPJ.Location = new System.Drawing.Point(275, 70);
+            this.mskBuscarCNPJ.Mask = "999.999.999/99999-99";
+            this.mskBuscarCNPJ.Name = "mskBuscarCNPJ";
+            this.mskBuscarCNPJ.Size = new System.Drawing.Size(157, 20);
+            this.mskBuscarCNPJ.TabIndex = 38;
             // 
             // label9
             // 
@@ -304,6 +305,7 @@
             this.btnBuscar.TabIndex = 40;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // FormEditarEmpresa
             // 
@@ -313,22 +315,22 @@
             this.ClientSize = new System.Drawing.Size(632, 403);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mskBuscarCNPJ);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.txtResponsavelEmpresa);
+            this.Controls.Add(this.txtResponsavel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtRazaoSocial);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtEnderecoEmpresa);
+            this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.mskCNPJ);
-            this.Controls.Add(this.mskTelefoneEmpresa);
-            this.Controls.Add(this.txtEmailEmpresa);
+            this.Controls.Add(this.mskTelefone);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtNomeEmpresa);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -347,18 +349,18 @@
 
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.TextBox txtResponsavelEmpresa;
+        private System.Windows.Forms.TextBox txtResponsavel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtRazaoSocial;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtEnderecoEmpresa;
+        private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox mskCNPJ;
-        private System.Windows.Forms.MaskedTextBox mskTelefoneEmpresa;
-        private System.Windows.Forms.TextBox txtEmailEmpresa;
+        private System.Windows.Forms.MaskedTextBox mskTelefone;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNomeEmpresa;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -366,7 +368,7 @@
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mskBuscarCNPJ;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnBuscar;
     }

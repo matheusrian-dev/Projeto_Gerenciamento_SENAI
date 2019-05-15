@@ -30,18 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNomeEmpresa = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtEmailEmpresa = new System.Windows.Forms.TextBox();
-            this.mskTelefoneEmpresa = new System.Windows.Forms.MaskedTextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
             this.mskCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtEnderecoEmpresa = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtRazaoSocial = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtResponsavelEmpresa = new System.Windows.Forms.TextBox();
+            this.txtResponsavel = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnShowEditar = new System.Windows.Forms.Button();
@@ -67,15 +67,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Nome";
             // 
-            // txtNomeEmpresa
+            // txtNome
             // 
-            this.txtNomeEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeEmpresa.Location = new System.Drawing.Point(181, 41);
-            this.txtNomeEmpresa.Name = "txtNomeEmpresa";
-            this.txtNomeEmpresa.Size = new System.Drawing.Size(375, 22);
-            this.txtNomeEmpresa.TabIndex = 3;
-            this.txtNomeEmpresa.Enter += new System.EventHandler(this.txtNomeEmpresa_Enter);
-            this.txtNomeEmpresa.Leave += new System.EventHandler(this.txtNomeEmpresa_Leave);
+            this.txtNome.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(181, 41);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(375, 22);
+            this.txtNome.TabIndex = 3;
+            this.txtNome.Enter += new System.EventHandler(this.txtNomeEmpresa_Enter);
+            this.txtNome.Leave += new System.EventHandler(this.txtNomeEmpresa_Leave);
             // 
             // label3
             // 
@@ -97,23 +97,23 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Email";
             // 
-            // txtEmailEmpresa
+            // txtEmail
             // 
-            this.txtEmailEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailEmpresa.Location = new System.Drawing.Point(181, 98);
-            this.txtEmailEmpresa.Name = "txtEmailEmpresa";
-            this.txtEmailEmpresa.Size = new System.Drawing.Size(375, 22);
-            this.txtEmailEmpresa.TabIndex = 6;
-            this.txtEmailEmpresa.Enter += new System.EventHandler(this.txtEmailEmpresa_Enter);
-            this.txtEmailEmpresa.Leave += new System.EventHandler(this.txtEmailEmpresa_Leave);
+            this.txtEmail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(181, 98);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(375, 22);
+            this.txtEmail.TabIndex = 6;
+            this.txtEmail.Enter += new System.EventHandler(this.txtEmailEmpresa_Enter);
+            this.txtEmail.Leave += new System.EventHandler(this.txtEmailEmpresa_Leave);
             // 
-            // mskTelefoneEmpresa
+            // mskTelefone
             // 
-            this.mskTelefoneEmpresa.Location = new System.Drawing.Point(434, 69);
-            this.mskTelefoneEmpresa.Mask = "(99) 00000-0000";
-            this.mskTelefoneEmpresa.Name = "mskTelefoneEmpresa";
-            this.mskTelefoneEmpresa.Size = new System.Drawing.Size(122, 20);
-            this.mskTelefoneEmpresa.TabIndex = 7;
+            this.mskTelefone.Location = new System.Drawing.Point(434, 69);
+            this.mskTelefone.Mask = "(99) 00000-0000";
+            this.mskTelefone.Name = "mskTelefone";
+            this.mskTelefone.Size = new System.Drawing.Size(122, 20);
+            this.mskTelefone.TabIndex = 7;
             // 
             // mskCNPJ
             // 
@@ -133,15 +133,15 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Endereço";
             // 
-            // txtEnderecoEmpresa
+            // txtEndereco
             // 
-            this.txtEnderecoEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnderecoEmpresa.Location = new System.Drawing.Point(181, 128);
-            this.txtEnderecoEmpresa.Name = "txtEnderecoEmpresa";
-            this.txtEnderecoEmpresa.Size = new System.Drawing.Size(375, 22);
-            this.txtEnderecoEmpresa.TabIndex = 12;
-            this.txtEnderecoEmpresa.Enter += new System.EventHandler(this.txtEnderecoEmpresa_Enter);
-            this.txtEnderecoEmpresa.Leave += new System.EventHandler(this.txtEnderecoEmpresa_Leave);
+            this.txtEndereco.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEndereco.Location = new System.Drawing.Point(181, 128);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(375, 22);
+            this.txtEndereco.TabIndex = 12;
+            this.txtEndereco.Enter += new System.EventHandler(this.txtEnderecoEmpresa_Enter);
+            this.txtEndereco.Leave += new System.EventHandler(this.txtEnderecoEmpresa_Leave);
             // 
             // label6
             // 
@@ -173,15 +173,15 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Responsável";
             // 
-            // txtResponsavelEmpresa
+            // txtResponsavel
             // 
-            this.txtResponsavelEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResponsavelEmpresa.Location = new System.Drawing.Point(181, 191);
-            this.txtResponsavelEmpresa.Name = "txtResponsavelEmpresa";
-            this.txtResponsavelEmpresa.Size = new System.Drawing.Size(375, 22);
-            this.txtResponsavelEmpresa.TabIndex = 16;
-            this.txtResponsavelEmpresa.Enter += new System.EventHandler(this.txtResponsavelEmpresa_Enter);
-            this.txtResponsavelEmpresa.Leave += new System.EventHandler(this.txtResponsavelEmpresa_Leave);
+            this.txtResponsavel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResponsavel.Location = new System.Drawing.Point(181, 191);
+            this.txtResponsavel.Name = "txtResponsavel";
+            this.txtResponsavel.Size = new System.Drawing.Size(375, 22);
+            this.txtResponsavel.TabIndex = 16;
+            this.txtResponsavel.Enter += new System.EventHandler(this.txtResponsavelEmpresa_Enter);
+            this.txtResponsavel.Leave += new System.EventHandler(this.txtResponsavelEmpresa_Leave);
             // 
             // btnCadastrar
             // 
@@ -228,18 +228,18 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.btnShowEditar);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.txtResponsavelEmpresa);
+            this.Controls.Add(this.txtResponsavel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtRazaoSocial);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtEnderecoEmpresa);
+            this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.mskCNPJ);
-            this.Controls.Add(this.mskTelefoneEmpresa);
-            this.Controls.Add(this.txtEmailEmpresa);
+            this.Controls.Add(this.mskTelefone);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtNomeEmpresa);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -255,18 +255,18 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNomeEmpresa;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtEmailEmpresa;
-        private System.Windows.Forms.MaskedTextBox mskTelefoneEmpresa;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.MaskedTextBox mskTelefone;
         private System.Windows.Forms.MaskedTextBox mskCNPJ;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtEnderecoEmpresa;
+        private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtRazaoSocial;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtResponsavelEmpresa;
+        private System.Windows.Forms.TextBox txtResponsavel;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnShowEditar;

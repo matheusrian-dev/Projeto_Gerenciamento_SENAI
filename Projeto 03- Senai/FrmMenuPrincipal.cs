@@ -79,6 +79,13 @@ namespace Projeto_03__Senai
             userControlGerenciarEmpresa1.Visible = false;
         }
 
+        private void btnIrAddFuncionario_Click(object sender, EventArgs e)
+        {
+            FormCadastrarFuncionario cadastrar = new FormCadastrarFuncionario();
+            this.Hide();
+            cadastrar.Show();
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (isPanelDropDownMenuOpen)

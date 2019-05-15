@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRelatorioAluno));
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.ClassAlunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnFechar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            ((System.ComponentModel.ISupportInitialize)(this.ClassAlunoBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // ClassAlunoBindingSource
             // 
-            this.reportViewer1.Location = new System.Drawing.Point(0, 38);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(742, 439);
-            this.reportViewer1.TabIndex = 0;
+            this.ClassAlunoBindingSource.DataSource = typeof(Projeto_03__Senai.ClassAluno);
             // 
             // btnFechar
             // 
@@ -96,20 +97,32 @@
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
+            // reportViewer1
+            // 
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.ClassAlunoBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Projeto_03__Senai.Report1.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 44);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(742, 433);
+            this.reportViewer1.TabIndex = 40;
+            // 
             // FormRelatorioAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(742, 477);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.reportViewer1);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormRelatorioAluno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormRelatorioAluno";
             this.Load += new System.EventHandler(this.FormRelatorioAluno_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ClassAlunoBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -121,6 +134,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.BindingSource ClassAlunoBindingSource;
         public Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

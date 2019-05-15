@@ -19,6 +19,7 @@ namespace Projeto_03__Senai
         {
             InitializeComponent();
         }
+        ClassFuncionario funcionario = new ClassFuncionario();
 
         private void btnMostrarSenha_Click(object sender, EventArgs e)
         {
@@ -65,9 +66,21 @@ namespace Projeto_03__Senai
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogar_Click(object sender, EventArgs e)
         {
-
+            funcionario.EmailFunc = txtEmail.Text;
+            funcionario.Senha = txtSenha.Text;
+            funcionario.RealizarLogin();
+            if (funcionario.RealizarLogin() == true)
+            {
+                MessageBox.Show("Funcionário: " + funcionario.NomeFunc + "\n"
+                             + "\n" + "Bem vindo ao Sistema!");
+                
+                FrmMenuPrincipal menu = new FrmMenuPrincipal();
+                this.Hide();
+                menu.Show();
+                
+            }
         }
     }
 }

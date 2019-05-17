@@ -24,8 +24,6 @@ namespace Projeto_03__Senai
         {
             this.Controls.Add(reportViewer1);
             reportViewer1.RefreshReport();
-            this.reportViewer1.RefreshReport();
-            this.reportViewer1.RefreshReport();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -49,6 +47,11 @@ namespace Projeto_03__Senai
             {
                 this.SetDesktopLocation(MousePosition.X - MouPosX, MousePosition.Y - MouPosY);
             }
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)

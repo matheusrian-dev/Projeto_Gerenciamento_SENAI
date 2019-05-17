@@ -62,3 +62,5 @@ CREATE TABLE Aluno(
 INSERT INTO Funcionario VALUES('999.999.999-99', 'Admin', 'Coordenador', '123', '(31) 98988-3242', 'admin@gmail.com');
 --DROP DATABASE Senai;
 --SELECT * FROM Funcionario;
+UPDATE Funcionario SET nomeFunc = 'Gabriel Alexandre', cargo = 'Funcionário', senha = '12345', telefoneFunc = '(31) 98988-3242', emailFunc = 'rgabrielaraujo@gmail.com'
+	WHERE cpf LIKE '111.111.111-11'

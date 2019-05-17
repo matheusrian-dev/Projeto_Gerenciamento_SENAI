@@ -68,22 +68,29 @@ namespace Projeto_03__Senai
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            funcionario.EmailFunc = txtEmail.Text;
-            funcionario.Senha = txtSenha.Text;
-            funcionario.RealizarLogin();
-            if (funcionario.RealizarLogin() == true)
+            if (txtEmail.Text.Length == 0 || txtSenha.Text.Length == 0)
             {
-                MessageBox.Show("Funcionário: " + funcionario.NomeFunc + "\n"
-                             + "\n" + "Bem vindo ao Sistema!");
-                
-                FrmMenuPrincipal menu = new FrmMenuPrincipal(funcionario.CargoUsuario);
-                this.Hide();
-                menu.Show();
-                
+                MessageBox.Show("Por favor, preencha ambos os campos antes de tentar realizar o login.");
             }
             else
             {
-                MessageBox.Show("Email ou Senha inválido.");
+                funcionario.EmailFunc = txtEmail.Text;
+                funcionario.Senha = txtSenha.Text;
+                funcionario.RealizarLogin();
+                if (funcionario.RealizarLogin() == true)
+                {
+                    MessageBox.Show("Funcionário: " + funcionario.NomeFunc + "\n"
+                                 + "\n" + "Bem vindo ao Sistema!");
+
+                    FrmMenuPrincipal menu = new FrmMenuPrincipal(funcionario.CargoUsuario);
+                    this.Hide();
+                    menu.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("Email ou Senha inválido.");
+                }
             }
         }
     }

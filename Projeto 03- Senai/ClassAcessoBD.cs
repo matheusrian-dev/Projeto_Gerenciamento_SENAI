@@ -29,7 +29,8 @@ namespace Projeto_03__Senai
         //criar string de conexão 
         //private string server = @"(localdb)\MSSQLLocalDB";// nome do servidor sqlServer
         private string database = "Senai"; //nome do database
-        private string server = @"CASA\SQLEXPRESS";
+        //private string server = @"CASA\SQLEXPRESS";
+        private string server = @"TI20-PC";
         //Método: CONECTAR
         public void Conectar()
         {

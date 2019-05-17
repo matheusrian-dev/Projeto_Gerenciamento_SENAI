@@ -143,7 +143,7 @@
             // mskCNPJ
             // 
             this.mskCNPJ.Location = new System.Drawing.Point(177, 145);
-            this.mskCNPJ.Mask = "999.999.999/99999-99";
+            this.mskCNPJ.Mask = "999,999,999/99999-99";
             this.mskCNPJ.Name = "mskCNPJ";
             this.mskCNPJ.ReadOnly = true;
             this.mskCNPJ.Size = new System.Drawing.Size(157, 20);
@@ -278,7 +278,7 @@
             // mskBuscarCNPJ
             // 
             this.mskBuscarCNPJ.Location = new System.Drawing.Point(275, 70);
-            this.mskBuscarCNPJ.Mask = "999.999.999/99999-99";
+            this.mskBuscarCNPJ.Mask = "999,999,999/99999-99";
             this.mskBuscarCNPJ.Name = "mskBuscarCNPJ";
             this.mskBuscarCNPJ.Size = new System.Drawing.Size(157, 20);
             this.mskBuscarCNPJ.TabIndex = 38;

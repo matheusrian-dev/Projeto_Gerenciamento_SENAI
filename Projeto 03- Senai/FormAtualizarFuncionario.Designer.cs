@@ -33,7 +33,7 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
-            this.btnIrParaEditarFuncionario = new System.Windows.Forms.Button();
+            this.btnEditarFuncionario = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -103,19 +103,19 @@
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // btnIrParaEditarFuncionario
+            // btnEditarFuncionario
             // 
-            this.btnIrParaEditarFuncionario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnIrParaEditarFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrParaEditarFuncionario.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIrParaEditarFuncionario.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnIrParaEditarFuncionario.Location = new System.Drawing.Point(255, 348);
-            this.btnIrParaEditarFuncionario.Name = "btnIrParaEditarFuncionario";
-            this.btnIrParaEditarFuncionario.Size = new System.Drawing.Size(123, 46);
-            this.btnIrParaEditarFuncionario.TabIndex = 72;
-            this.btnIrParaEditarFuncionario.Text = "Atualizar Funcionário";
-            this.btnIrParaEditarFuncionario.UseVisualStyleBackColor = false;
-            this.btnIrParaEditarFuncionario.Click += new System.EventHandler(this.btnIrParaEditarFuncionario_Click);
+            this.btnEditarFuncionario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnEditarFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarFuncionario.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarFuncionario.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnEditarFuncionario.Location = new System.Drawing.Point(255, 348);
+            this.btnEditarFuncionario.Name = "btnEditarFuncionario";
+            this.btnEditarFuncionario.Size = new System.Drawing.Size(123, 46);
+            this.btnEditarFuncionario.TabIndex = 72;
+            this.btnEditarFuncionario.Text = "Atualizar Funcionário";
+            this.btnEditarFuncionario.UseVisualStyleBackColor = false;
+            this.btnEditarFuncionario.Click += new System.EventHandler(this.btnEditarFuncionario_Click);
             // 
             // label7
             // 
@@ -148,7 +148,7 @@
             // mskCPF
             // 
             this.mskCPF.Location = new System.Drawing.Point(183, 148);
-            this.mskCPF.Mask = "999.999.999-99";
+            this.mskCPF.Mask = "999,999,999-99";
             this.mskCPF.Name = "mskCPF";
             this.mskCPF.ReadOnly = true;
             this.mskCPF.Size = new System.Drawing.Size(157, 20);
@@ -282,7 +282,7 @@
             this.Controls.Add(this.btnBuscarFuncionario);
             this.Controls.Add(this.mskBuscaCPF);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.btnIrParaEditarFuncionario);
+            this.Controls.Add(this.btnEditarFuncionario);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.label5);
@@ -315,7 +315,7 @@
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.Button btnIrParaEditarFuncionario;
+        private System.Windows.Forms.Button btnEditarFuncionario;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label5;

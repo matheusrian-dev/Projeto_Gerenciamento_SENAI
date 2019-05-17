@@ -53,13 +53,13 @@ namespace Projeto_03__Senai
             }
         }
 
-        private void btnIrParaEditarFuncionario_Click(object sender, EventArgs e)
+        private void btnEditarFuncionario_Click(object sender, EventArgs e)
         {
             funcionario.NomeFunc = txtNome.Text;
             funcionario.TelefoneFunc = mskTelefone.Text;
             funcionario.EmailFunc = txtEmail.Text;
             funcionario.Senha = txtSenha.Text;
-            funcionario.Cargo = cboCargo.Text;
+            funcionario.Cargo = cboCargo.SelectedItem.ToString();
             funcionario.EditarFuncionario(mskCPF.Text);
         }
     }

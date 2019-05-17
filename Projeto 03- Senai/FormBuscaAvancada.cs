@@ -323,13 +323,14 @@ namespace Projeto_03__Senai
                 txtFiltrarPorGenero.ForeColor = Color.Black;
             }
         }
-
+        // criação do datasource do ReportViewer
         ReportDataSource rs = new ReportDataSource();
         private void btnGerarRelatorio_Click(object sender, EventArgs e)
         {
+            // gera a lista que será o valor inserido no datasource
             List<ClassAluno> lst = new List<ClassAluno>();
             lst.Clear();
-
+            // inserção dos dados na lista
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
                 
@@ -342,11 +343,14 @@ namespace Projeto_03__Senai
                 };
                 lst.Add(aluno);
             }
-
+            // insere um nome no datasource
             rs.Name = "DataSet1";
+            // insere a lista como valor no datasource
             rs.Value = lst;
             FormRelatorioAluno relatorio = new FormRelatorioAluno();
+            // limpa os registros anteriores do reportviewer
             relatorio.reportViewer1.LocalReport.DataSources.Clear();
+            // impõe o datasource criado como datasource do reportviewer do FormRelatorioAluno
             relatorio.reportViewer1.LocalReport.DataSources.Add(rs);
             relatorio.reportViewer1.LocalReport.ReportEmbeddedResource = "Projeto 03- Senai.Report1.rdlc";
             relatorio.ShowDialog();

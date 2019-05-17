@@ -51,29 +51,17 @@ namespace Projeto_03__Senai
         }
 
 
-        public bool EditarFuncionario(string cpf)
+        public void EditarFuncionario(string cpf)
         {
-            try
-            {
                 //Conectar no Banco
                 bd.Conectar();
-
-                //Executar o Insert
-                bd.ExecutarComandosSql(String.Format("Update Funcionario SET " +
-                    " nomeFunc = '" + NomeFunc + "', cargo = '" + Cargo + "', senha = '" + Senha + "', telefoneFunc = '" + TelefoneFunc + "', emailFunc = '" + EmailFunc + "'" +
-                    " WHERE cpf LIKE '" + cpf +"'"));
-
+                bd.ExecutarComandosSql(String.Format("UPDATE Funcionario SET nomeFunc = '" + NomeFunc + "', cargo = '"+ Cargo + "', senha = '"+ Senha +"', telefoneFunc = '"+ TelefoneFunc +"', emailFunc = '"+EmailFunc+ "'"
+                    +"WHERE cpf LIKE '"+ cpf + "'"));
                 //Desconectar
                 bd.Desconectar();
                 MessageBox.Show("Cadastro do Funcionário Atualizado com Sucesso!");
-                return true;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message +
-                     "Erro ao editar o Funcionário.");
-
-            }
+                
+            
         }
 
         public DataTable MostrarFuncionario()
@@ -115,6 +103,12 @@ namespace Projeto_03__Senai
             }
             else
             {
+                NomeFunc = dt.Rows[0]["nomeFunc"].ToString();
+                Cargo = dt.Rows[0]["cargo"].ToString();
+                Cpf = dt.Rows[0]["cpf"].ToString();
+                Senha = dt.Rows[0]["senha"].ToString();
+                TelefoneFunc = dt.Rows[0]["telefoneFunc"].ToString();
+                EmailFunc = dt.Rows[0]["emailFunc"].ToString();
                 return true;
             }
         }

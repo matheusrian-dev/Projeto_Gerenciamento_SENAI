@@ -52,6 +52,7 @@
             this.btnFiltrarPorGenero = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.mskFiltrarAlunosNaEmpresa = new System.Windows.Forms.MaskedTextBox();
+            this.btnUndoFilter = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -182,7 +183,7 @@
             this.btnFiltrarAlunosEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarAlunosEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarAlunosEmpresa.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFiltrarAlunosEmpresa.Location = new System.Drawing.Point(204, 210);
+            this.btnFiltrarAlunosEmpresa.Location = new System.Drawing.Point(204, 188);
             this.btnFiltrarAlunosEmpresa.Name = "btnFiltrarAlunosEmpresa";
             this.btnFiltrarAlunosEmpresa.Size = new System.Drawing.Size(84, 53);
             this.btnFiltrarAlunosEmpresa.TabIndex = 50;
@@ -194,7 +195,7 @@
             // 
             this.dtpFiltrarDataMatricula.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFiltrarDataMatricula.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFiltrarDataMatricula.Location = new System.Drawing.Point(33, 105);
+            this.dtpFiltrarDataMatricula.Location = new System.Drawing.Point(33, 83);
             this.dtpFiltrarDataMatricula.Name = "dtpFiltrarDataMatricula";
             this.dtpFiltrarDataMatricula.Size = new System.Drawing.Size(165, 22);
             this.dtpFiltrarDataMatricula.TabIndex = 49;
@@ -205,7 +206,7 @@
             this.btnFiltrarTurma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarTurma.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFiltrarTurma.Location = new System.Drawing.Point(204, 151);
+            this.btnFiltrarTurma.Location = new System.Drawing.Point(204, 129);
             this.btnFiltrarTurma.Name = "btnFiltrarTurma";
             this.btnFiltrarTurma.Size = new System.Drawing.Size(84, 53);
             this.btnFiltrarTurma.TabIndex = 48;
@@ -216,7 +217,7 @@
             // txtFiltrarTurma
             // 
             this.txtFiltrarTurma.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltrarTurma.Location = new System.Drawing.Point(33, 166);
+            this.txtFiltrarTurma.Location = new System.Drawing.Point(33, 144);
             this.txtFiltrarTurma.Name = "txtFiltrarTurma";
             this.txtFiltrarTurma.Size = new System.Drawing.Size(165, 22);
             this.txtFiltrarTurma.TabIndex = 47;
@@ -229,7 +230,7 @@
             this.btnFiltrarDataMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarDataMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarDataMatricula.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFiltrarDataMatricula.Location = new System.Drawing.Point(204, 92);
+            this.btnFiltrarDataMatricula.Location = new System.Drawing.Point(204, 70);
             this.btnFiltrarDataMatricula.Name = "btnFiltrarDataMatricula";
             this.btnFiltrarDataMatricula.Size = new System.Drawing.Size(84, 53);
             this.btnFiltrarDataMatricula.TabIndex = 46;
@@ -243,7 +244,7 @@
             this.btnFiltrarRA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarRA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarRA.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFiltrarRA.Location = new System.Drawing.Point(204, 33);
+            this.btnFiltrarRA.Location = new System.Drawing.Point(204, 11);
             this.btnFiltrarRA.Name = "btnFiltrarRA";
             this.btnFiltrarRA.Size = new System.Drawing.Size(84, 53);
             this.btnFiltrarRA.TabIndex = 45;
@@ -254,7 +255,7 @@
             // txtFiltrarRA
             // 
             this.txtFiltrarRA.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltrarRA.Location = new System.Drawing.Point(33, 48);
+            this.txtFiltrarRA.Location = new System.Drawing.Point(33, 26);
             this.txtFiltrarRA.Name = "txtFiltrarRA";
             this.txtFiltrarRA.Size = new System.Drawing.Size(165, 22);
             this.txtFiltrarRA.TabIndex = 44;
@@ -264,7 +265,7 @@
             // txtFiltrarPorIdade
             // 
             this.txtFiltrarPorIdade.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltrarPorIdade.Location = new System.Drawing.Point(33, 284);
+            this.txtFiltrarPorIdade.Location = new System.Drawing.Point(33, 262);
             this.txtFiltrarPorIdade.Name = "txtFiltrarPorIdade";
             this.txtFiltrarPorIdade.Size = new System.Drawing.Size(165, 22);
             this.txtFiltrarPorIdade.TabIndex = 53;
@@ -277,7 +278,7 @@
             this.btnFiltrarPorIdade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarPorIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarPorIdade.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFiltrarPorIdade.Location = new System.Drawing.Point(204, 269);
+            this.btnFiltrarPorIdade.Location = new System.Drawing.Point(204, 247);
             this.btnFiltrarPorIdade.Name = "btnFiltrarPorIdade";
             this.btnFiltrarPorIdade.Size = new System.Drawing.Size(84, 53);
             this.btnFiltrarPorIdade.TabIndex = 52;
@@ -288,7 +289,7 @@
             // txtFiltrarPorGenero
             // 
             this.txtFiltrarPorGenero.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltrarPorGenero.Location = new System.Drawing.Point(33, 343);
+            this.txtFiltrarPorGenero.Location = new System.Drawing.Point(33, 321);
             this.txtFiltrarPorGenero.Name = "txtFiltrarPorGenero";
             this.txtFiltrarPorGenero.Size = new System.Drawing.Size(165, 22);
             this.txtFiltrarPorGenero.TabIndex = 55;
@@ -301,7 +302,7 @@
             this.btnFiltrarPorGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarPorGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarPorGenero.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFiltrarPorGenero.Location = new System.Drawing.Point(204, 328);
+            this.btnFiltrarPorGenero.Location = new System.Drawing.Point(204, 306);
             this.btnFiltrarPorGenero.Name = "btnFiltrarPorGenero";
             this.btnFiltrarPorGenero.Size = new System.Drawing.Size(84, 53);
             this.btnFiltrarPorGenero.TabIndex = 54;
@@ -311,6 +312,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnUndoFilter);
             this.groupBox2.Controls.Add(this.mskFiltrarAlunosNaEmpresa);
             this.groupBox2.Controls.Add(this.txtFiltrarPorGenero);
             this.groupBox2.Controls.Add(this.btnFiltrarRA);
@@ -331,11 +333,25 @@
             // 
             // mskFiltrarAlunosNaEmpresa
             // 
-            this.mskFiltrarAlunosNaEmpresa.Location = new System.Drawing.Point(33, 227);
+            this.mskFiltrarAlunosNaEmpresa.Location = new System.Drawing.Point(33, 205);
             this.mskFiltrarAlunosNaEmpresa.Mask = "999,999,999/99999-99";
             this.mskFiltrarAlunosNaEmpresa.Name = "mskFiltrarAlunosNaEmpresa";
             this.mskFiltrarAlunosNaEmpresa.Size = new System.Drawing.Size(165, 20);
             this.mskFiltrarAlunosNaEmpresa.TabIndex = 56;
+            // 
+            // btnUndoFilter
+            // 
+            this.btnUndoFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUndoFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUndoFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUndoFilter.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnUndoFilter.Location = new System.Drawing.Point(91, 375);
+            this.btnUndoFilter.Name = "btnUndoFilter";
+            this.btnUndoFilter.Size = new System.Drawing.Size(131, 38);
+            this.btnUndoFilter.TabIndex = 57;
+            this.btnUndoFilter.Text = "Desfazer Filtragens";
+            this.btnUndoFilter.UseVisualStyleBackColor = false;
+            this.btnUndoFilter.Click += new System.EventHandler(this.btnUndoFilter_Click);
             // 
             // FormBuscaAvancada
             // 
@@ -391,5 +407,6 @@
         private System.Windows.Forms.Button btnFiltrarPorGenero;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.MaskedTextBox mskFiltrarAlunosNaEmpresa;
+        private System.Windows.Forms.Button btnUndoFilter;
     }
 }

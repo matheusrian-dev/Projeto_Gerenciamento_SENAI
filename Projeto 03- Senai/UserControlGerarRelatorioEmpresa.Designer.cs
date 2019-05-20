@@ -28,14 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.ClassEmpresaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btnGerarPorCNPJ = new System.Windows.Forms.Button();
             this.btnGerarTodasEmpresas = new System.Windows.Forms.Button();
             this.mskGerarPorCNPJ = new System.Windows.Forms.MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ClassEmpresaBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ClassEmpresaBindingSource
+            // 
+            this.ClassEmpresaBindingSource.DataSource = typeof(Projeto_03__Senai.ClassEmpresa);
             // 
             // reportViewer1
             // 
+            reportDataSource1.Name = "DataSetEmpresa";
+            reportDataSource1.Value = this.ClassEmpresaBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Projeto_03__Senai.Report2.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(22, 15);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(599, 209);
@@ -53,6 +65,7 @@
             this.btnGerarPorCNPJ.TabIndex = 14;
             this.btnGerarPorCNPJ.Text = "Gerar por CNPJ";
             this.btnGerarPorCNPJ.UseVisualStyleBackColor = false;
+            this.btnGerarPorCNPJ.Click += new System.EventHandler(this.btnGerarPorCNPJ_Click);
             // 
             // btnGerarTodasEmpresas
             // 
@@ -66,6 +79,7 @@
             this.btnGerarTodasEmpresas.TabIndex = 15;
             this.btnGerarTodasEmpresas.Text = "Gerar Relatório de Todas as Empresas";
             this.btnGerarTodasEmpresas.UseVisualStyleBackColor = false;
+            this.btnGerarTodasEmpresas.Click += new System.EventHandler(this.btnGerarTodasEmpresas_Click);
             // 
             // mskGerarPorCNPJ
             // 
@@ -87,6 +101,7 @@
             this.Name = "UserControlGerarRelatorioEmpresa";
             this.Size = new System.Drawing.Size(640, 304);
             this.Load += new System.EventHandler(this.UserControlGerarRelatorioEmpresa_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ClassEmpresaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,5 +113,6 @@
         private System.Windows.Forms.Button btnGerarPorCNPJ;
         private System.Windows.Forms.Button btnGerarTodasEmpresas;
         private System.Windows.Forms.MaskedTextBox mskGerarPorCNPJ;
+        private System.Windows.Forms.BindingSource ClassEmpresaBindingSource;
     }
 }

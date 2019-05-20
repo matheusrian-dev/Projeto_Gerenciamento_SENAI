@@ -107,7 +107,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("sexo LIKE '{0}%' OR sexo LIKE '% {0}%'", txtFiltrarRA.Text);
+                    string.Format("RA ALUNO LIKE '{0}%' OR RA ALUNO LIKE '% {0}%'", txtFiltrarRA.Text);
                 }
             }
         }
@@ -131,7 +131,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("sexo LIKE '{0}%' OR sexo LIKE '% {0}%'", dtpFiltrarDataMatricula.Text);
+                    string.Format("DATA DE MATRICULA LIKE '{0}%' OR DATA DE MATRICULA LIKE '% {0}%'", dtpFiltrarDataMatricula.Text);
                 }
             }
         }
@@ -155,7 +155,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("sexo LIKE '{0}%' OR sexo LIKE '% {0}%'", txtFiltrarTurma.Text);
+                    string.Format("CODIGO TURMA LIKE '{0}%' OR CODIGO TURMA LIKE '% {0}%'", txtFiltrarTurma.Text);
                 }
             }
         }
@@ -203,7 +203,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("sexo LIKE '{0}%' OR sexo LIKE '% {0}%'", txtFiltrarPorIdade.Text);
+                    string.Format("IDADE DO ALUNO LIKE '{0}%' OR IDADE DO ALUNO LIKE '% {0}%'", txtFiltrarPorIdade.Text);
                 }
             }
         }
@@ -227,7 +227,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("sexo LIKE '{0}%' OR sexo LIKE '% {0}%'", txtFiltrarPorGenero.Text);
+                    string.Format("SEXO LIKE '{0}%' OR SEXO LIKE '% {0}%'", txtFiltrarPorGenero.Text);
                 }
             }
         }
@@ -321,6 +321,7 @@ namespace Projeto_03__Senai
             {
                 txtFiltrarPorGenero.Text = "";
                 txtFiltrarPorGenero.ForeColor = Color.Black;
+                
             }
         }
         // criação do datasource do ReportViewer
@@ -330,16 +331,42 @@ namespace Projeto_03__Senai
             // gera a lista que será o valor inserido no datasource
             List<ClassAluno> lst = new List<ClassAluno>();
             lst.Clear();
-            // inserção dos dados na lista
+            // inserção dos dados na lista 
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
-                
+                DateTime dataNascimentoTotal = Convert.ToDateTime(dataGridView1.Rows[i].Cells[2].Value.ToString());
+                string dataNascimentoParcial = dataNascimentoTotal.ToString("dd/MM/yyyy");
+                DateTime dataMatriculaTotal = Convert.ToDateTime(dataGridView1.Rows[i].Cells[74].Value.ToString());
+                string dataMatriculaParcial = dataMatriculaTotal.ToString("dd/MM/yyyy");
                 ClassAluno aluno = new ClassAluno
                 {
-                    Nome = dataGridView1.Rows[i].Cells[0].Value.ToString(),
-                    Idade = int.Parse(dataGridView1.Rows[i].Cells[1].Value.ToString()),
-                    Sexo = dataGridView1.Rows[i].Cells[2].Value.ToString(),
-                    Telefone = dataGridView1.Rows[i].Cells[3].Value.ToString(),
+                    RaAluno = dataGridView1.Rows[i].Cells[0].Value.ToString(),
+                    AlunoNome = dataGridView1.Rows[i].Cells[1].Value.ToString(),
+                    Nascimento = dataNascimentoParcial,
+                    IdadeAluno = int.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString()),
+                    Sexo = dataGridView1.Rows[i].Cells[4].Value.ToString(),
+                    GrauInstrucao = dataGridView1.Rows[i].Cells[5].Value.ToString(),
+                    Rua = dataGridView1.Rows[i].Cells[6].Value.ToString(),
+                    Numero = dataGridView1.Rows[i].Cells[7].Value.ToString(),
+                    Complemento = dataGridView1.Rows[i].Cells[8].Value.ToString(),
+                    Bairro = dataGridView1.Rows[i].Cells[9].Value.ToString(),
+                    Estado = dataGridView1.Rows[i].Cells[10].Value.ToString(),
+                    Cidade = dataGridView1.Rows[i].Cells[11].Value.ToString(),
+                    Cep = dataGridView1.Rows[i].Cells[12].Value.ToString(),
+                    Telefone1 = dataGridView1.Rows[i].Cells[13].Value.ToString(),
+                    Identidade = dataGridView1.Rows[i].Cells[14].Value.ToString(),
+                    Cpf = dataGridView1.Rows[i].Cells[15].Value.ToString(),
+                    Email = dataGridView1.Rows[i].Cells[16].Value.ToString(),
+                    CarteiraTrabalho = dataGridView1.Rows[i].Cells[17].Value.ToString(),
+                    NomePai = dataGridView1.Rows[i].Cells[31].Value.ToString(),
+                    TelefonePai = dataGridView1.Rows[i].Cells[32].Value.ToString(),
+                    NomeMae = dataGridView1.Rows[i].Cells[37].Value.ToString(),
+                    TelefoneMae = dataGridView1.Rows[i].Cells[38].Value.ToString(),
+                    NomeCurso = dataGridView1.Rows[i].Cells[58].Value.ToString(),
+                    CodTurma = dataGridView1.Rows[i].Cells[60].Value.ToString(),
+                    StatusAluno = dataGridView1.Rows[i].Cells[62].Value.ToString(),
+                    DataMatricula = dataMatriculaParcial,
+                    Telefone2 = dataGridView1.Rows[i].Cells[84].Value.ToString(),
                 };
                 lst.Add(aluno);
             }
@@ -352,8 +379,12 @@ namespace Projeto_03__Senai
             relatorio.reportViewer1.LocalReport.DataSources.Clear();
             // impõe o datasource criado como datasource do reportviewer do FormRelatorioAluno
             relatorio.reportViewer1.LocalReport.DataSources.Add(rs);
-            relatorio.reportViewer1.LocalReport.ReportEmbeddedResource = "Projeto 03- Senai.Report1.rdlc";
             relatorio.ShowDialog();
+        }
+
+        private void btnUndoFilter_Click(object sender, EventArgs e)
+        {
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = null;
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)

@@ -40,7 +40,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("sexo LIKE '{0}%' OR sexo LIKE '% {0}%'", txtFiltrarRA.Text);
+                    string.Format("[RA ALUNO] LIKE '{0}%' OR [RA ALUNO] LIKE '% {0}%'", txtFiltrarRA.Text);
                 }
             }
             
@@ -183,7 +183,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("sexo LIKE '{0}%' OR sexo LIKE '% {0}%'", txtFiltrarTurma.Text);
+                    string.Format("[CODIGO TURMA] LIKE '{0}%' OR [CODIGO TURMA] LIKE '% {0}%'", txtFiltrarTurma.Text);
                 }
             }
         }
@@ -212,10 +212,9 @@ namespace Projeto_03__Senai
             }
         }
 
-        private void btnIrParaBuscaAvancada_Click(object sender, EventArgs e)
+        private void btnUndoFilter_Click(object sender, EventArgs e)
         {
-            FormBuscaAvancada buscaA = new FormBuscaAvancada();
-            buscaA.Show();
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = null;
         }
     }
 }

@@ -107,7 +107,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("RA ALUNO LIKE '{0}%' OR RA ALUNO LIKE '% {0}%'", txtFiltrarRA.Text);
+                    string.Format("[RA ALUNO] LIKE '{0}%' OR [RA ALUNO] LIKE '% {0}%'", txtFiltrarRA.Text);
                 }
             }
         }
@@ -131,7 +131,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("DATA DE MATRICULA LIKE '{0}%' OR DATA DE MATRICULA LIKE '% {0}%'", dtpFiltrarDataMatricula.Text);
+                    string.Format("[DATA DE MATRICULA] = #{0}# OR [DATA DE MATRICULA] = # {0}#", Convert.ToDateTime(dtpFiltrarDataMatricula.Text));
                 }
             }
         }
@@ -155,7 +155,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("CODIGO TURMA LIKE '{0}%' OR CODIGO TURMA LIKE '% {0}%'", txtFiltrarTurma.Text);
+                    string.Format("[CODIGO TURMA] LIKE '{0}%' OR [CODIGO TURMA] LIKE '% {0}%'", txtFiltrarTurma.Text);
                 }
             }
         }
@@ -203,7 +203,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("IDADE DO ALUNO LIKE '{0}%' OR IDADE DO ALUNO LIKE '% {0}%'", txtFiltrarPorIdade.Text);
+                    string.Format("[IDADE DO ALUNO] = '%{0}%'", txtFiltrarPorIdade.Text);
                 }
             }
         }

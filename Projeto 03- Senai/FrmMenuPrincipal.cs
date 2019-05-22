@@ -15,6 +15,7 @@ namespace Projeto_03__Senai
         bool isPanelDropDownMenuOpen = false;
         int MouPosX = 0, MouPosY = 0;
         bool mouseDown = false;
+        bool validUser = true;
 
         public FrmMenuPrincipal(string CargoUsuario)
         {
@@ -26,6 +27,8 @@ namespace Projeto_03__Senai
                 btnIrAddFuncionario.Visible = false;
                 lblGerarRelatorioEmpresa.Visible = false;
                 lblGerenciarEmpresa.Visible = false;
+                btnIrParaBuscaAvancada.Visible = false;
+                validUser = false;
             }
         }
 
@@ -69,6 +72,14 @@ namespace Projeto_03__Senai
             userControlVisualizarDadosAlunos1.Visible = true;
             userControlGerarRelatorioEmpresa1.Visible = false;
             userControlGerenciarEmpresa1.Visible = false;
+            if (validUser == false)
+            {
+                btnIrParaBuscaAvancada.Visible = false;
+            }
+            else
+            {
+                btnIrParaBuscaAvancada.Visible = true;
+            }
         }
 
         private void lblGerenciarEmpresa_Click(object sender, EventArgs e)
@@ -76,6 +87,7 @@ namespace Projeto_03__Senai
             userControlGerenciarEmpresa1.Visible = true;
             userControlVisualizarDadosAlunos1.Visible = false;
             userControlGerarRelatorioEmpresa1.Visible = false;
+            btnIrParaBuscaAvancada.Visible = false;
         }
 
         private void lblGerarRelatorioEmpresa_Click(object sender, EventArgs e)
@@ -83,6 +95,7 @@ namespace Projeto_03__Senai
             userControlGerarRelatorioEmpresa1.Visible = true;
             userControlVisualizarDadosAlunos1.Visible = false;
             userControlGerenciarEmpresa1.Visible = false;
+            btnIrParaBuscaAvancada.Visible = false;
         }
 
         private void btnIrAddFuncionario_Click(object sender, EventArgs e)
@@ -90,6 +103,12 @@ namespace Projeto_03__Senai
             FormCadastrarFuncionario cadastrar = new FormCadastrarFuncionario();
             this.Hide();
             cadastrar.Show();
+        }
+
+        private void btnIrParaBuscaAvancada_Click(object sender, EventArgs e)
+        {
+            FormBuscaAvancada buscaA = new FormBuscaAvancada();
+            buscaA.Show();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

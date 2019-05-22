@@ -38,9 +38,9 @@
             this.btnBuscarArquivo = new System.Windows.Forms.Button();
             this.btnFiltrarAlunosEmpresa = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnIrParaBuscaAvancada = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.mskFiltrarAlunosNaEmpresa = new System.Windows.Forms.MaskedTextBox();
+            this.btnUndoFilter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,20 +161,6 @@
             this.comboBox1.TabIndex = 11;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // btnIrParaBuscaAvancada
-            // 
-            this.btnIrParaBuscaAvancada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnIrParaBuscaAvancada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrParaBuscaAvancada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIrParaBuscaAvancada.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnIrParaBuscaAvancada.Location = new System.Drawing.Point(372, 241);
-            this.btnIrParaBuscaAvancada.Name = "btnIrParaBuscaAvancada";
-            this.btnIrParaBuscaAvancada.Size = new System.Drawing.Size(255, 53);
-            this.btnIrParaBuscaAvancada.TabIndex = 12;
-            this.btnIrParaBuscaAvancada.Text = "Ir para a Tela de Busca Avançada e Criação de Relatórios";
-            this.btnIrParaBuscaAvancada.UseVisualStyleBackColor = false;
-            this.btnIrParaBuscaAvancada.Click += new System.EventHandler(this.btnIrParaBuscaAvancada_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -193,14 +179,28 @@
             this.mskFiltrarAlunosNaEmpresa.Size = new System.Drawing.Size(165, 20);
             this.mskFiltrarAlunosNaEmpresa.TabIndex = 14;
             // 
+            // btnUndoFilter
+            // 
+            this.btnUndoFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUndoFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUndoFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUndoFilter.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnUndoFilter.Location = new System.Drawing.Point(543, 242);
+            this.btnUndoFilter.Name = "btnUndoFilter";
+            this.btnUndoFilter.Size = new System.Drawing.Size(84, 50);
+            this.btnUndoFilter.TabIndex = 58;
+            this.btnUndoFilter.Text = "Desfazer Filtragens";
+            this.btnUndoFilter.UseVisualStyleBackColor = false;
+            this.btnUndoFilter.Click += new System.EventHandler(this.btnUndoFilter_Click);
+            // 
             // UserControlVisualizarDadosAlunos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.btnUndoFilter);
             this.Controls.Add(this.mskFiltrarAlunosNaEmpresa);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnIrParaBuscaAvancada);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnFiltrarAlunosEmpresa);
             this.Controls.Add(this.btnBuscarArquivo);
@@ -232,8 +232,8 @@
         private System.Windows.Forms.Button btnBuscarArquivo;
         private System.Windows.Forms.Button btnFiltrarAlunosEmpresa;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button btnIrParaBuscaAvancada;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox mskFiltrarAlunosNaEmpresa;
+        private System.Windows.Forms.Button btnUndoFilter;
     }
 }

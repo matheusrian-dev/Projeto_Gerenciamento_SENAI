@@ -42,6 +42,7 @@
             this.lblGerarRelatorioEmpresa = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnIrParaBuscaAvancada = new System.Windows.Forms.Button();
             this.userControlVisualizarDadosAlunos1 = new Projeto_03__Senai.UserControlVisualizarDadosAlunos();
             this.userControlGerenciarEmpresa1 = new Projeto_03__Senai.UserControlGerenciarEmpresa();
             this.userControlGerarRelatorioEmpresa1 = new Projeto_03__Senai.UserControlGerarRelatorioEmpresa();
@@ -186,6 +187,20 @@
             this.timer1.Interval = 38;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnIrParaBuscaAvancada
+            // 
+            this.btnIrParaBuscaAvancada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnIrParaBuscaAvancada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIrParaBuscaAvancada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIrParaBuscaAvancada.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnIrParaBuscaAvancada.Location = new System.Drawing.Point(373, 276);
+            this.btnIrParaBuscaAvancada.Name = "btnIrParaBuscaAvancada";
+            this.btnIrParaBuscaAvancada.Size = new System.Drawing.Size(162, 53);
+            this.btnIrParaBuscaAvancada.TabIndex = 13;
+            this.btnIrParaBuscaAvancada.Text = "Ir para a Tela de Busca Avançada e Criação de Relatórios";
+            this.btnIrParaBuscaAvancada.UseVisualStyleBackColor = false;
+            this.btnIrParaBuscaAvancada.Click += new System.EventHandler(this.btnIrParaBuscaAvancada_Click);
+            // 
             // userControlVisualizarDadosAlunos1
             // 
             this.userControlVisualizarDadosAlunos1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -216,6 +231,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(640, 340);
+            this.Controls.Add(this.btnIrParaBuscaAvancada);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.userControlVisualizarDadosAlunos1);
@@ -251,5 +267,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnIrAddFuncionario;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button btnIrParaBuscaAvancada;
     }
 }

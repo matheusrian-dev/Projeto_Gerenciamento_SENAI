@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using ExcelDataReader;
 using System.IO;
 using Microsoft.Reporting.WinForms;
+using System.Globalization;
 
 namespace Projeto_03__Senai
 {
@@ -131,7 +132,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("[DATA DE MATRICULA] = #{0}# OR [DATA DE MATRICULA] = # {0}#", Convert.ToDateTime(dtpFiltrarDataMatricula.Text));
+                    string.Format(CultureInfo.InvariantCulture.DateTimeFormat, "[DATA DE MATRICULA] >= '{0} 00:00:00' AND [DATA DE MATRICULA] <= '{0} 23:59:59'", dtpFiltrarDataMatricula.Value.ToString("dd/MM/yyyy"));
                 }
             }
         }
@@ -203,7 +204,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("[IDADE DO ALUNO] = '%{0}%'", txtFiltrarPorIdade.Text);
+                    string.Format("[IDADE DO ALUNO] = {0}", int.Parse(txtFiltrarPorIdade.Text));
                 }
             }
         }

@@ -159,7 +159,7 @@ namespace Projeto_03__Senai
                     //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
                     // como faria no banco de dados 
                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("sexo LIKE '{0}%' OR sexo LIKE '% {0}%'", dtpFiltrarDataMatricula.Text);
+                    string.Format("[DATA DE MATRICULA] >= '{0} 00:00:00' AND [DATA DE MATRICULA] <= '{0} 23:59:59'", dtpFiltrarDataMatricula.Text);
                 }
             }
         }

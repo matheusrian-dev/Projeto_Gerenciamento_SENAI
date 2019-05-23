@@ -592,7 +592,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1879,8 +1878,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.51125cm</Top>
-        <Left>0.65828cm</Left>
+        <Top>1.27854cm</Top>
+        <Left>0.75247cm</Left>
         <Height>13.8cm</Height>
         <Width>15.17292cm</Width>
         <Style>
@@ -1889,14 +1888,44 @@
           </Border>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox65">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>RELATÓRIO GERAL DO ALUNO</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox65</rd:DefaultName>
+        <Top>0.33365cm</Top>
+        <Left>5.60286cm</Left>
+        <Height>0.6cm</Height>
+        <Width>5.47216cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>5.7281in</Height>
+    <Height>6.12393in</Height>
     <Style />
   </Body>
   <Width>6.56609in</Width>
   <Page>
     <PageHeader>
-      <Height>1.6287cm</Height>
+      <Height>1.33766cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>

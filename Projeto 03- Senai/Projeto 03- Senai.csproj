@@ -61,6 +61,7 @@
     <Compile Include="ClassAcessoBD.cs" />
     <Compile Include="ClassAluno.cs" />
     <Compile Include="ClassEmpresa.cs" />
+    <Compile Include="ClassEncaminhamento.cs" />
     <Compile Include="ClassFuncionario.cs" />
     <Compile Include="FormAtualizarFuncionario.cs">
       <SubType>Form</SubType>
@@ -92,11 +93,23 @@
     <Compile Include="FormEncaminharAluno.Designer.cs">
       <DependentUpon>FormEncaminharAluno.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGerenciarEncaminhamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGerenciarEncaminhamento.Designer.cs">
+      <DependentUpon>FormGerenciarEncaminhamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRelatorioAluno.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRelatorioAluno.Designer.cs">
       <DependentUpon>FormRelatorioAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatorioEncaminhar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorioEncaminhar.Designer.cs">
+      <DependentUpon>FormRelatorioEncaminhar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -145,8 +158,14 @@
     <EmbeddedResource Include="FormEncaminharAluno.resx">
       <DependentUpon>FormEncaminharAluno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormGerenciarEncaminhamento.resx">
+      <DependentUpon>FormGerenciarEncaminhamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRelatorioAluno.resx">
       <DependentUpon>FormRelatorioAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorioEncaminhar.resx">
+      <DependentUpon>FormRelatorioEncaminhar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

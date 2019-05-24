@@ -161,30 +161,6 @@ namespace Projeto_03__Senai
             }
         }
 
-        private void btnFiltrarAlunosEmpresa_Click(object sender, EventArgs e)
-        {
-            //Validação para o caso do textbox estar em branco ou com um placeholder
-            if (mskFiltrarAlunosNaEmpresa.MaskFull == false)
-            {
-                MessageBox.Show("Insira um valor no campo de filtro de Alunos da Empresa ao lado da opção 'Filtrar Alunos na Empresa'");
-            }
-            else
-            {
-                if (dataGridView1.Rows.Count == 0)
-                {
-                    //Validação para o caso da tabela não tenha sido selecionada ainda
-                    MessageBox.Show("Por favor, selecione uma tabela antes de filtrar!");
-                }
-                else
-                {
-                    //Código para filtrar o datagridview, para colocar mais filtros juntos só adicionar AND/OR e a condição, 
-                    // como faria no banco de dados 
-                    (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                    string.Format("sexo LIKE '{0}%' OR sexo LIKE '% {0}%'", mskFiltrarAlunosNaEmpresa.Text);
-                }
-            }
-        }
-
         private void btnFiltrarPorIdade_Click(object sender, EventArgs e)
         {
             //Validação para o caso do textbox estar em branco ou com um placeholder
@@ -235,6 +211,7 @@ namespace Projeto_03__Senai
 
         private void FormBuscaAvancada_Load(object sender, EventArgs e)
         {
+            //Inserção do PlaceHolder ao iniciar o Form
             txtFiltrarRA.Text = "Insira a RA do Aluno";
             txtFiltrarRA.ForeColor = Color.Gray;
 
@@ -252,7 +229,7 @@ namespace Projeto_03__Senai
         {
             dataGridView1.DataSource = result.Tables[comboBox1.SelectedIndex];
         }
-
+        //Remoção do PlaceHolder
         private void txtFiltrarRA_Enter(object sender, EventArgs e)
         {
             if (txtFiltrarRA.Text == "Insira a RA do Aluno")
@@ -261,7 +238,7 @@ namespace Projeto_03__Senai
                 txtFiltrarRA.ForeColor = Color.Black;
             }
         }
-
+        //Inserção do PlaceHolder
         private void txtFiltrarRA_Leave(object sender, EventArgs e)
         {
             if (txtFiltrarRA.Text == "")
@@ -270,7 +247,7 @@ namespace Projeto_03__Senai
                 txtFiltrarRA.ForeColor = Color.Gray;
             }
         }
-
+        //Remoção do PlaceHolder
         private void txtFiltrarTurma_Enter(object sender, EventArgs e)
         {
             if (txtFiltrarTurma.Text == "Insira o código da Turma")
@@ -279,7 +256,7 @@ namespace Projeto_03__Senai
                 txtFiltrarTurma.ForeColor = Color.Black;
             }
         }
-
+        //Inserção do PlaceHolder
         private void txtFiltrarTurma_Leave(object sender, EventArgs e)
         {
             if (txtFiltrarTurma.Text == "")
@@ -288,7 +265,7 @@ namespace Projeto_03__Senai
                 txtFiltrarTurma.ForeColor = Color.Gray;
             }
         }
-
+        //Inserção do PlaceHolder
         private void txtFiltrarPorIdade_Leave(object sender, EventArgs e)
         {
             if (txtFiltrarPorIdade.Text == "")
@@ -297,7 +274,7 @@ namespace Projeto_03__Senai
                 txtFiltrarPorIdade.ForeColor = Color.Gray;
             }
         }
-
+        //Remoção do PlaceHolder
         private void txtFiltrarPorIdade_Enter(object sender, EventArgs e)
         {
             if (txtFiltrarPorIdade.Text == "Insira a Idade do Aluno")
@@ -306,7 +283,7 @@ namespace Projeto_03__Senai
                 txtFiltrarPorIdade.ForeColor = Color.Black;
             }
         }
-
+        //Inserção do PlaceHolder
         private void txtFiltrarPorGenero_Leave(object sender, EventArgs e)
         {
             if (txtFiltrarPorGenero.Text == "")
@@ -315,7 +292,7 @@ namespace Projeto_03__Senai
                 txtFiltrarPorGenero.ForeColor = Color.Gray;
             }
         }
-
+        //Remoção do PlaceHolder
         private void txtFiltrarPorGenero_Enter(object sender, EventArgs e)
         {
             if (txtFiltrarPorGenero.Text == "Insira o Gênero do Aluno")
@@ -386,6 +363,18 @@ namespace Projeto_03__Senai
         private void btnUndoFilter_Click(object sender, EventArgs e)
         {
             (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = null;
+        }
+
+        private void btnGerarRelatorioEncaminhamento_Click(object sender, EventArgs e)
+        {
+            FormRelatorioEncaminhar encaminhar = new FormRelatorioEncaminhar();
+            encaminhar.Show();
+        }
+
+        private void btnGerenciarEncaminhamento_Click(object sender, EventArgs e)
+        {
+            FormGerenciarEncaminhamento gerenciarEncaminhamento = new FormGerenciarEncaminhamento();
+            gerenciarEncaminhamento.Show();
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)

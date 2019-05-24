@@ -165,3 +165,5 @@ C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto_
 C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto 03- Senai.csproj.GenerateResource.Cache
 C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\RdlCompile.cache
 C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\RdlCompile.compiled
+C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto 03- Senai.csprojResolveAssemblyReference.cache
+C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto_03__Senai.FormEncaminharAluno.resources

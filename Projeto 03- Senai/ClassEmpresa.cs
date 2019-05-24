@@ -103,13 +103,21 @@ namespace Projeto_03__Senai
         {
             bd.Conectar();
             DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Empresa WHERE cnpj = '" + cnpj + "'"));
-            NomeEmpresa = dt.Rows[0]["nomeEmpresa"].ToString();
-            RazaoSocial = dt.Rows[0]["razaoSocial"].ToString();
-            Endereco = dt.Rows[0]["endereco"].ToString();
-            TelefoneEmpresa = dt.Rows[0]["telefoneEmpresa"].ToString();
-            EmailEmpresa = dt.Rows[0]["emailEmpresa"].ToString();
-            Responsavel = dt.Rows[0]["responsavel"].ToString();
-            Cnpj = dt.Rows[0]["cnpj"].ToString();
+            if(dt.Rows.Count == 0)
+            {
+                MessageBox.Show("Não há empresas cadastradas com o CNPJ informado, verifique se inseriu corretamente o valor.");
+            }
+            else
+            {
+                NomeEmpresa = dt.Rows[0]["nomeEmpresa"].ToString();
+                RazaoSocial = dt.Rows[0]["razaoSocial"].ToString();
+                Endereco = dt.Rows[0]["endereco"].ToString();
+                TelefoneEmpresa = dt.Rows[0]["telefoneEmpresa"].ToString();
+                EmailEmpresa = dt.Rows[0]["emailEmpresa"].ToString();
+                Responsavel = dt.Rows[0]["responsavel"].ToString();
+                Cnpj = dt.Rows[0]["cnpj"].ToString();
+            }
+            
             bd.Desconectar();
             return dt;
         }

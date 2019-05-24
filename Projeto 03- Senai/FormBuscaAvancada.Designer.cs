@@ -50,6 +50,10 @@
             this.txtFiltrarPorGenero = new System.Windows.Forms.TextBox();
             this.btnFiltrarPorGenero = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnGerarRelatorioEncaminhamento = new System.Windows.Forms.Button();
+            this.btnExcluirEncaminhamento = new System.Windows.Forms.Button();
+            this.btnGerenciarEncaminhamento = new System.Windows.Forms.Button();
+            this.btnEncaminharAluno = new System.Windows.Forms.Button();
             this.btnUndoFilter = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -114,7 +118,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(25, 123);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(472, 348);
+            this.dataGridView1.Size = new System.Drawing.Size(472, 384);
             this.dataGridView1.TabIndex = 39;
             // 
             // label1
@@ -157,7 +161,7 @@
             this.groupBox1.Controls.Add(this.btnBuscarArquivo);
             this.groupBox1.Location = new System.Drawing.Point(12, 58);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(495, 419);
+            this.groupBox1.Size = new System.Drawing.Size(495, 455);
             this.groupBox1.TabIndex = 43;
             this.groupBox1.TabStop = false;
             // 
@@ -297,6 +301,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnGerarRelatorioEncaminhamento);
+            this.groupBox2.Controls.Add(this.btnExcluirEncaminhamento);
+            this.groupBox2.Controls.Add(this.btnGerenciarEncaminhamento);
+            this.groupBox2.Controls.Add(this.btnEncaminharAluno);
             this.groupBox2.Controls.Add(this.btnUndoFilter);
             this.groupBox2.Controls.Add(this.txtFiltrarPorGenero);
             this.groupBox2.Controls.Add(this.btnFiltrarRA);
@@ -310,9 +318,63 @@
             this.groupBox2.Controls.Add(this.dtpFiltrarDataMatricula);
             this.groupBox2.Location = new System.Drawing.Point(513, 58);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(303, 419);
+            this.groupBox2.Size = new System.Drawing.Size(303, 455);
             this.groupBox2.TabIndex = 56;
             this.groupBox2.TabStop = false;
+            // 
+            // btnGerarRelatorioEncaminhamento
+            // 
+            this.btnGerarRelatorioEncaminhamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnGerarRelatorioEncaminhamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGerarRelatorioEncaminhamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGerarRelatorioEncaminhamento.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGerarRelatorioEncaminhamento.Location = new System.Drawing.Point(156, 363);
+            this.btnGerarRelatorioEncaminhamento.Name = "btnGerarRelatorioEncaminhamento";
+            this.btnGerarRelatorioEncaminhamento.Size = new System.Drawing.Size(131, 38);
+            this.btnGerarRelatorioEncaminhamento.TabIndex = 61;
+            this.btnGerarRelatorioEncaminhamento.Text = "Gerar Relatório de Encaminhamento";
+            this.btnGerarRelatorioEncaminhamento.UseVisualStyleBackColor = false;
+            this.btnGerarRelatorioEncaminhamento.Click += new System.EventHandler(this.btnGerarRelatorioEncaminhamento_Click);
+            // 
+            // btnExcluirEncaminhamento
+            // 
+            this.btnExcluirEncaminhamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnExcluirEncaminhamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluirEncaminhamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluirEncaminhamento.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnExcluirEncaminhamento.Location = new System.Drawing.Point(157, 405);
+            this.btnExcluirEncaminhamento.Name = "btnExcluirEncaminhamento";
+            this.btnExcluirEncaminhamento.Size = new System.Drawing.Size(131, 38);
+            this.btnExcluirEncaminhamento.TabIndex = 60;
+            this.btnExcluirEncaminhamento.Text = "Excluir Encaminhamento";
+            this.btnExcluirEncaminhamento.UseVisualStyleBackColor = false;
+            // 
+            // btnGerenciarEncaminhamento
+            // 
+            this.btnGerenciarEncaminhamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnGerenciarEncaminhamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGerenciarEncaminhamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGerenciarEncaminhamento.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGerenciarEncaminhamento.Location = new System.Drawing.Point(18, 405);
+            this.btnGerenciarEncaminhamento.Name = "btnGerenciarEncaminhamento";
+            this.btnGerenciarEncaminhamento.Size = new System.Drawing.Size(131, 38);
+            this.btnGerenciarEncaminhamento.TabIndex = 59;
+            this.btnGerenciarEncaminhamento.Text = "Gerenciar Encaminhamento";
+            this.btnGerenciarEncaminhamento.UseVisualStyleBackColor = false;
+            this.btnGerenciarEncaminhamento.Click += new System.EventHandler(this.btnGerenciarEncaminhamento_Click);
+            // 
+            // btnEncaminharAluno
+            // 
+            this.btnEncaminharAluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnEncaminharAluno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEncaminharAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEncaminharAluno.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnEncaminharAluno.Location = new System.Drawing.Point(18, 362);
+            this.btnEncaminharAluno.Name = "btnEncaminharAluno";
+            this.btnEncaminharAluno.Size = new System.Drawing.Size(131, 38);
+            this.btnEncaminharAluno.TabIndex = 58;
+            this.btnEncaminharAluno.Text = "Encaminhar Aluno";
+            this.btnEncaminharAluno.UseVisualStyleBackColor = false;
             // 
             // btnUndoFilter
             // 
@@ -320,9 +382,9 @@
             this.btnUndoFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUndoFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUndoFilter.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnUndoFilter.Location = new System.Drawing.Point(93, 306);
+            this.btnUndoFilter.Location = new System.Drawing.Point(18, 306);
             this.btnUndoFilter.Name = "btnUndoFilter";
-            this.btnUndoFilter.Size = new System.Drawing.Size(131, 38);
+            this.btnUndoFilter.Size = new System.Drawing.Size(269, 38);
             this.btnUndoFilter.TabIndex = 57;
             this.btnUndoFilter.Text = "Desfazer Filtragens";
             this.btnUndoFilter.UseVisualStyleBackColor = false;
@@ -333,7 +395,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(840, 489);
+            this.ClientSize = new System.Drawing.Size(840, 520);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
@@ -381,5 +443,9 @@
         private System.Windows.Forms.Button btnFiltrarPorGenero;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnUndoFilter;
+        private System.Windows.Forms.Button btnExcluirEncaminhamento;
+        private System.Windows.Forms.Button btnGerenciarEncaminhamento;
+        private System.Windows.Forms.Button btnEncaminharAluno;
+        private System.Windows.Forms.Button btnGerarRelatorioEncaminhamento;
     }
 }

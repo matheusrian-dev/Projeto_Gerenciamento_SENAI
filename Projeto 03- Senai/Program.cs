@@ -16,7 +16,7 @@ namespace Projeto_03__Senai
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new FormEncaminharAluno());
         }
     }
 }

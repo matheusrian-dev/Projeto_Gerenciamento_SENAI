@@ -99,6 +99,18 @@
     <Compile Include="FormGerenciarEncaminhamento.Designer.cs">
       <DependentUpon>FormGerenciarEncaminhamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddPedidoEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddPedidoEmpresa.Designer.cs">
+      <DependentUpon>FormAddPedidoEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGerenciarPedidoEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGerenciarPedidoEmpresa.Designer.cs">
+      <DependentUpon>FormGerenciarPedidoEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRelatorioAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +172,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGerenciarEncaminhamento.resx">
       <DependentUpon>FormGerenciarEncaminhamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddPedidoEmpresa.resx">
+      <DependentUpon>FormAddPedidoEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGerenciarPedidoEmpresa.resx">
+      <DependentUpon>FormGerenciarPedidoEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRelatorioAluno.resx">
       <DependentUpon>FormRelatorioAluno.cs</DependentUpon>

@@ -99,7 +99,15 @@ namespace Projeto_03__Senai
             return dt;
         }
 
-        public DataTable MostrarEmpresasCnpj(string cnpj)
+        public DataTable MostrarCNPJEmpresas()
+        {
+            bd.Conectar();
+            DataTable dt = bd.RetDataTable(String.Format("SELECT CNPJ FROM Empresa"));
+            bd.Desconectar();
+            return dt;
+        }
+
+        public DataTable MostrarEmpresasPorCnpj(string cnpj)
         {
             bd.Conectar();
             DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Empresa WHERE cnpj = '" + cnpj + "'"));

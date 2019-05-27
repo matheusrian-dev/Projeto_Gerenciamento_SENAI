@@ -167,3 +167,6 @@ C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\RdlCompi
 C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\RdlCompile.compiled
 C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto 03- Senai.csprojResolveAssemblyReference.cache
 C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto_03__Senai.FormEncaminharAluno.resources
+C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto_03__Senai.FormGerenciarEncaminhamento.resources
+C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto_03__Senai.FormAddPedidoEmpresa.resources
+C:\Users\ti20\Desktop\Projeto 03\Projeto-03\Projeto 03- Senai\obj\Debug\Projeto_03__Senai.FormRelatorioEncaminhar.resources

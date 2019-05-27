@@ -45,6 +45,7 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnShowEditar = new System.Windows.Forms.Button();
+            this.btnNecessidadeEmpresa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -189,7 +190,7 @@
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCadastrar.Location = new System.Drawing.Point(372, 241);
+            this.btnCadastrar.Location = new System.Drawing.Point(69, 241);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(123, 46);
             this.btnCadastrar.TabIndex = 17;
@@ -213,7 +214,7 @@
             this.btnShowEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowEditar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowEditar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnShowEditar.Location = new System.Drawing.Point(501, 241);
+            this.btnShowEditar.Location = new System.Drawing.Point(198, 241);
             this.btnShowEditar.Name = "btnShowEditar";
             this.btnShowEditar.Size = new System.Drawing.Size(123, 46);
             this.btnShowEditar.TabIndex = 19;
@@ -221,11 +222,26 @@
             this.btnShowEditar.UseVisualStyleBackColor = false;
             this.btnShowEditar.Click += new System.EventHandler(this.btnShowEditar_Click);
             // 
+            // btnNecessidadeEmpresa
+            // 
+            this.btnNecessidadeEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnNecessidadeEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNecessidadeEmpresa.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNecessidadeEmpresa.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnNecessidadeEmpresa.Location = new System.Drawing.Point(449, 241);
+            this.btnNecessidadeEmpresa.Name = "btnNecessidadeEmpresa";
+            this.btnNecessidadeEmpresa.Size = new System.Drawing.Size(123, 46);
+            this.btnNecessidadeEmpresa.TabIndex = 20;
+            this.btnNecessidadeEmpresa.Text = "Necessidades das Empresas";
+            this.btnNecessidadeEmpresa.UseVisualStyleBackColor = false;
+            this.btnNecessidadeEmpresa.Click += new System.EventHandler(this.btnNecessidadeEmpresa_Click);
+            // 
             // UserControlGerenciarEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.btnNecessidadeEmpresa);
             this.Controls.Add(this.btnShowEditar);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtResponsavel);
@@ -270,5 +286,6 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnShowEditar;
+        private System.Windows.Forms.Button btnNecessidadeEmpresa;
     }
 }

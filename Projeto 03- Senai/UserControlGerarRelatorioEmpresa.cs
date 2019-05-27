@@ -46,7 +46,7 @@ namespace Projeto_03__Senai
 
         private void btnGerarTodasEmpresas_Click(object sender, EventArgs e)
         {
-            DataTable validTable = empresa.MostrarEmpresasCnpj(mskGerarPorCNPJ.Text);
+            DataTable validTable = empresa.MostrarEmpresasPorCnpj(mskGerarPorCNPJ.Text);
             if (validTable.Rows.Count == 0)
             {
                 MessageBox.Show("Não Há empresas cadastradas no sistema, por favor registre ao menos uma empresa antes de realizar uma busca");
@@ -64,7 +64,7 @@ namespace Projeto_03__Senai
 
         private void btnGerarPorCNPJ_Click(object sender, EventArgs e)
         {
-            DataTable validTable = empresa.MostrarEmpresasCnpj(mskGerarPorCNPJ.Text);
+            DataTable validTable = empresa.MostrarEmpresasPorCnpj(mskGerarPorCNPJ.Text);
             if (validTable.Rows.Count == 0)
             {
                 MessageBox.Show("CNPJ não encontrado no sistema, verifique se digitou corretamente.");
@@ -73,7 +73,7 @@ namespace Projeto_03__Senai
             {
                 ReportDataSource reportsource = new ReportDataSource();
                 reportsource.Name = "DataSetEmpresa";
-                reportsource.Value = empresa.MostrarEmpresasCnpj(mskGerarPorCNPJ.Text);
+                reportsource.Value = empresa.MostrarEmpresasPorCnpj(mskGerarPorCNPJ.Text);
                 reportViewer1.LocalReport.DataSources.Clear();
                 reportViewer1.LocalReport.DataSources.Add(reportsource);
                 reportViewer1.RefreshReport();

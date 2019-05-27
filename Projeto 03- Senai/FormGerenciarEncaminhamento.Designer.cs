@@ -77,7 +77,9 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtRABusca = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnRemoverEncaminhamento = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -138,7 +140,7 @@
             this.btnEncaminharAluno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEncaminharAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEncaminharAluno.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnEncaminharAluno.Location = new System.Drawing.Point(490, 348);
+            this.btnEncaminharAluno.Location = new System.Drawing.Point(400, 348);
             this.btnEncaminharAluno.Name = "btnEncaminharAluno";
             this.btnEncaminharAluno.Size = new System.Drawing.Size(167, 33);
             this.btnEncaminharAluno.TabIndex = 159;
@@ -519,6 +521,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnRemoverEncaminhamento);
             this.groupBox3.Location = new System.Drawing.Point(10, 116);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1132, 271);
@@ -543,6 +546,20 @@
             this.label1.Size = new System.Drawing.Size(218, 16);
             this.label1.TabIndex = 161;
             this.label1.Text = "Informe o RA do Aluno desejado:";
+            // 
+            // btnRemoverEncaminhamento
+            // 
+            this.btnRemoverEncaminhamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRemoverEncaminhamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoverEncaminhamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoverEncaminhamento.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnRemoverEncaminhamento.Location = new System.Drawing.Point(566, 232);
+            this.btnRemoverEncaminhamento.Name = "btnRemoverEncaminhamento";
+            this.btnRemoverEncaminhamento.Size = new System.Drawing.Size(167, 33);
+            this.btnRemoverEncaminhamento.TabIndex = 160;
+            this.btnRemoverEncaminhamento.Text = "Remover Encaminhamento";
+            this.btnRemoverEncaminhamento.UseVisualStyleBackColor = false;
+            this.btnRemoverEncaminhamento.Click += new System.EventHandler(this.btnRemoverEncaminhamento_Click);
             // 
             // FormGerenciarEncaminhamento
             // 
@@ -602,6 +619,7 @@
             this.Text = "FormGerenciarEncaminhamento";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -657,5 +675,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox txtRABusca;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRemoverEncaminhamento;
     }
 }

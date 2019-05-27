@@ -192,5 +192,11 @@ namespace Projeto_03__Senai
             }
             
         }
+
+        private void btnNecessidadeEmpresa_Click(object sender, EventArgs e)
+        {
+            FormAddPedidoEmpresa necessidade = new FormAddPedidoEmpresa();
+            necessidade.Show();
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEncaminharAluno));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnBuscarArquivo = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             this.btnBuscarCNPJ = new System.Windows.Forms.Button();
             this.mskBuscarPorCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnReverterBuscas = new System.Windows.Forms.Button();
             this.mskCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.mskTelefoneEmpresa = new System.Windows.Forms.MaskedTextBox();
             this.txtEmailEmpresa = new System.Windows.Forms.TextBox();
@@ -95,12 +97,14 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnEncaminharAluno = new System.Windows.Forms.Button();
             this.txtResponsavel = new System.Windows.Forms.TextBox();
-            this.btnReverterBuscas = new System.Windows.Forms.Button();
+            this.btnNecessidade = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -384,6 +388,20 @@
             this.groupBox2.TabIndex = 75;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados da Empresa";
+            // 
+            // btnReverterBuscas
+            // 
+            this.btnReverterBuscas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnReverterBuscas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReverterBuscas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReverterBuscas.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnReverterBuscas.Location = new System.Drawing.Point(252, 15);
+            this.btnReverterBuscas.Name = "btnReverterBuscas";
+            this.btnReverterBuscas.Size = new System.Drawing.Size(125, 23);
+            this.btnReverterBuscas.TabIndex = 118;
+            this.btnReverterBuscas.Text = "Reverter Busca";
+            this.btnReverterBuscas.UseVisualStyleBackColor = false;
+            this.btnReverterBuscas.Click += new System.EventHandler(this.btnReverterBuscas_Click);
             // 
             // mskCNPJ
             // 
@@ -765,6 +783,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnNecessidade);
             this.groupBox3.Location = new System.Drawing.Point(42, 430);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1132, 271);
@@ -795,19 +814,17 @@
             this.txtResponsavel.Size = new System.Drawing.Size(375, 22);
             this.txtResponsavel.TabIndex = 89;
             // 
-            // btnReverterBuscas
+            // btnNecessidade
             // 
-            this.btnReverterBuscas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnReverterBuscas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReverterBuscas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReverterBuscas.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnReverterBuscas.Location = new System.Drawing.Point(252, 15);
-            this.btnReverterBuscas.Name = "btnReverterBuscas";
-            this.btnReverterBuscas.Size = new System.Drawing.Size(125, 23);
-            this.btnReverterBuscas.TabIndex = 118;
-            this.btnReverterBuscas.Text = "Reverter Busca";
-            this.btnReverterBuscas.UseVisualStyleBackColor = false;
-            this.btnReverterBuscas.Click += new System.EventHandler(this.btnReverterBuscas_Click);
+            this.btnNecessidade.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNecessidade.BackgroundImage")));
+            this.btnNecessidade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNecessidade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNecessidade.Location = new System.Drawing.Point(1094, 235);
+            this.btnNecessidade.Name = "btnNecessidade";
+            this.btnNecessidade.Size = new System.Drawing.Size(30, 30);
+            this.btnNecessidade.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.btnNecessidade, "Visualizar Necessidades da Empresa.");
+            this.btnNecessidade.UseVisualStyleBackColor = true;
             // 
             // FormEncaminharAluno
             // 
@@ -890,6 +907,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -964,5 +982,7 @@
         private System.Windows.Forms.Button btnEncaminharAluno;
         private System.Windows.Forms.TextBox txtResponsavel;
         private System.Windows.Forms.Button btnReverterBuscas;
+        private System.Windows.Forms.Button btnNecessidade;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -320,7 +320,7 @@ namespace Projeto_03__Senai
 
         private void btnBuscarCNPJ_Click(object sender, EventArgs e)
         {
-            dataGridView2.DataSource = empresa.MostrarEmpresasCnpj(mskBuscarPorCNPJ.Text);
+            dataGridView2.DataSource = empresa.MostrarEmpresasPorCnpj(mskBuscarPorCNPJ.Text);
         }
 
         private void btnReverterBuscas_Click(object sender, EventArgs e)

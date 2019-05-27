@@ -122,7 +122,7 @@ namespace Projeto_03__Senai
                 empresa.RetEmpresaCNPJ(mskBuscarCNPJ.Text);
                 if(empresa.RetEmpresaCNPJ(mskBuscarCNPJ.Text) == true)
                 {
-                    empresa.MostrarEmpresasCnpj(mskBuscarCNPJ.Text);
+                    empresa.MostrarEmpresasPorCnpj(mskBuscarCNPJ.Text);
                     mskCNPJ.Text = empresa.Cnpj;
                     txtNome.Text = empresa.NomeEmpresa;
                     mskTelefone.Text = empresa.TelefoneEmpresa;

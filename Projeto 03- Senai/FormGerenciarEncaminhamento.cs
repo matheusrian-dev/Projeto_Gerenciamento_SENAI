@@ -44,6 +44,11 @@ namespace Projeto_03__Senai
             MouPosY = e.Y;
         }
 
+        private void btnRemoverEncaminhamento_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;

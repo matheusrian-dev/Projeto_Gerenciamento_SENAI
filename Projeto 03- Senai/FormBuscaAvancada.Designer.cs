@@ -51,7 +51,6 @@
             this.btnFiltrarPorGenero = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnGerarRelatorioEncaminhamento = new System.Windows.Forms.Button();
-            this.btnExcluirEncaminhamento = new System.Windows.Forms.Button();
             this.btnGerenciarEncaminhamento = new System.Windows.Forms.Button();
             this.btnEncaminharAluno = new System.Windows.Forms.Button();
             this.btnUndoFilter = new System.Windows.Forms.Button();
@@ -302,7 +301,6 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnGerarRelatorioEncaminhamento);
-            this.groupBox2.Controls.Add(this.btnExcluirEncaminhamento);
             this.groupBox2.Controls.Add(this.btnGerenciarEncaminhamento);
             this.groupBox2.Controls.Add(this.btnEncaminharAluno);
             this.groupBox2.Controls.Add(this.btnUndoFilter);
@@ -336,19 +334,6 @@
             this.btnGerarRelatorioEncaminhamento.UseVisualStyleBackColor = false;
             this.btnGerarRelatorioEncaminhamento.Click += new System.EventHandler(this.btnGerarRelatorioEncaminhamento_Click);
             // 
-            // btnExcluirEncaminhamento
-            // 
-            this.btnExcluirEncaminhamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnExcluirEncaminhamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluirEncaminhamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluirEncaminhamento.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnExcluirEncaminhamento.Location = new System.Drawing.Point(157, 405);
-            this.btnExcluirEncaminhamento.Name = "btnExcluirEncaminhamento";
-            this.btnExcluirEncaminhamento.Size = new System.Drawing.Size(131, 38);
-            this.btnExcluirEncaminhamento.TabIndex = 60;
-            this.btnExcluirEncaminhamento.Text = "Excluir Encaminhamento";
-            this.btnExcluirEncaminhamento.UseVisualStyleBackColor = false;
-            // 
             // btnGerenciarEncaminhamento
             // 
             this.btnGerenciarEncaminhamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -357,7 +342,7 @@
             this.btnGerenciarEncaminhamento.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnGerenciarEncaminhamento.Location = new System.Drawing.Point(18, 405);
             this.btnGerenciarEncaminhamento.Name = "btnGerenciarEncaminhamento";
-            this.btnGerenciarEncaminhamento.Size = new System.Drawing.Size(131, 38);
+            this.btnGerenciarEncaminhamento.Size = new System.Drawing.Size(269, 38);
             this.btnGerenciarEncaminhamento.TabIndex = 59;
             this.btnGerenciarEncaminhamento.Text = "Gerenciar Encaminhamento";
             this.btnGerenciarEncaminhamento.UseVisualStyleBackColor = false;
@@ -375,6 +360,7 @@
             this.btnEncaminharAluno.TabIndex = 58;
             this.btnEncaminharAluno.Text = "Encaminhar Aluno";
             this.btnEncaminharAluno.UseVisualStyleBackColor = false;
+            this.btnEncaminharAluno.Click += new System.EventHandler(this.btnEncaminharAluno_Click);
             // 
             // btnUndoFilter
             // 
@@ -443,7 +429,6 @@
         private System.Windows.Forms.Button btnFiltrarPorGenero;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnUndoFilter;
-        private System.Windows.Forms.Button btnExcluirEncaminhamento;
         private System.Windows.Forms.Button btnGerenciarEncaminhamento;
         private System.Windows.Forms.Button btnEncaminharAluno;
         private System.Windows.Forms.Button btnGerarRelatorioEncaminhamento;

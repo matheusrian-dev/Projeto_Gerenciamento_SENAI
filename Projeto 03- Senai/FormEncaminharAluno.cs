@@ -290,7 +290,31 @@ namespace Projeto_03__Senai
 
         private void btnEncaminharAluno_Click(object sender, EventArgs e)
         {
-
+            ClassEncaminhamento encaminhamento = new ClassEncaminhamento();
+            //Informações Pessoais do Aluno
+            encaminhamento.NomeAluno = txtNomeAluno.Text;
+            encaminhamento.CpfEncaminhar = mskCPFAluno.Text;
+            encaminhamento.RaEncaminhar = int.Parse(txtRAAluno.Text);
+            encaminhamento.RgEncaminhar = mskRGAluno.Text;
+            encaminhamento.EmailEncaminhar = txtEmailAluno.Text;
+            encaminhamento.TelefoneEncaminhar = mskTelefoneAluno.Text;
+            encaminhamento.CodTurmaEncaminhar = mskCodTurma.Text;
+            encaminhamento.SexoEncaminhar = mskSexoAluno.Text;
+            // Informações do Contrato
+            string periodoCompleto = cboPeriodo1.Text + " de " + dtpPeriodo2.Text;
+            encaminhamento.Periodo = periodoCompleto;
+            encaminhamento.TipoContrato = cboTipoContrato.Text;
+            encaminhamento.InicioContrato = dtpInicioContrato.Value;
+            encaminhamento.FimContrato = dtpFimContrato.Value;
+            // Informações da Empresa
+            encaminhamento.NomeFantasia = txtNomeFantasia.Text;
+            encaminhamento.TelefoneEmpresa2 = mskTelefoneEmpresa.Text;
+            encaminhamento.EmailEmpresa2 = txtEmailEmpresa.Text;
+            encaminhamento.EnderecoEmpresa = txtEnderecoEmpresa.Text;
+            encaminhamento.RazaoSocial2 = txtRazaoSocial.Text;
+            encaminhamento.Responsavel2 = txtResponsavel.Text;
+            encaminhamento.Empresa_Cnpj = mskCNPJ.Text;
+            encaminhamento.RegistrarEncaminhamento();
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -349,6 +373,11 @@ namespace Projeto_03__Senai
             txtEnderecoEmpresa.Text = dataGridView2.SelectedRows[0].Cells[3].Value.ToString();
             txtRazaoSocial.Text = dataGridView2.SelectedRows[0].Cells[2].Value.ToString();
             txtResponsavel.Text = dataGridView2.SelectedRows[0].Cells[6].Value.ToString();
+        }
+
+        private void btnMostrarNecessidade_Click(object sender, EventArgs e)
+        {
+            //Criar um Form para mostrar a Tabela com as necessidades registradas
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)

@@ -10,19 +10,22 @@ namespace Projeto_03__Senai
 {
     class ClassEncaminhamento
     {
-        public int CodEnturmar { get; set; }
+        // Informações do Aluno
+        public int CodEncaminhar { get; set; }
         public string NomeAluno { get; set; }
-        public string CpfEnturmar { get; set; }
-        public int RaEnturmar { get; set; }
-        public string RgEnturmar { get; set; }
-        public string EmailEnturmar { get; set; }
-        public string TelefoneEnturmar { get; set; }
-        public string CodigoEnturmar { get; set; }
-        public string SexoEnturmar { get; set; }
+        public string CpfEncaminhar { get; set; }
+        public int RaEncaminhar { get; set; }
+        public string RgEncaminhar { get; set; }
+        public string EmailEncaminhar { get; set; }
+        public string TelefoneEncaminhar { get; set; }
+        public string CodTurmaEncaminhar { get; set; }
+        public string SexoEncaminhar { get; set; }
+        // Informações do Contrato
         public string Periodo { get; set; }
         public string TipoContrato { get; set; }
         public DateTime InicioContrato { get; set; }
         public DateTime FimContrato { get; set; }
+        // Informações da Empresa
         public string NomeFantasia { get; set; }
         public string TelefoneEmpresa2 { get; set; }
         public string EmailEmpresa2 { get; set; }
@@ -43,9 +46,9 @@ namespace Projeto_03__Senai
                 string fimContratoShow = FimContrato.ToString("yyyy-MM-dd");
 
                 //Executar o Insert
-                bd.ExecutarComandosSql(String.Format("INSERT INTO Enturmar(codEnturmar, nomeAluno, cpfEnturmar, raEnturmar, rgEnturmar, emailEnturmar, telefoneEnturmar, codigoEnturmar, sexoEnturmar, periodo," +
+                bd.ExecutarComandosSql(String.Format("INSERT INTO Encaminhar(codEncaminhar, nomeAluno, cpfEncaminhar, raEncaminhar, rgEncaminhar, emailEncaminhar, telefoneEncaminhar, codTurmaEncaminhar, sexoEncaminhar, periodo," +
                     "tipoContrato, inicioContrato, fimContrato, nomeFantasia, telefoneEmpresa2, emailEmpresa2, enderecoEmpresa, razaoSocial2, responsavel2, Empresa_Cnpj )" +
-                    "VALUES (" + CodEnturmar + ", '" + NomeAluno + "', '" + CpfEnturmar + "', " + RaEnturmar + ", '" + RgEnturmar + "', '" + EmailEnturmar + "', '" + TelefoneEnturmar + "', '" + CodigoEnturmar + "', '" + SexoEnturmar + "'" +
+                    "VALUES (" + CodEncaminhar + ", '" + NomeAluno + "', '" + CpfEncaminhar + "', " + RaEncaminhar + ", '" + RgEncaminhar + "', '" + EmailEncaminhar + "', '" + TelefoneEncaminhar + "', '" + CodTurmaEncaminhar + "', '" + SexoEncaminhar + "'" +
                     " '" + Periodo + "', '" + TipoContrato + "', '" + inicioContratoShow + "', '" + fimContratoShow + "', '" + NomeFantasia + "', '" + TelefoneEmpresa2 + "' " +
                     " '" + EmailEmpresa2 + "', '" + EnderecoEmpresa + "', '" + RazaoSocial2 + "', '" + Responsavel2 + "', '" + Empresa_Cnpj + "')"));
 
@@ -62,7 +65,7 @@ namespace Projeto_03__Senai
             }
         }
 
-        public bool EditarEncaminhamento(int codEnturmar)
+        public bool EditarEncaminhamento(int codEncaminhar)
         {
             try
             {
@@ -73,11 +76,11 @@ namespace Projeto_03__Senai
 
                 //Executar o Insert
                 bd.ExecutarComandosSql(String.Format("Update Enturmar SET " +
-                    " nomeAluno = '" + NomeAluno + "', cpfEnturmar = '" + CpfEnturmar + "', raEnturmar = " + RaEnturmar + ", rgEnturmar = '" + RgEnturmar + "', emailEnturmar = '" + EmailEnturmar + "', telefoneEnturmar = '" + TelefoneEnturmar + "' " +
-                    " codigoEnturmar = '" + CodigoEnturmar + "', sexoEnturmar = '" + SexoEnturmar + "', periodo = '" + Periodo + "', tipoContrato = '" + TipoContrato + "', inicioContrato = '" + inicioContratoShow + "' " +
+                    " nomeAluno = '" + NomeAluno + "', cpfEncaminhar = '" + CpfEncaminhar + "', raEncaminhar = " + RaEncaminhar + ", rgEncaminhar = '" + RgEncaminhar + "', emailEncaminhar = '" + EmailEncaminhar + "', telefoneEncaminhar = '" + TelefoneEncaminhar + "' " +
+                    " codTurmaEncaminhar = '" + CodTurmaEncaminhar + "', sexoEnturmar = '" + SexoEncaminhar + "', periodo = '" + Periodo + "', tipoContrato = '" + TipoContrato + "', inicioContrato = '" + inicioContratoShow + "' " +
                     " fimContrato = '" + fimContratoShow + "', nomeFantasia = '" + NomeFantasia + "', telefoneEmpresa2 = '" + TelefoneEmpresa2 + "', emailEmpresa2 = '" + EmailEmpresa2 + "', enderecoEmpresa = '" + EnderecoEmpresa + "' " +
                     " razaoSocial2 = '" + RazaoSocial2 + "', responsavel2 = '" + Responsavel2 + "',  Empresa_Cnpj = '" + Empresa_Cnpj + "'" +
-                    " WHERE codEnturmar LIKE " + codEnturmar));
+                    " WHERE codEnturmar LIKE " + codEncaminhar));
 
                 //Desconectar
                 bd.Desconectar();
@@ -95,7 +98,7 @@ namespace Projeto_03__Senai
         public void ExcluirEncaminhamento()
         {
             bd.Conectar();
-            bd.ExecutarComandosSql(String.Format("DELETE FROM Enturmar WHERE codEnturmar = '" + CodEnturmar + "'"));
+            bd.ExecutarComandosSql(String.Format("DELETE FROM Encaminhar WHERE codEncaminhar = '" + CodEncaminhar + "'"));
             bd.Desconectar();
             MessageBox.Show("Encaminhamento Excluido com Sucesso!");
 
@@ -104,7 +107,7 @@ namespace Projeto_03__Senai
         public DataTable MostrarEncaminhamento()
         {
             bd.Conectar();
-            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Encaminhamento"));
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Encaminhar"));
             bd.Desconectar();
             return dt;
         }
@@ -112,7 +115,7 @@ namespace Projeto_03__Senai
         public DataTable MostrarEncaminhamentoRa()
         {
             bd.Conectar();
-            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Encaminhamento WHERE raEnturmar = " + RaEnturmar + ""));
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Encaminhar WHERE raEncaminhar = " + RaEncaminhar + ""));
             bd.Desconectar();
             return dt;
         }
@@ -120,9 +123,11 @@ namespace Projeto_03__Senai
         public DataTable MostrarEncaminhamentoCnpj()
         {
             bd.Conectar();
-            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Encaminhamento WHERE Empresa_cnpj = " + Empresa_Cnpj + ""));
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Encaminhar WHERE Empresa_cnpj = " + Empresa_Cnpj + ""));
             bd.Desconectar();
             return dt;
         }
+
     }
 }
+

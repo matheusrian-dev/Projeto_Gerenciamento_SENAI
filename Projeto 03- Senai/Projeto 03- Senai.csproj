@@ -117,11 +117,11 @@
     <Compile Include="FormRelatorioAluno.Designer.cs">
       <DependentUpon>FormRelatorioAluno.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRelatorioEncaminhar.cs">
+    <Compile Include="FormGerarRelatorioEncaminhar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRelatorioEncaminhar.Designer.cs">
-      <DependentUpon>FormRelatorioEncaminhar.cs</DependentUpon>
+    <Compile Include="FormGerarRelatorioEncaminhar.Designer.cs">
+      <DependentUpon>FormGerarRelatorioEncaminhar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -182,8 +182,8 @@
     <EmbeddedResource Include="FormRelatorioAluno.resx">
       <DependentUpon>FormRelatorioAluno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRelatorioEncaminhar.resx">
-      <DependentUpon>FormRelatorioEncaminhar.cs</DependentUpon>
+    <EmbeddedResource Include="FormGerarRelatorioEncaminhar.resx">
+      <DependentUpon>FormGerarRelatorioEncaminhar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

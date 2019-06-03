@@ -95,9 +95,9 @@
             this.dtpPeriodo2 = new System.Windows.Forms.DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnMostrarNecessidade = new System.Windows.Forms.Button();
             this.btnEncaminharAluno = new System.Windows.Forms.Button();
             this.txtResponsavel = new System.Windows.Forms.TextBox();
-            this.btnNecessidade = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -783,13 +783,26 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnNecessidade);
+            this.groupBox3.Controls.Add(this.btnMostrarNecessidade);
             this.groupBox3.Location = new System.Drawing.Point(42, 430);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1132, 271);
             this.groupBox3.TabIndex = 116;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Formulário do Registro de Encaminhamento do Aluno";
+            // 
+            // btnMostrarNecessidade
+            // 
+            this.btnMostrarNecessidade.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMostrarNecessidade.BackgroundImage")));
+            this.btnMostrarNecessidade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMostrarNecessidade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarNecessidade.Location = new System.Drawing.Point(1094, 235);
+            this.btnMostrarNecessidade.Name = "btnMostrarNecessidade";
+            this.btnMostrarNecessidade.Size = new System.Drawing.Size(30, 30);
+            this.btnMostrarNecessidade.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.btnMostrarNecessidade, "Visualizar Necessidades da Empresa.");
+            this.btnMostrarNecessidade.UseVisualStyleBackColor = true;
+            this.btnMostrarNecessidade.Click += new System.EventHandler(this.btnMostrarNecessidade_Click);
             // 
             // btnEncaminharAluno
             // 
@@ -814,24 +827,12 @@
             this.txtResponsavel.Size = new System.Drawing.Size(375, 22);
             this.txtResponsavel.TabIndex = 89;
             // 
-            // btnNecessidade
-            // 
-            this.btnNecessidade.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNecessidade.BackgroundImage")));
-            this.btnNecessidade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnNecessidade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNecessidade.Location = new System.Drawing.Point(1094, 235);
-            this.btnNecessidade.Name = "btnNecessidade";
-            this.btnNecessidade.Size = new System.Drawing.Size(30, 30);
-            this.btnNecessidade.TabIndex = 0;
-            this.toolTip1.SetToolTip(this.btnNecessidade, "Visualizar Necessidades da Empresa.");
-            this.btnNecessidade.UseVisualStyleBackColor = true;
-            // 
             // FormEncaminharAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1217, 711);
+            this.ClientSize = new System.Drawing.Size(1217, 713);
             this.Controls.Add(this.btnEncaminharAluno);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.dtpPeriodo2);
@@ -982,7 +983,7 @@
         private System.Windows.Forms.Button btnEncaminharAluno;
         private System.Windows.Forms.TextBox txtResponsavel;
         private System.Windows.Forms.Button btnReverterBuscas;
-        private System.Windows.Forms.Button btnNecessidade;
+        private System.Windows.Forms.Button btnMostrarNecessidade;
         private System.Windows.Forms.ToolTip toolTip1;
     }
 }

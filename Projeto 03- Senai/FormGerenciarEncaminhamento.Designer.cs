@@ -75,9 +75,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnRemoverEncaminhamento = new System.Windows.Forms.Button();
             this.txtRABusca = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnRemoverEncaminhamento = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -529,24 +530,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Formulário do Registro de Encaminhamento do Aluno";
             // 
-            // txtRABusca
-            // 
-            this.txtRABusca.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRABusca.Location = new System.Drawing.Point(11, 79);
-            this.txtRABusca.Name = "txtRABusca";
-            this.txtRABusca.Size = new System.Drawing.Size(375, 22);
-            this.txtRABusca.TabIndex = 160;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 16);
-            this.label1.TabIndex = 161;
-            this.label1.Text = "Informe o RA do Aluno desejado:";
-            // 
             // btnRemoverEncaminhamento
             // 
             this.btnRemoverEncaminhamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -561,12 +544,45 @@
             this.btnRemoverEncaminhamento.UseVisualStyleBackColor = false;
             this.btnRemoverEncaminhamento.Click += new System.EventHandler(this.btnRemoverEncaminhamento_Click);
             // 
+            // txtRABusca
+            // 
+            this.txtRABusca.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRABusca.Location = new System.Drawing.Point(11, 79);
+            this.txtRABusca.Name = "txtRABusca";
+            this.txtRABusca.Size = new System.Drawing.Size(214, 22);
+            this.txtRABusca.TabIndex = 160;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(7, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(218, 16);
+            this.label1.TabIndex = 161;
+            this.label1.Text = "Informe o RA do Aluno desejado:";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnBuscar.Location = new System.Drawing.Point(231, 69);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(64, 33);
+            this.btnBuscar.TabIndex = 162;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // FormGerenciarEncaminhamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1152, 409);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtRABusca);
             this.Controls.Add(this.btnEncaminharAluno);
@@ -676,5 +692,6 @@
         private System.Windows.Forms.TextBox txtRABusca;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRemoverEncaminhamento;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

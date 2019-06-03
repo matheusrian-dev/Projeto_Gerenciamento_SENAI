@@ -283,6 +283,7 @@
             this.btnRegistrarNecessidade.TabIndex = 118;
             this.btnRegistrarNecessidade.Text = "Registrar Necessidade da Empresa";
             this.btnRegistrarNecessidade.UseVisualStyleBackColor = false;
+            this.btnRegistrarNecessidade.Click += new System.EventHandler(this.btnRegistrarNecessidade_Click);
             // 
             // btnGerenciarNecessidade
             // 
@@ -296,6 +297,7 @@
             this.btnGerenciarNecessidade.TabIndex = 119;
             this.btnGerenciarNecessidade.Text = "Gerenciar Necessidades Existentes";
             this.btnGerenciarNecessidade.UseVisualStyleBackColor = false;
+            this.btnGerenciarNecessidade.Click += new System.EventHandler(this.btnGerenciarNecessidade_Click);
             // 
             // FormAddPedidoEmpresa
             // 

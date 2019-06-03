@@ -31,5 +31,16 @@ namespace Projeto_03__Senai
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnRegistrarNecessidade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGerenciarNecessidade_Click(object sender, EventArgs e)
+        {
+            FormGerenciarPedidoEmpresa gerenciarPedido = new FormGerenciarPedidoEmpresa();
+            gerenciarPedido.Show();
+        }
     }
 }

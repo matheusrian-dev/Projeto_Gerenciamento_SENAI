@@ -17,7 +17,7 @@ CREATE TABLE Empresa(
  cnpj			      VARCHAR(22) PRIMARY KEY NOT NULL,
  nomeEmpresa          VARCHAR(90)			  NULL,
  razaoSocial          VARCHAR(100)		      NULL,
- endereco             VARCHAR(100)			  NULL,
+ endereco             VARCHAR(300)			  NULL,
  telefoneEmpresa      VARCHAR(20)			  NULL,
  emailEmpresa	      VARCHAR(70)			  NULL,
  responsavel          VARCHAR(100)			  NULL,
@@ -56,29 +56,43 @@ CREATE TABLE Aluno(
 	REFERENCES Empresa(cnpj)
 );
 
-CREATE TABLE Enturmar(
-	codEnturmar			INT PRIMARY KEY IDENTITY(1,1),
-	nomeAluno			VARCHAR(90)		NULL,
-	cpfEnturmar			VARCHAR(20)		NULL,
-	raEnturmar			INT				NULL,
-	rgEnturmar          VARCHAR(20)	    NULL,		
-	emailEnturmar		VARCHAR(90)		NULL,
-	telefoneEnturmar	VARCHAR(20)		NULL,
-	codigoEnturmar		VARCHAR(30)		NULL,	
-	sexoEnturmar		VARCHAR(50)		NULL,
-	periodo				VARCHAR(200)	NULL,
-	tipoContrato		VARCHAR(50)		NULL,
-	inicioContrato		DATE			NULL,
-	fimContrato			DATE			NULL,	
-	nomeFantasia		VARCHAR(100)	NULL,
-	telefoneEmpresa2	VARCHAR(15)		NULL,
-	emailEmpresa2		VARCHAR(70)		NULL,
-	enderecoEmpresa		VARCHAR(100)	NULL,
-	razaoSocial2		VARCHAR(100)	NULL,	
-	responsavel2		VARCHAR(100)	NULL,
-	Empresa_cnpj		VARCHAR(22)		NOT NULL,
+CREATE TABLE Encaminhar(
+	codEncaminhar		INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	nomeAluno			VARCHAR(90)					  NULL,
+	cpfEncaminhar		VARCHAR(15)					  NULL,
+	raEncaminhar		INT							  NULL,
+	rgEncaminhar	    VARCHAR(20)					  NULL,
+	emailEncaminhar		VARCHAR(90)					  NULL,
+	telefoneEncaminhar  VARCHAR(20)					  NULL,
+	codTurmaEncaminhar  VARCHAR(30)					  NULL,	
+	sexoEncaminhar      VARCHAR(50)					  NULL,
+	periodo				VARCHAR(200)				  NULL,
+	tipoContrato		VARCHAR(50)					  NULL,
+	inicioContrato		DATE						  NULL,
+	fimContrato			DATE						  NULL,	
+	nomeFantasia		VARCHAR(100)				  NULL,
+	telefoneEmpresa2	VARCHAR(15)					  NULL,
+	emailEmpresa2		VARCHAR(70)					  NULL,
+	enderecoEmpresa		VARCHAR(300)				  NULL,
+	razaoSocial2		VARCHAR(100)				  NULL,	
+	responsavel2		VARCHAR(100)				  NULL,
+	Empresa_cnpj		VARCHAR(22)					  NULL,
 	FOREIGN KEY (Empresa_cnpj)
 		REFERENCES Empresa(cnpj)	
+);
+
+CREATE TABLE NecessidadeEmpresa(
+ codNecessidade				 INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+ nomeEmpresaC				 VARCHAR(100)				   NULL,
+ dataRequerimento			 DATE						   NULL,	
+ qtdContratoFaseEscolar		 INT						   NULL,
+ qtdContratoPraticaSequecial INT						   NULL,
+ qtdContratoConcomitante     INT						   NULL,	
+ qtdContratoSequecial		 INT						   NULL,
+ qtdContratoDual			 INT						   NULL,
+ Empresa_cnpj				 VARCHAR(22)				   NULL,
+ FOREIGN KEY (Empresa_cnpj)
+	REFERENCES Empresa(cnpj)	
 );
 
 --SELECT * FROM Aluno;

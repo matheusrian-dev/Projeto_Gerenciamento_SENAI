@@ -26,5 +26,20 @@ namespace Projeto_03__Senai
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnModificarNecessidade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExcluirNecessidade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscarEmpresaCNPJ_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

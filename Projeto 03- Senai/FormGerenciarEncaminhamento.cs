@@ -19,6 +19,8 @@ namespace Projeto_03__Senai
             InitializeComponent();
         }
 
+        ClassEncaminhamento encaminhamento = new ClassEncaminhamento();
+
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -45,6 +47,11 @@ namespace Projeto_03__Senai
         }
 
         private void btnRemoverEncaminhamento_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
 
         }

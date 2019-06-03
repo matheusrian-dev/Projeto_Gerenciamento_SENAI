@@ -367,7 +367,7 @@ namespace Projeto_03__Senai
 
         private void btnGerarRelatorioEncaminhamento_Click(object sender, EventArgs e)
         {
-            FormRelatorioEncaminhar encaminhar = new FormRelatorioEncaminhar();
+            FormGerarRelatorioEncaminhar encaminhar = new FormGerarRelatorioEncaminhar();
             encaminhar.Show();
         }
 
@@ -375,6 +375,12 @@ namespace Projeto_03__Senai
         {
             FormGerenciarEncaminhamento gerenciarEncaminhamento = new FormGerenciarEncaminhamento();
             gerenciarEncaminhamento.Show();
+        }
+
+        private void btnEncaminharAluno_Click(object sender, EventArgs e)
+        {
+            FormEncaminharAluno encaminharAluno = new FormEncaminharAluno();
+            encaminharAluno.Show();
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)

@@ -1,6 +1,6 @@
 ﻿namespace Projeto_03__Senai
 {
-    partial class FormRelatorioEncaminhar
+    partial class FormGerarRelatorioEncaminhar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRelatorioEncaminhar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGerarRelatorioEncaminhar));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -40,12 +40,10 @@
             this.txtFiltrarRA = new System.Windows.Forms.TextBox();
             this.txtFiltrarTurma = new System.Windows.Forms.TextBox();
             this.btnFiltrarTurma = new System.Windows.Forms.Button();
-            this.txtFiltrarPorIdade = new System.Windows.Forms.TextBox();
-            this.btnFiltrarPorIdade = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFiltrarPorEmpresa = new System.Windows.Forms.Button();
             this.mskFiltrarCNPJ = new System.Windows.Forms.MaskedTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnGerarRelatorioCompleto = new System.Windows.Forms.Button();
+            this.btnGerarRelatorioParcial = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -113,7 +111,7 @@
             // txtFiltrarPorGenero
             // 
             this.txtFiltrarPorGenero.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltrarPorGenero.Location = new System.Drawing.Point(510, 312);
+            this.txtFiltrarPorGenero.Location = new System.Drawing.Point(510, 253);
             this.txtFiltrarPorGenero.Name = "txtFiltrarPorGenero";
             this.txtFiltrarPorGenero.Size = new System.Drawing.Size(165, 22);
             this.txtFiltrarPorGenero.TabIndex = 61;
@@ -130,6 +128,7 @@
             this.btnFiltrarRA.TabIndex = 57;
             this.btnFiltrarRA.Text = "Filtrar por RA";
             this.btnFiltrarRA.UseVisualStyleBackColor = false;
+            this.btnFiltrarRA.Click += new System.EventHandler(this.btnFiltrarRA_Click);
             // 
             // btnFiltrarPorGenero
             // 
@@ -137,12 +136,13 @@
             this.btnFiltrarPorGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarPorGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarPorGenero.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFiltrarPorGenero.Location = new System.Drawing.Point(681, 297);
+            this.btnFiltrarPorGenero.Location = new System.Drawing.Point(681, 238);
             this.btnFiltrarPorGenero.Name = "btnFiltrarPorGenero";
             this.btnFiltrarPorGenero.Size = new System.Drawing.Size(84, 53);
             this.btnFiltrarPorGenero.TabIndex = 60;
             this.btnFiltrarPorGenero.Text = "Filtrar Alunos por Gênero";
             this.btnFiltrarPorGenero.UseVisualStyleBackColor = false;
+            this.btnFiltrarPorGenero.Click += new System.EventHandler(this.btnFiltrarPorGenero_Click);
             // 
             // txtFiltrarRA
             // 
@@ -155,7 +155,7 @@
             // txtFiltrarTurma
             // 
             this.txtFiltrarTurma.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltrarTurma.Location = new System.Drawing.Point(510, 194);
+            this.txtFiltrarTurma.Location = new System.Drawing.Point(510, 135);
             this.txtFiltrarTurma.Name = "txtFiltrarTurma";
             this.txtFiltrarTurma.Size = new System.Drawing.Size(165, 22);
             this.txtFiltrarTurma.TabIndex = 58;
@@ -166,80 +166,63 @@
             this.btnFiltrarTurma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarTurma.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFiltrarTurma.Location = new System.Drawing.Point(681, 179);
+            this.btnFiltrarTurma.Location = new System.Drawing.Point(681, 120);
             this.btnFiltrarTurma.Name = "btnFiltrarTurma";
             this.btnFiltrarTurma.Size = new System.Drawing.Size(84, 53);
             this.btnFiltrarTurma.TabIndex = 59;
             this.btnFiltrarTurma.Text = "Filtrar por Turma";
             this.btnFiltrarTurma.UseVisualStyleBackColor = false;
+            this.btnFiltrarTurma.Click += new System.EventHandler(this.btnFiltrarTurma_Click);
             // 
-            // txtFiltrarPorIdade
+            // btnFiltrarPorEmpresa
             // 
-            this.txtFiltrarPorIdade.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltrarPorIdade.Location = new System.Drawing.Point(510, 135);
-            this.txtFiltrarPorIdade.Name = "txtFiltrarPorIdade";
-            this.txtFiltrarPorIdade.Size = new System.Drawing.Size(165, 22);
-            this.txtFiltrarPorIdade.TabIndex = 63;
-            // 
-            // btnFiltrarPorIdade
-            // 
-            this.btnFiltrarPorIdade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnFiltrarPorIdade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltrarPorIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrarPorIdade.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFiltrarPorIdade.Location = new System.Drawing.Point(681, 120);
-            this.btnFiltrarPorIdade.Name = "btnFiltrarPorIdade";
-            this.btnFiltrarPorIdade.Size = new System.Drawing.Size(84, 53);
-            this.btnFiltrarPorIdade.TabIndex = 62;
-            this.btnFiltrarPorIdade.Text = "Filtrar Alunos por Idade ";
-            this.btnFiltrarPorIdade.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(681, 238);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 53);
-            this.button1.TabIndex = 64;
-            this.button1.Text = "Filtrar Alunos por Empresa";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnFiltrarPorEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnFiltrarPorEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltrarPorEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrarPorEmpresa.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFiltrarPorEmpresa.Location = new System.Drawing.Point(681, 179);
+            this.btnFiltrarPorEmpresa.Name = "btnFiltrarPorEmpresa";
+            this.btnFiltrarPorEmpresa.Size = new System.Drawing.Size(84, 53);
+            this.btnFiltrarPorEmpresa.TabIndex = 64;
+            this.btnFiltrarPorEmpresa.Text = "Filtrar Alunos por Empresa";
+            this.btnFiltrarPorEmpresa.UseVisualStyleBackColor = false;
+            this.btnFiltrarPorEmpresa.Click += new System.EventHandler(this.btnFiltrarPorEmpresa_Click);
             // 
             // mskFiltrarCNPJ
             // 
-            this.mskFiltrarCNPJ.Location = new System.Drawing.Point(510, 256);
+            this.mskFiltrarCNPJ.Location = new System.Drawing.Point(510, 197);
             this.mskFiltrarCNPJ.Mask = "999,999,999/99999-99";
             this.mskFiltrarCNPJ.Name = "mskFiltrarCNPJ";
             this.mskFiltrarCNPJ.Size = new System.Drawing.Size(164, 20);
             this.mskFiltrarCNPJ.TabIndex = 84;
             // 
-            // button2
+            // btnGerarRelatorioCompleto
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(510, 365);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 53);
-            this.button2.TabIndex = 85;
-            this.button2.Text = "Gerar Relatório Completo";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnGerarRelatorioCompleto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnGerarRelatorioCompleto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGerarRelatorioCompleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGerarRelatorioCompleto.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGerarRelatorioCompleto.Location = new System.Drawing.Point(510, 365);
+            this.btnGerarRelatorioCompleto.Name = "btnGerarRelatorioCompleto";
+            this.btnGerarRelatorioCompleto.Size = new System.Drawing.Size(131, 53);
+            this.btnGerarRelatorioCompleto.TabIndex = 85;
+            this.btnGerarRelatorioCompleto.Text = "Gerar Relatório Completo";
+            this.btnGerarRelatorioCompleto.UseVisualStyleBackColor = false;
+            this.btnGerarRelatorioCompleto.Click += new System.EventHandler(this.btnGerarRelatorioCompleto_Click);
             // 
-            // button3
+            // btnGerarRelatorioParcial
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(647, 365);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(131, 53);
-            this.button3.TabIndex = 86;
-            this.button3.Text = "Gerar Relatório Parcial";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnGerarRelatorioParcial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnGerarRelatorioParcial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGerarRelatorioParcial.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGerarRelatorioParcial.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGerarRelatorioParcial.Location = new System.Drawing.Point(647, 365);
+            this.btnGerarRelatorioParcial.Name = "btnGerarRelatorioParcial";
+            this.btnGerarRelatorioParcial.Size = new System.Drawing.Size(131, 53);
+            this.btnGerarRelatorioParcial.TabIndex = 86;
+            this.btnGerarRelatorioParcial.Text = "Gerar Relatório Parcial";
+            this.btnGerarRelatorioParcial.UseVisualStyleBackColor = false;
+            this.btnGerarRelatorioParcial.Click += new System.EventHandler(this.btnGerarRelatorioParcial_Click);
             // 
             // FormRelatorioEncaminhar
             // 
@@ -247,12 +230,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(793, 443);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnGerarRelatorioParcial);
+            this.Controls.Add(this.btnGerarRelatorioCompleto);
             this.Controls.Add(this.mskFiltrarCNPJ);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtFiltrarPorIdade);
-            this.Controls.Add(this.btnFiltrarPorIdade);
+            this.Controls.Add(this.btnFiltrarPorEmpresa);
             this.Controls.Add(this.txtFiltrarPorGenero);
             this.Controls.Add(this.btnFiltrarRA);
             this.Controls.Add(this.btnFiltrarPorGenero);
@@ -287,11 +268,9 @@
         private System.Windows.Forms.TextBox txtFiltrarRA;
         private System.Windows.Forms.TextBox txtFiltrarTurma;
         private System.Windows.Forms.Button btnFiltrarTurma;
-        private System.Windows.Forms.TextBox txtFiltrarPorIdade;
-        private System.Windows.Forms.Button btnFiltrarPorIdade;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFiltrarPorEmpresa;
         private System.Windows.Forms.MaskedTextBox mskFiltrarCNPJ;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnGerarRelatorioCompleto;
+        private System.Windows.Forms.Button btnGerarRelatorioParcial;
     }
 }

@@ -56,6 +56,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnExcluirNecessidade = new System.Windows.Forms.Button();
             this.btnModificarNecessidade = new System.Windows.Forms.Button();
+            this.btnBuscarEmpresaCNPJ = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -285,7 +286,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(223, 78);
+            this.maskedTextBox1.Location = new System.Drawing.Point(15, 78);
             this.maskedTextBox1.Mask = "999,999,999/99999-99";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(123, 20);
@@ -295,7 +296,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(17, 81);
+            this.label9.Location = new System.Drawing.Point(12, 53);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(188, 16);
             this.label9.TabIndex = 106;
@@ -313,6 +314,7 @@
             this.btnExcluirNecessidade.TabIndex = 121;
             this.btnExcluirNecessidade.Text = "Excluir Necessidade da Empresa";
             this.btnExcluirNecessidade.UseVisualStyleBackColor = false;
+            this.btnExcluirNecessidade.Click += new System.EventHandler(this.btnExcluirNecessidade_Click);
             // 
             // btnModificarNecessidade
             // 
@@ -326,6 +328,21 @@
             this.btnModificarNecessidade.TabIndex = 120;
             this.btnModificarNecessidade.Text = "Alterar Necessidade da Empresa";
             this.btnModificarNecessidade.UseVisualStyleBackColor = false;
+            this.btnModificarNecessidade.Click += new System.EventHandler(this.btnModificarNecessidade_Click);
+            // 
+            // btnBuscarEmpresaCNPJ
+            // 
+            this.btnBuscarEmpresaCNPJ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBuscarEmpresaCNPJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarEmpresaCNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEmpresaCNPJ.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnBuscarEmpresaCNPJ.Location = new System.Drawing.Point(143, 73);
+            this.btnBuscarEmpresaCNPJ.Name = "btnBuscarEmpresaCNPJ";
+            this.btnBuscarEmpresaCNPJ.Size = new System.Drawing.Size(100, 25);
+            this.btnBuscarEmpresaCNPJ.TabIndex = 122;
+            this.btnBuscarEmpresaCNPJ.Text = "Buscar";
+            this.btnBuscarEmpresaCNPJ.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpresaCNPJ.Click += new System.EventHandler(this.btnBuscarEmpresaCNPJ_Click);
             // 
             // FormGerenciarPedidoEmpresa
             // 
@@ -333,6 +350,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(859, 425);
+            this.Controls.Add(this.btnBuscarEmpresaCNPJ);
             this.Controls.Add(this.btnExcluirNecessidade);
             this.Controls.Add(this.btnModificarNecessidade);
             this.Controls.Add(this.maskedTextBox1);
@@ -404,5 +422,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnExcluirNecessidade;
         private System.Windows.Forms.Button btnModificarNecessidade;
+        private System.Windows.Forms.Button btnBuscarEmpresaCNPJ;
     }
 }

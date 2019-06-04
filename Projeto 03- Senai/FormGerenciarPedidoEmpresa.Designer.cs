@@ -33,15 +33,15 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownDual = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSequenciais = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownConcomitantes = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownPraticaSequencial = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownFaseEscolar = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.mskCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -49,20 +49,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dtpFimContrato = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataRequerimento = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mskCNPJBusca = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnExcluirNecessidade = new System.Windows.Forms.Button();
             this.btnModificarNecessidade = new System.Windows.Forms.Button();
             this.btnBuscarEmpresaCNPJ = new System.Windows.Forms.Button();
+            this.txtCodNecessidade = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDual)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSequenciais)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownConcomitantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPraticaSequencial)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFaseEscolar)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -116,12 +118,12 @@
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // numericUpDown5
+            // numericUpDownDual
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(689, 323);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown5.TabIndex = 103;
+            this.numericUpDownDual.Location = new System.Drawing.Point(689, 323);
+            this.numericUpDownDual.Name = "numericUpDownDual";
+            this.numericUpDownDual.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownDual.TabIndex = 103;
             // 
             // label7
             // 
@@ -133,12 +135,12 @@
             this.label7.TabIndex = 102;
             this.label7.Text = "Quantidade de Contratos Dual";
             // 
-            // numericUpDown4
+            // numericUpDownSequenciais
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(689, 299);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown4.TabIndex = 101;
+            this.numericUpDownSequenciais.Location = new System.Drawing.Point(689, 299);
+            this.numericUpDownSequenciais.Name = "numericUpDownSequenciais";
+            this.numericUpDownSequenciais.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownSequenciais.TabIndex = 101;
             // 
             // label6
             // 
@@ -150,12 +152,12 @@
             this.label6.TabIndex = 100;
             this.label6.Text = "Quantidade de Contratos Sequenciais";
             // 
-            // numericUpDown3
+            // numericUpDownConcomitantes
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(689, 275);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown3.TabIndex = 99;
+            this.numericUpDownConcomitantes.Location = new System.Drawing.Point(689, 275);
+            this.numericUpDownConcomitantes.Name = "numericUpDownConcomitantes";
+            this.numericUpDownConcomitantes.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownConcomitantes.TabIndex = 99;
             // 
             // label5
             // 
@@ -167,12 +169,12 @@
             this.label5.TabIndex = 98;
             this.label5.Text = "Quantidade de Contratos Concomitantes";
             // 
-            // numericUpDown2
+            // numericUpDownPraticaSequencial
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(689, 251);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown2.TabIndex = 97;
+            this.numericUpDownPraticaSequencial.Location = new System.Drawing.Point(689, 251);
+            this.numericUpDownPraticaSequencial.Name = "numericUpDownPraticaSequencial";
+            this.numericUpDownPraticaSequencial.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownPraticaSequencial.TabIndex = 97;
             // 
             // label4
             // 
@@ -184,12 +186,12 @@
             this.label4.TabIndex = 96;
             this.label4.Text = "Quantidade de Contratos de Prática Sequencial";
             // 
-            // numericUpDown1
+            // numericUpDownFaseEscolar
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(689, 227);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 95;
+            this.numericUpDownFaseEscolar.Location = new System.Drawing.Point(689, 227);
+            this.numericUpDownFaseEscolar.Name = "numericUpDownFaseEscolar";
+            this.numericUpDownFaseEscolar.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownFaseEscolar.TabIndex = 95;
             // 
             // label3
             // 
@@ -250,7 +252,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.dtpFimContrato);
+            this.groupBox1.Controls.Add(this.dtpDataRequerimento);
             this.groupBox1.Location = new System.Drawing.Point(351, 72);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(480, 114);
@@ -258,14 +260,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Empresa Contratante";
             // 
-            // dtpFimContrato
+            // dtpDataRequerimento
             // 
-            this.dtpFimContrato.CustomFormat = "dd/MM/yyyy hh:mm:ss";
-            this.dtpFimContrato.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFimContrato.Location = new System.Drawing.Point(172, 74);
-            this.dtpFimContrato.Name = "dtpFimContrato";
-            this.dtpFimContrato.Size = new System.Drawing.Size(131, 20);
-            this.dtpFimContrato.TabIndex = 112;
+            this.dtpDataRequerimento.CustomFormat = "dd/MM/yyyy hh:mm:ss";
+            this.dtpDataRequerimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataRequerimento.Location = new System.Drawing.Point(172, 74);
+            this.dtpDataRequerimento.Name = "dtpDataRequerimento";
+            this.dtpDataRequerimento.Size = new System.Drawing.Size(131, 20);
+            this.dtpDataRequerimento.TabIndex = 112;
             // 
             // groupBox2
             // 
@@ -281,16 +283,18 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(16, 101);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(329, 258);
             this.dataGridView1.TabIndex = 105;
+            this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
-            // maskedTextBox1
+            // mskCNPJBusca
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(15, 78);
-            this.maskedTextBox1.Mask = "999,999,999/99999-99";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(123, 20);
-            this.maskedTextBox1.TabIndex = 107;
+            this.mskCNPJBusca.Location = new System.Drawing.Point(15, 78);
+            this.mskCNPJBusca.Mask = "999,999,999/99999-99";
+            this.mskCNPJBusca.Name = "mskCNPJBusca";
+            this.mskCNPJBusca.Size = new System.Drawing.Size(123, 20);
+            this.mskCNPJBusca.TabIndex = 107;
             // 
             // label9
             // 
@@ -344,27 +348,48 @@
             this.btnBuscarEmpresaCNPJ.UseVisualStyleBackColor = false;
             this.btnBuscarEmpresaCNPJ.Click += new System.EventHandler(this.btnBuscarEmpresaCNPJ_Click);
             // 
+            // txtCodNecessidade
+            // 
+            this.txtCodNecessidade.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodNecessidade.Location = new System.Drawing.Point(752, 395);
+            this.txtCodNecessidade.Name = "txtCodNecessidade";
+            this.txtCodNecessidade.ReadOnly = true;
+            this.txtCodNecessidade.Size = new System.Drawing.Size(100, 22);
+            this.txtCodNecessidade.TabIndex = 124;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(591, 398);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(157, 16);
+            this.label10.TabIndex = 123;
+            this.label10.Text = "Código da Necessidade";
+            // 
             // FormGerenciarPedidoEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(859, 425);
+            this.Controls.Add(this.txtCodNecessidade);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnBuscarEmpresaCNPJ);
             this.Controls.Add(this.btnExcluirNecessidade);
             this.Controls.Add(this.btnModificarNecessidade);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mskCNPJBusca);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.numericUpDown5);
+            this.Controls.Add(this.numericUpDownDual);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.numericUpDown4);
+            this.Controls.Add(this.numericUpDownSequenciais);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.numericUpDownConcomitantes);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.numericUpDownPraticaSequencial);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numericUpDownFaseEscolar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.mskCNPJ);
             this.Controls.Add(this.txtNome);
@@ -378,13 +403,14 @@
             this.Name = "FormGerenciarPedidoEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGerenciarPedidoEmpresa";
+            this.Load += new System.EventHandler(this.FormGerenciarPedidoEmpresa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDual)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSequenciais)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownConcomitantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPraticaSequencial)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFaseEscolar)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -399,15 +425,15 @@
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown numericUpDownDual;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown numericUpDownSequenciais;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown numericUpDownConcomitantes;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDownPraticaSequencial;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDownFaseEscolar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox mskCNPJ;
         private System.Windows.Forms.Label label20;
@@ -415,13 +441,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker dtpFimContrato;
+        private System.Windows.Forms.DateTimePicker dtpDataRequerimento;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mskCNPJBusca;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnExcluirNecessidade;
         private System.Windows.Forms.Button btnModificarNecessidade;
         private System.Windows.Forms.Button btnBuscarEmpresaCNPJ;
+        private System.Windows.Forms.TextBox txtCodNecessidade;
+        private System.Windows.Forms.Label label10;
     }
 }

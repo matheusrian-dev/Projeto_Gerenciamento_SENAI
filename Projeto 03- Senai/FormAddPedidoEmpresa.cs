@@ -17,6 +17,7 @@ namespace Projeto_03__Senai
             InitializeComponent();
         }
         ClassEmpresa empresa = new ClassEmpresa();
+        ClassNecessidadesEmpresa necessidades = new ClassNecessidadesEmpresa();
 
         private void FormAddPedidoEmpresa_Load(object sender, EventArgs e)
         {
@@ -34,7 +35,14 @@ namespace Projeto_03__Senai
 
         private void btnRegistrarNecessidade_Click(object sender, EventArgs e)
         {
-
+            necessidades.NomeEmpresaC = txtNome.Text;
+            necessidades.DataRequerimento = dtpFimContrato.Value;
+            necessidades.QtdContratoFaseEscolar = int.Parse(numericUpDownFaseEscolar.Text);
+            necessidades.QtdContratoPraticaSequencial = int.Parse(numericUpDownPraticaSequencial.Text);
+            necessidades.QtdContratoSequencial = int.Parse(numericUpDownSequenciais.Text);
+            necessidades.QtdContratoConcomitante = int.Parse(numericUpDownConcomitantes.Text);
+            necessidades.QtdContratoDual = int.Parse(numericUpDownDual.Text);
+            necessidades.RegistrarNecessidade();
         }
 
         private void btnGerenciarNecessidade_Click(object sender, EventArgs e)

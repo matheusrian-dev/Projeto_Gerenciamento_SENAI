@@ -95,10 +95,10 @@ namespace Projeto_03__Senai
             }
         }
 
-        public void ExcluirEncaminhamento()
+        public void ExcluirEncaminhamento(int codEncaminhar)
         {
             bd.Conectar();
-            bd.ExecutarComandosSql(String.Format("DELETE FROM Encaminhar WHERE codEncaminhar = '" + CodEncaminhar + "'"));
+            bd.ExecutarComandosSql(String.Format("DELETE FROM Encaminhar WHERE codEncaminhar = '" + codEncaminhar + "'"));
             bd.Desconectar();
             MessageBox.Show("Encaminhamento Excluido com Sucesso!");
 
@@ -112,10 +112,10 @@ namespace Projeto_03__Senai
             return dt;
         }
 
-        public DataTable MostrarEncaminhamentoRa()
+        public DataTable MostrarEncaminhamentoRa(int ra)
         {
             bd.Conectar();
-            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Encaminhar WHERE raEncaminhar = " + RaEncaminhar + ""));
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Encaminhar WHERE raEncaminhar = " + ra + ""));
             bd.Desconectar();
             return dt;
         }

@@ -48,14 +48,59 @@ namespace Projeto_03__Senai
 
         private void btnRemoverEncaminhamento_Click(object sender, EventArgs e)
         {
-
+            DialogResult result = MessageBox.Show("Deseja realmente cancelar o encaminhamento do "+"\n"+" aluno: " + txtNomeAluno.Text + 
+                "\n"+"para a empresa: " + txtNomeFantasia.Text + "?", "Mensagem de Confirmação", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (result.Equals(DialogResult.OK))
+            {
+                encaminhamento.ExcluirEncaminhamento(int.Parse(txtCodEncaminhamento.Text));
+            }
+            else
+            {
+            }
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-
+            encaminhamento.MostrarEncaminhamentoRa(int.Parse(txtRABusca.Text));
+            // tem que codificar a distribuição de informações pelo campo
         }
 
+        private void btnEncaminharAluno_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Deseja realmente alterar o encaminhamento do " + "\n" + " aluno: " + txtNomeAluno.Text +
+                "\n" + "para a empresa: " + txtNomeFantasia.Text + "?", "Mensagem de Confirmação", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (result.Equals(DialogResult.OK))
+            {
+                // Informações do Aluno
+                encaminhamento.NomeAluno = txtNomeAluno.Text;
+                encaminhamento.CpfEncaminhar = mskCNPJ.Text;
+                encaminhamento.RaEncaminhar = int.Parse(txtRAAluno.Text);
+                encaminhamento.RgEncaminhar = mskRGAluno.Text;
+                encaminhamento.EmailEncaminhar = txtEmailAluno.Text;
+                encaminhamento.TelefoneEncaminhar = mskTelefoneAluno.Text;
+                encaminhamento.CodTurmaEncaminhar = mskCodTurma.Text;
+                encaminhamento.SexoEncaminhar = mskSexoAluno.Text;
+                // Informações do Contrato
+                encaminhamento.Periodo = txtPeriodo.Text;
+                encaminhamento.TipoContrato = cboTipoContrato.Text;
+                encaminhamento.InicioContrato = dtpInicioContrato.Value;
+                encaminhamento.FimContrato = dtpFimContrato.Value;
+                // Informações da Empresa
+                encaminhamento.NomeFantasia = txtNomeFantasia.Text;
+                encaminhamento.TelefoneEmpresa2 = mskTelefoneEmpresa.Text;
+                encaminhamento.EmailEmpresa2 = txtEmailEmpresa.Text;
+                encaminhamento.EnderecoEmpresa = txtEnderecoEmpresa.Text;
+                encaminhamento.RazaoSocial2 = txtRazaoSocial.Text;
+                encaminhamento.Responsavel2 = txtResponsavel.Text;
+                encaminhamento.Empresa_Cnpj = mskCNPJ.Text;
+                encaminhamento.EditarEncaminhamento(int.Parse(txtCodEncaminhamento.Text));
+            }
+            else
+            {
+            }
+        }
+
+        
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;

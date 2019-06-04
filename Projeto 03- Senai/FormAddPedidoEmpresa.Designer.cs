@@ -41,25 +41,25 @@
             this.label20 = new System.Windows.Forms.Label();
             this.dtpFimContrato = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownFaseEscolar = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownPraticaSequencial = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownConcomitantes = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSequenciais = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownDual = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnRegistrarNecessidade = new System.Windows.Forms.Button();
             this.btnGerenciarNecessidade = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFaseEscolar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPraticaSequencial)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownConcomitantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSequenciais)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDual)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -187,19 +187,19 @@
             this.label3.TabIndex = 77;
             this.label3.Text = "Quantidade de Contratos de Fase Escolar";
             // 
-            // numericUpDown1
+            // numericUpDownFaseEscolar
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(410, 213);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 79;
+            this.numericUpDownFaseEscolar.Location = new System.Drawing.Point(410, 213);
+            this.numericUpDownFaseEscolar.Name = "numericUpDownFaseEscolar";
+            this.numericUpDownFaseEscolar.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownFaseEscolar.TabIndex = 79;
             // 
-            // numericUpDown2
+            // numericUpDownPraticaSequencial
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(410, 237);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown2.TabIndex = 81;
+            this.numericUpDownPraticaSequencial.Location = new System.Drawing.Point(410, 237);
+            this.numericUpDownPraticaSequencial.Name = "numericUpDownPraticaSequencial";
+            this.numericUpDownPraticaSequencial.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownPraticaSequencial.TabIndex = 81;
             // 
             // label4
             // 
@@ -211,12 +211,12 @@
             this.label4.TabIndex = 80;
             this.label4.Text = "Quantidade de Contratos de Prática Sequencial";
             // 
-            // numericUpDown3
+            // numericUpDownConcomitantes
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(410, 261);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown3.TabIndex = 83;
+            this.numericUpDownConcomitantes.Location = new System.Drawing.Point(410, 261);
+            this.numericUpDownConcomitantes.Name = "numericUpDownConcomitantes";
+            this.numericUpDownConcomitantes.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownConcomitantes.TabIndex = 83;
             // 
             // label5
             // 
@@ -228,12 +228,12 @@
             this.label5.TabIndex = 82;
             this.label5.Text = "Quantidade de Contratos Concomitantes";
             // 
-            // numericUpDown4
+            // numericUpDownSequenciais
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(410, 285);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown4.TabIndex = 85;
+            this.numericUpDownSequenciais.Location = new System.Drawing.Point(410, 285);
+            this.numericUpDownSequenciais.Name = "numericUpDownSequenciais";
+            this.numericUpDownSequenciais.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownSequenciais.TabIndex = 85;
             // 
             // label6
             // 
@@ -245,12 +245,12 @@
             this.label6.TabIndex = 84;
             this.label6.Text = "Quantidade de Contratos Sequenciais";
             // 
-            // numericUpDown5
+            // numericUpDownDual
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(410, 309);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown5.TabIndex = 87;
+            this.numericUpDownDual.Location = new System.Drawing.Point(410, 309);
+            this.numericUpDownDual.Name = "numericUpDownDual";
+            this.numericUpDownDual.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownDual.TabIndex = 87;
             // 
             // label7
             // 
@@ -307,15 +307,15 @@
             this.ClientSize = new System.Drawing.Size(637, 412);
             this.Controls.Add(this.btnGerenciarNecessidade);
             this.Controls.Add(this.btnRegistrarNecessidade);
-            this.Controls.Add(this.numericUpDown5);
+            this.Controls.Add(this.numericUpDownDual);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.numericUpDown4);
+            this.Controls.Add(this.numericUpDownSequenciais);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.numericUpDownConcomitantes);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.numericUpDownPraticaSequencial);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numericUpDownFaseEscolar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.mskCNPJ);
             this.Controls.Add(this.txtNome);
@@ -334,11 +334,11 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFaseEscolar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPraticaSequencial)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownConcomitantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSequenciais)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDual)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,14 +356,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDownFaseEscolar;
+        private System.Windows.Forms.NumericUpDown numericUpDownPraticaSequencial;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown numericUpDownConcomitantes;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown numericUpDownSequenciais;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown numericUpDownDual;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnRegistrarNecessidade;

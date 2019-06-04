@@ -34,9 +34,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnEncaminharAluno = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.dtpPeriodo2 = new System.Windows.Forms.DateTimePicker();
-            this.cboPeriodo1 = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -75,10 +72,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtPeriodo = new System.Windows.Forms.TextBox();
             this.btnRemoverEncaminhamento = new System.Windows.Forms.Button();
             this.txtRABusca = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtCodEncaminhamento = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -147,39 +147,7 @@
             this.btnEncaminharAluno.TabIndex = 159;
             this.btnEncaminharAluno.Text = "Alterar Encaminhamento";
             this.btnEncaminharAluno.UseVisualStyleBackColor = false;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(446, 257);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(24, 32);
-            this.label22.TabIndex = 157;
-            this.label22.Text = "-";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dtpPeriodo2
-            // 
-            this.dtpPeriodo2.CustomFormat = "yyyy";
-            this.dtpPeriodo2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpPeriodo2.Location = new System.Drawing.Point(486, 263);
-            this.dtpPeriodo2.Name = "dtpPeriodo2";
-            this.dtpPeriodo2.ShowUpDown = true;
-            this.dtpPeriodo2.Size = new System.Drawing.Size(81, 20);
-            this.dtpPeriodo2.TabIndex = 156;
-            // 
-            // cboPeriodo1
-            // 
-            this.cboPeriodo1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPeriodo1.FormattingEnabled = true;
-            this.cboPeriodo1.Items.AddRange(new object[] {
-            "Primeiro Período",
-            "Segundo Período"});
-            this.cboPeriodo1.Location = new System.Drawing.Point(311, 264);
-            this.cboPeriodo1.Name = "cboPeriodo1";
-            this.cboPeriodo1.Size = new System.Drawing.Size(121, 21);
-            this.cboPeriodo1.TabIndex = 155;
+            this.btnEncaminharAluno.Click += new System.EventHandler(this.btnEncaminharAluno_Click);
             // 
             // label21
             // 
@@ -522,6 +490,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.txtPeriodo);
             this.groupBox3.Controls.Add(this.btnRemoverEncaminhamento);
             this.groupBox3.Location = new System.Drawing.Point(10, 116);
             this.groupBox3.Name = "groupBox3";
@@ -529,6 +498,14 @@
             this.groupBox3.TabIndex = 158;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Formulário do Registro de Encaminhamento do Aluno";
+            // 
+            // txtPeriodo
+            // 
+            this.txtPeriodo.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPeriodo.Location = new System.Drawing.Point(292, 147);
+            this.txtPeriodo.Name = "txtPeriodo";
+            this.txtPeriodo.Size = new System.Drawing.Size(265, 22);
+            this.txtPeriodo.TabIndex = 161;
             // 
             // btnRemoverEncaminhamento
             // 
@@ -576,19 +553,37 @@
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // txtCodEncaminhamento
+            // 
+            this.txtCodEncaminhamento.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodEncaminhamento.Location = new System.Drawing.Point(573, 91);
+            this.txtCodEncaminhamento.Name = "txtCodEncaminhamento";
+            this.txtCodEncaminhamento.ReadOnly = true;
+            this.txtCodEncaminhamento.Size = new System.Drawing.Size(200, 22);
+            this.txtCodEncaminhamento.TabIndex = 164;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(379, 94);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(188, 16);
+            this.label22.TabIndex = 163;
+            this.label22.Text = "Código do Encaminhamento";
+            // 
             // FormGerenciarEncaminhamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1152, 409);
+            this.Controls.Add(this.txtCodEncaminhamento);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtRABusca);
             this.Controls.Add(this.btnEncaminharAluno);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.dtpPeriodo2);
-            this.Controls.Add(this.cboPeriodo1);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
@@ -636,6 +631,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -648,9 +644,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button btnEncaminharAluno;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DateTimePicker dtpPeriodo2;
-        private System.Windows.Forms.ComboBox cboPeriodo1;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
@@ -693,5 +686,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRemoverEncaminhamento;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtPeriodo;
+        private System.Windows.Forms.TextBox txtCodEncaminhamento;
+        private System.Windows.Forms.Label label22;
     }
 }

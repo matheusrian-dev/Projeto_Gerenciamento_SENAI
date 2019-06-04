@@ -63,6 +63,7 @@
     <Compile Include="ClassEmpresa.cs" />
     <Compile Include="ClassEncaminhamento.cs" />
     <Compile Include="ClassFuncionario.cs" />
+    <Compile Include="ClassNecessidadesEmpresa.cs" />
     <Compile Include="FormAtualizarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +123,12 @@
     </Compile>
     <Compile Include="FormGerarRelatorioEncaminhar.Designer.cs">
       <DependentUpon>FormGerarRelatorioEncaminhar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTabelaNecessidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTabelaNecessidades.Designer.cs">
+      <DependentUpon>FormTabelaNecessidades.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -184,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGerarRelatorioEncaminhar.resx">
       <DependentUpon>FormGerarRelatorioEncaminhar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTabelaNecessidades.resx">
+      <DependentUpon>FormTabelaNecessidades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

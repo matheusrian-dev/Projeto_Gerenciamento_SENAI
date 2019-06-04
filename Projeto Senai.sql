@@ -82,17 +82,17 @@ CREATE TABLE Encaminhar(
 );
 
 CREATE TABLE NecessidadeEmpresa(
- codNecessidade				 INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
- nomeEmpresaC				 VARCHAR(100)				   NULL,
- dataRequerimento			 DATE						   NULL,	
- qtdContratoFaseEscolar		 INT						   NULL,
- qtdContratoPraticaSequecial INT						   NULL,
- qtdContratoConcomitante     INT						   NULL,	
- qtdContratoSequecial		 INT						   NULL,
- qtdContratoDual			 INT						   NULL,
- Empresa_cnpj				 VARCHAR(22)				   NULL,
- FOREIGN KEY (Empresa_cnpj)
-	REFERENCES Empresa(cnpj)	
+	codNecessidade				 INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	nomeEmpresaC				 VARCHAR(100)				   NULL,
+	dataRequerimento			 DATE						   NULL,	
+	qtdContratoFaseEscolar		 INT						   NULL,
+	qtdContratoPraticaSequecial INT						   NULL,
+	qtdContratoConcomitante     INT						   NULL,	
+	qtdContratoSequecial		 INT						   NULL,
+	qtdContratoDual			 INT						   NULL,
+	Empresa_cnpj				 VARCHAR(22)				   NULL,
+	FOREIGN KEY (Empresa_cnpj)
+		REFERENCES Empresa(cnpj)	
 );
 
 --SELECT * FROM Aluno;

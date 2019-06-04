@@ -61,8 +61,44 @@ namespace Projeto_03__Senai
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            encaminhamento.MostrarEncaminhamentoRa(int.Parse(txtRABusca.Text));
-            // tem que codificar a distribuição de informações pelo campo
+            if (txtRABusca.Text.Length == 0)
+            {
+                MessageBox.Show("Por favor, insira o RA antes de efetuar a busca.");
+            }
+            else
+            {
+                if(encaminhamento.RetornarEncaminhamentoRa(int.Parse(txtRAAluno.Text)) == true)
+                {
+                    encaminhamento.MostrarEncaminhamentoRa(int.Parse(txtRAAluno.Text));
+                    // Informações do Aluno
+                    txtCodEncaminhamento.Text = Convert.ToString(encaminhamento.CodEncaminhar);
+                    txtNomeAluno.Text = encaminhamento.NomeAluno;
+                    mskCPFAluno.Text = encaminhamento.CpfEncaminhar;
+                    txtRAAluno.Text = Convert.ToString(encaminhamento.RaEncaminhar);
+                    mskRGAluno.Text = encaminhamento.RgEncaminhar;
+                    txtEmailAluno.Text = encaminhamento.EmailEncaminhar;
+                    mskTelefoneAluno.Text = encaminhamento.TelefoneEncaminhar;
+                    mskCodTurma.Text = encaminhamento.CodTurmaEncaminhar;
+                    mskSexoAluno.Text = encaminhamento.SexoEncaminhar;
+                    //// Informações do Contrato
+                    txtPeriodo.Text = encaminhamento.Periodo;
+                    cboTipoContrato.Text = encaminhamento.TipoContrato;
+                    dtpInicioContrato.Value = encaminhamento.InicioContrato;
+                    dtpFimContrato.Value = encaminhamento.FimContrato;
+                    //// Informações da Empresa
+                    txtNomeFantasia.Text = encaminhamento.NomeFantasia; 
+                    mskTelefoneEmpresa.Text = encaminhamento.TelefoneEmpresa2; 
+                    txtEmailEmpresa.Text = encaminhamento.EmailEmpresa2;
+                    txtEnderecoEmpresa.Text = encaminhamento.EnderecoEmpresa;
+                    txtRazaoSocial.Text = encaminhamento.RazaoSocial2; 
+                    txtResponsavel.Text = encaminhamento.Responsavel2; 
+                    mskCNPJ.Text = encaminhamento.Empresa_Cnpj;
+                }
+                else
+                {
+                    MessageBox.Show("Aluno não encontrado.");
+                }
+            }
         }
 
         private void btnEncaminharAluno_Click(object sender, EventArgs e)
@@ -100,8 +136,7 @@ namespace Projeto_03__Senai
             }
         }
 
-        
-        private void btnMinimizar_Click(object sender, EventArgs e)
+        private void btnMinimizar_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
